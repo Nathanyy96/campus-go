@@ -1,3 +1,13 @@
+# Gemini 免費額度測試（目前正式站）
+
+AI 後端：https://campus-go-ai.onrender.com。正式靜態站預設連線到此服務，原先誤填靜態站網址的設定也會自動使用此後端。
+
+在 Render 的 campus-go-ai / Environment 設定 GEMINI_API_KEY，選用有 Free Tier 的 Google AI Studio 專案，不啟用付費帳務。預設 GEMINI_MODEL=gemini-3.1-flash-lite；模型供應狀態與免費額度以 Google 帳戶當下顯示為準。Gemini 金鑰存在時優先使用 Gemini，不會因額度不足自動切換 OpenAI。額度不足時訊息保留，可稍後重試。
+
+/api/status 的 enabled 表示有設定金鑰，不代表供應商已驗證成功；必須實測 /api/chat 和 /api/think。金鑰只存在 Render，不能放在網頁或 GitHub。免費 Gemini 資料使用條款不同於付費方案，測試請使用虛構內容。
+
+以下保留 OpenAI 選用部署方式：
+
 # OpenAI 訊息後端部署
 
 目前遊戲是 Render Static Site。保留現有網址，另外建立 Node Web Service：

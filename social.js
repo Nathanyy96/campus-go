@@ -1,3 +1,4 @@
+import {relationshipPreference,activePartners,hasUnclearCommitments} from './relationship-rules.js';
 import {gameDate,weekday,datedText} from './calendar.js';
 import {absolute, advance, BY_ID, clock, hash, log, personState, relationship, createAppointment, isBooked, romanticFit} from './simulation.js';
 
@@ -8,6 +9,8 @@ export function bond(s, id) {
   r.days ??= [];
   r.sharedDays ??= [];
   r.romance ??= {stage:'friends', cooldownUntil:0, attempts:{}, firsts:{}};
+  r.romance.attempts??={};r.romance.firsts??={};r.romance.cooldownUntil??=0;
+  if(r.romance.stage==='dating')r.romance.agreement??='exclusive';
   // Older saves recorded shared experiences as text. Keep those experiences useful.
   for (const memory of r.memories) {
     const match = memory.match(/^第(\d+)天一起(?:在|參與)/);
@@ -18,6 +21,7 @@ export function bond(s, id) {
 
 export function relationshipLabel(s, id) {
   const r = bond(s, id);
+  if(r.romance.stage==='ended')return s.day-(r.romance.endedDay??s.day)<3?'已結束交往 · 需要空間':'結束交往後，慢慢重新相處';
   if (r.romance.stage === 'dating') return s.day-(r.romance.startedDay??s.day)>=7&&r.trust>=18&&r.sharedDays.length>=4?'穩定交往中':'正在交往';
   return friendshipStage(s,id).label;
 }
@@ -33,6 +37,7 @@ export function friendshipStage(s,id){const r=bond(s,id);let index=0;if(r.famili
 
 export function syncSocial(s) {
   s.social ??= {lastInitiativeDay:0};
+  s.social.commitmentWarning=hasUnclearCommitments(s);
   for (let i=0; i<s.appointments.length; i++) {
     const a=s.appointments[i];
     a.id ??= `legacy-${i}`;
@@ -50,12 +55,12 @@ export function syncSocial(s) {
   }).sort((a,b)=>hash(a.id*31+s.day)-hash(b.id*31+s.day));
   const p=people[0];
   if (!p) return;
-  const walking=['散步','運動'].includes(p.hobby), loc=walking?'park':'cafe';
-  const a=createAppointment(s,{person:p.id,day:s.day,time:1080,loc,kind:walking?'walk':'meal',status:'proposed',origin:'npc'});
+  const walking=['散步','運動'].includes(p.hobby),homeVisit=bond(s,p.id).familiar>=18&&bond(s,p.id).trust>=8&&hash(p.id*59+s.day)<.25,loc=homeVisit?'guestHome':walking?'park':'cafe';
+  const a=createAppointment(s,{person:p.id,day:s.day,time:1080,loc,kind:homeVisit?'visit':walking?'walk':'meal',duration:homeVisit?60:30,status:'proposed',origin:'npc'});
   bond(s,p.id).lastProactive=s.day;
   s.social.lastInitiativeDay=s.day;
   s.messages.unshift({person:p.id,day:s.day,time:s.time,kind:'proposal',appointmentId:a.id,read:false,
-    text:`今天18:00要不要一起到${BY_ID[loc].name}${walking?'走走':'吃點東西'}？17:30前回我就好，不方便也沒關係。`});
+    text:homeVisit?'今天18:00要不要來我家坐坐？我會留一小時，17:30前回我就好，不方便也沒關係。':`今天18:00要不要一起到${BY_ID[loc].name}${walking?'走走':'吃點東西'}？17:30前回我就好，不方便也沒關係。`});
   log(s,`${p.name}主動傳來一則邀約，等待你的回覆。`);
 }
 
@@ -76,6 +81,7 @@ export function cancelAppointment(s, id) {
   if (!a || a.status!=='confirmed') return '這個約定目前無法取消。';
   const late=absolute(s) >= (a.day-1)*1440+a.time-30;
   a.status='cancelled';
+  if(a.reservedMoney&&s.life){s.life.money+=a.reservedMoney;a.reservedMoney=0;}
   if (a.reservedFood && s.life) {s.life.ingredients+=a.reservedFood;a.reservedFood=0;}
   if (late) relationship(s,a.person).trust-=1;
   const p=s.people.find(p=>p.id===a.person);
@@ -97,7 +103,7 @@ function availableFor(s,p,minutes) {
 
 export function socialAction(s,p,action) {
   const r=bond(s,p.id),romance=r.romance;
-  const minutes=action==='dateChat'?6:action==='confess'||action==='apologize'?4:2;
+  const minutes=action==='dateChat'?6:['confess','apologize','discussOpen','breakup'].includes(action)?4:2;
   const unavailable=availableFor(s,p,minutes);
   if(unavailable) return unavailable;
   const meeting=s.appointments.find(a=>a.person===p.id&&a.day===s.day&&a.status==='met'&&s.location===a.loc&&s.time>=a.time&&s.time+minutes<a.time+30);
@@ -106,7 +112,7 @@ export function socialAction(s,p,action) {
     if(meeting.sharedConversation) return '剛才一起聊過了，這段回憶我會記得。';
     meeting.sharedConversation=true;r.trust+=2;if(romanticFit(p))r.attraction++;
     unique(r.days,s.day);unique(r.sharedDays,s.day);
-    const text=`${gameDate(s.day)}一起${meeting.loc==='home'?'在家吃飯，分享今天的小事':meeting.loc==='park'?'在河邊散步，聊起各自想做的事':'在咖啡店共餐，聊起校園裡的小事'}`;
+    const text=`${gameDate(s.day)}一起${meeting.loc==='guestHome'?'到同學家作客，分享最近的生活':meeting.loc==='home'?'在家吃飯，分享今天的小事':meeting.loc==='park'?'在河邊散步，聊起各自想做的事':'在咖啡店共餐，聊起校園裡的小事'}`;
     r.memories.push(text);advance(s,minutes);log(s,`你和${p.name}留了一段時間，好好聽彼此說話。`);
     return '和你這樣慢慢聊，我覺得很自在。今天這段時間很開心。';
   }
@@ -118,10 +124,28 @@ export function socialAction(s,p,action) {
     log(s,`你向${p.name}解釋失約並道歉。`);
     return '謝謝你願意解釋。下次記得提前告訴我，我也會安排自己的時間。';
   }
-  if(!['confess','hand','hug','kiss'].includes(action)) return '先聊聊今天的生活吧。';
+  if(action==='breakup'){
+    if(romance.stage!=='dating')return '你們目前沒有正在進行的交往關係。';
+    romance.stage='ended';romance.endedDay=s.day;romance.openConsent=false;romance.agreement=null;romance.cooldownUntil=absolute(s)+3*1440;
+    r.trust=Math.max(0,r.trust-2);r.memories.push(`${gameDate(s.day)}你當面說清楚結束交往，彼此保留空間`);
+    for(const a of s.appointments.filter(a=>a.person===p.id&&['proposed','confirmed'].includes(a.status))){a.status='cancelled';if(a.reservedMoney&&s.life){s.life.money+=a.reservedMoney;a.reservedMoney=0;}if(a.reservedFood&&s.life){s.life.ingredients+=a.reservedFood;a.reservedFood=0;}}
+    advance(s,minutes);log(s,`你和${p.name}結束交往。既有回憶保留，不會立刻回到親近朋友。`);return '你把結束交往的決定說清楚。彼此需要一段時間適應，也暫停了尚未進行的兩人約定。';
+  }
+  if(action==='discussOpen'){
+    if(romance.stage==='ended'&&romance.cooldownUntil>absolute(s))return '對方現在需要空間，之後再談關係吧。';
+    if(romance.openConsent)return '你們已談過可以各自發展其他關係；這不代表可以忽略約定或對方的感受。';
+    if(romance.boundaryAskedDay===s.day)return '今天已經談過這個想法，先尊重對方的回答。';
+    romance.boundaryAskedDay=s.day;advance(s,minutes);romance.knownPreference=relationshipPreference(p);
+    if(relationshipPreference(p)==='exclusive'){r.memories.push(`${gameDate(s.day)}我說明希望交往是專一的關係`);return '我希望交往是彼此專一的。如果你想同時和其他人發展，我不會答應；你仍然可以選擇結束我們的關係。';}
+    if(r.familiar<18||r.trust<12||r.days.length<3||r.sharedDays.length<2)return '我願意討論不同的相處方式，但目前還不夠了解彼此，暫時沒有同意同時交往。';
+    romance.openConsent=true;if(romance.stage==='dating')romance.agreement='open';r.memories.push(`${gameDate(s.day)}充分討論後，同意可以各自發展其他關係，仍要尊重每一方的界線與約定`);
+    log(s,`你和${p.name}明確討論並同意非專一的關係安排。`);return '我願意在彼此知情的前提下，試著讓各自也能發展其他關係。時間、變動和界線仍要說清楚；其他當事人也需要自己答應。';
+  }
+  if(!['confess','hand','hug','kiss','lean','hair'].includes(action)) return '先聊聊今天的生活吧。';
   if(romance.cooldownUntil>absolute(s)) return '剛才已經說過我的想法了，先聊點別的，給彼此一些時間。';
   if(romance.attempts[`${s.day}:${action}`]) return '今天已經聊過這件事，留點時間慢慢相處吧。';
   if(action==='confess'&&romance.stage==='dating') return '我們已經在交往了。比起再確認一次，我更想珍惜一起相處的時間。';
+  if(action==='confess'){const others=activePartners(s,p.id);if(others.length&&(!romance.openConsent||others.some(other=>!bond(s,other.id).romance.openConsent||bond(s,other.id).romance.agreement!=='open')))return '你目前已有交往對象。如果想同時發展，需要先和每位當事人談清楚並得到明確同意；目前還沒有成立新的交往關係。';}
   romance.attempts[`${s.day}:${action}`]=true;
   const refuse=(text)=>{romance.cooldownUntil=absolute(s)+180;advance(s,2);log(s,`${p.name}表達了自己的界線，你停下邀請，給對方空間。`);return text;};
   if(!romanticFit(p)) return refuse('我很珍惜我們的相處，但對你是朋友的感覺。希望你能理解。');
@@ -129,20 +153,21 @@ export function socialAction(s,p,action) {
     if(r.familiar<18||r.trust<9||r.attraction<5||r.days.length<3||r.sharedDays.length<2)
       return refuse('我還想多了解彼此。一起經歷些日常，再慢慢想這件事，好嗎？');
     if(hash((p.id+1)*211+s.day*17)<.18) return refuse('我最近有些事情要整理，還沒有準備好開始交往。可以再給我一點時間嗎？');
-    romance.stage='dating';romance.startedDay=s.day;advance(s,minutes);
+    romance.stage='dating';romance.startedDay=s.day;romance.agreement=romance.openConsent?'open':'exclusive';advance(s,minutes);
     r.memories.push(`${gameDate(s.day)}彼此表達心意，決定開始交往`);
     log(s,`你與${p.name}確認了彼此的心意，開始交往。`);
-    return '我也一直很期待和你見面。我願意，我們慢慢認識交往後的彼此。';
+    return romance.agreement==='open'?'我願意。我們依照先前談好的安排交往，也讓每位當事人知情；有變動仍要說清楚。':'我也一直很期待和你見面。我願意和你專一地交往，我們慢慢認識交往後的彼此。';
   }
   if(romance.stage!=='dating') return refuse('這樣的接觸對我有特別的意思，我還沒有準備好。先像現在這樣相處吧。');
   if(!['home','park','cafe','plaza'].includes(s.location)) return refuse('這裡不太適合，我想留在比較自在的場合。');
+  if(['lean','hair'].includes(action)&&(s.location!=='home'||romance.firsts.hug===undefined))return refuse('我想先習慣擁抱，再在家裡慢慢試試，好嗎？');
   if(action==='kiss'&&(romance.firsts.hand===undefined||romance.firsts.hug===undefined||romance.firsts.hand>=s.day||romance.firsts.hug>=s.day))
     return refuse('我想再慢一點，先習慣牽手、擁抱的相處，再說好嗎？');
   if(action==='hug'&&romance.firsts.hand===undefined) return refuse('我想先從牽手慢慢習慣，好嗎？');
   if(hash((p.id+1)*211+s.day*17)<.22) return refuse('我今天比較想保留一點自己的空間。我們說說話就好，好嗎？');
-  const names={hand:'牽手',hug:'擁抱',kiss:'接吻'};
+  const names={hand:'牽手',hug:'擁抱',kiss:'接吻',lean:'依偎',hair:'撫摸頭髮'};
   const first=romance.firsts[action]===undefined;
   if(first) {romance.firsts[action]=s.day;r.memories.push(`${gameDate(s.day)}問過彼此意願後，第一次${names[action]}`);}
   advance(s,minutes);log(s,`你詢問${p.name}的意願，對方答應了${names[action]}。`);
-  return {hand:'「可以啊。」對方輕輕握住你的手，和你並肩待了一會兒。',hug:'「我願意。」你們靠近，給彼此一個溫暖的擁抱，再慢慢鬆開。',kiss:'「好。」確認彼此的心意後，你們輕輕接吻，笑著靠在一起。'}[action];
+  return {lean:'「可以。」你們肩靠著肩，安靜地陪彼此待了一會兒。',hair:'「好，輕一點喔。」你輕輕順過對方的頭髮，留意對方是否舒服。',hand:'「可以啊。」對方輕輕握住你的手，和你並肩待了一會兒。',hug:'「我願意。」你們靠近，給彼此一個溫暖的擁抱，再慢慢鬆開。',kiss:'「好。」確認彼此的心意後，你們輕輕接吻，笑著靠在一起。'}[action];
 }

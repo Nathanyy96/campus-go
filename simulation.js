@@ -33,12 +33,17 @@ export const PLACES=[
  ['park','河畔公園',145,745,'公共','樹蔭和步道沿著河岸延伸，適合散步。'],
  ['west','西側步道',345,200,'公共','連接教學區、體育館與圖書館。'],
  ['east','東側步道',755,200,'公共','通往專業教室與行政大樓。'],
+ ['mall','澄灣百貨',1040,440,'商業','服飾、文具與餐飲樓層，適合和朋友逛逛。'],
+ ['cinema','星幕電影院',1040,570,'娛樂','今天有校園青春片與紀錄片，晚間可安排兩人觀影。'],
+ ['district','住宅區入口',550,785,'公共','同學們住在附近；到訪前先取得邀請與確認時間。'],
+ ['guestHome','受邀同學住家',680,785,'私宅','只接受已確認的拜訪；門牌與接待者依當次邀約顯示。'],
+ ['bank','校外銀行',1040,685,'商業','可辦理七日定存與校園模擬基金，投資價格有漲有跌。'],
  ['rest','生活休息區',550,555,'公共','飲水機、洗手間入口與可稍坐的長椅。']
 ].map(([id,name,x,y,type,desc])=>({id,name,x,y,type,desc}));
 export const BY_ID=Object.fromEntries(PLACES.map(p=>[p.id,p]));
 export const DEPT_PLACES=['cs','business','design','language','media','psych','sport','hospitality'];
 export const CLUB_PLACES=['music','photo','board','basket','dance','cook','volunteer','council'];
-export const EDGES=[['plaza','west'],['plaza','east'],['plaza','canteen'],['plaza','rest'],['rest','gate'],['gate','home'],['home','park'],['home','shop'],['shop','cafe'],['shop','canteen'],['cafe','park'],['west','cs'],['west','language'],['cs','business'],['language','psych'],['business','psych'],['psych','plaza'],['business','canteen'],['west','gym'],['gym','court'],['court','basket'],['west','library'],['library','office'],['office','admin'],['office','east'],['admin','council'],['east','design'],['design','media'],['design','sport'],['media','hospitality'],['sport','hospitality'],['sport','music'],['hospitality','photo'],['music','photo'],['music','board'],['photo','dance'],['board','dance'],['board','cook'],['dance','volunteer'],['cook','volunteer'],['music','rest'],['cook','gate']];
+export const EDGES=[['plaza','west'],['plaza','east'],['plaza','canteen'],['plaza','rest'],['rest','gate'],['gate','home'],['home','park'],['home','shop'],['shop','cafe'],['shop','canteen'],['cafe','park'],['west','cs'],['west','language'],['cs','business'],['language','psych'],['business','psych'],['psych','plaza'],['business','canteen'],['west','gym'],['gym','court'],['court','basket'],['west','library'],['library','office'],['office','admin'],['office','east'],['admin','council'],['east','design'],['design','media'],['design','sport'],['media','hospitality'],['sport','hospitality'],['sport','music'],['hospitality','photo'],['music','photo'],['music','board'],['photo','dance'],['board','dance'],['board','cook'],['dance','volunteer'],['cook','volunteer'],['music','rest'],['cook','gate'],['hospitality','mall'],['mall','cinema'],['cinema','bank'],['gate','district'],['district','guestHome'],['guestHome','bank']];
 export const hash=(n)=>{let x=Math.sin(n*127.1+311.7)*43758.5453;return x-Math.floor(x);};
 export function route(from,to){if(!BY_ID[from]||!BY_ID[to])throw Error('Unknown place');const distances=Object.fromEntries(PLACES.map(p=>[p.id,Infinity])),prev={},todo=new Set(PLACES.map(p=>p.id));distances[from]=0;while(todo.size){const a=[...todo].sort((a,b)=>distances[a]-distances[b])[0];todo.delete(a);if(a===to)break;for(const e of EDGES){const b=e[0]===a?e[1]:e[1]===a?e[0]:null;if(!b||!todo.has(b))continue;const weight=Math.max(1,Math.round(Math.hypot(BY_ID[a].x-BY_ID[b].x,BY_ID[a].y-BY_ID[b].y)/65));if(distances[a]+weight<distances[b]){distances[b]=distances[a]+weight;prev[b]=a;}}}const nodes=[to];while(nodes[0]!==from){const p=prev[nodes[0]];if(!p)throw Error('Disconnected map');nodes.unshift(p);}return {nodes,minutes:distances[to]};}
 const first=['林','陳','沈','許','江','周','李','王','張','吳','劉','黃','蔡','鄭','楊','何'];
@@ -59,9 +64,9 @@ export const clock=(t)=>`${String(Math.floor(t/60)%24).padStart(2,'0')}:${String
 export function relationship(s,id){return s.relations[id]??(s.relations[id]={familiar:0,trust:0,attraction:0,lastProactive:0,memories:[]});}
 export function ordinaryEvents(p,day){
  const own=DEPT_PLACES[p.dept],club=CLUB_PLACES[p.club],seed=p.id*17+day*13,weekend=weekday(day)>=5;
- const options=weekend?['library','cafe','park','court','shop','canteen','gym','plaza']:['library','cafe','plaza',own,'park','canteen','office','shop'];
+ const options=weekend?['library','cafe','park','court','shop','canteen','gym','plaza','mall','cinema']:['library','cafe','plaza',own,'park','canteen','office','shop'];
  const free=(n)=>options[(seed+n)%options.length];
- const leisure=loc=>({library:'閱讀與整理筆記',cafe:'喝咖啡、與朋友聊天',park:'散步與攝影',court:'自主打球',shop:'採買生活用品',canteen:'用餐與休息',gym:'自主健身',plaza:'逛市集與碰見朋友',office:'處理課務與諮詢'}[loc]||'自習與整理作業');
+ const leisure=loc=>({mall:'逛百貨與生活採買',cinema:'看電影與欣賞影展',library:'閱讀與整理筆記',cafe:'喝咖啡、與朋友聊天',park:'散步與攝影',court:'自主打球',shop:'採買生活用品',canteen:'用餐與休息',gym:'自主健身',plaza:'逛市集與碰見朋友',office:'處理課務與諮詢'}[loc]||'自習與整理作業');
  const morning=!weekend&&(p.id+day)%4!==0,afternoon=!weekend&&(p.id+day*2)%3===0;
  const lunch=660+(seed%5)*20;
  const events=[{time:0,loc:'gate',activity:'在校外休息'},
@@ -80,9 +85,9 @@ export function ordinaryEvents(p,day){
  if(p.transfer&&day===3)events.push({time:540,loc:'admin',activity:'辦理轉入報到'},{time:600,loc:own,activity:'認識新同學'});
  return events;
 }
-export function dayPlan(s,p){const events=ordinaryEvents(p,s.day);for(const plan of s.npcBrains?.[p.id]?.plans??[]){if(plan.day!==s.day)continue;const slot=events.find(e=>e.time===plan.time);if(slot&&!/上課|課前|餐|吃|洗手間|回到/.test(slot.activity)&&BY_ID[plan.loc])Object.assign(slot,{loc:plan.loc,activity:plan.activity});}for(const a of s.appointments.filter(a=>a.person===p.id&&a.day===s.day&&['confirmed','met'].includes(a.status))){const before=events.filter(e=>e.time<a.time).sort((a,b)=>a.time-b.time).at(-1);let travel=route(before.loc,a.loc).minutes;for(let i=events.length-1;i>=0;i--)if(events[i].time>=a.time-travel&&events[i].time<a.time+30)events.splice(i,1);events.push({time:a.time-travel,loc:a.loc,activity:'前往約定地點'},{time:a.time+30,loc:DEPT_PLACES[p.dept],activity:'繼續自己的安排'});}
+export function dayPlan(s,p){const events=ordinaryEvents(p,s.day);for(const plan of s.npcBrains?.[p.id]?.plans??[]){if(plan.day!==s.day)continue;const slot=events.find(e=>e.time===plan.time);if(slot&&!/上課|課前|餐|吃|洗手間|回到/.test(slot.activity)&&BY_ID[plan.loc])Object.assign(slot,{loc:plan.loc,activity:plan.activity});}for(const a of s.appointments.filter(a=>a.person===p.id&&a.day===s.day&&['confirmed','met'].includes(a.status))){const before=events.filter(e=>e.time<a.time).sort((a,b)=>a.time-b.time).at(-1);let travel=route(before.loc,a.loc).minutes;for(let i=events.length-1;i>=0;i--)if(events[i].time>=a.time-travel&&events[i].time<a.time+(a.duration??30))events.splice(i,1);events.push({time:a.time-travel,loc:a.loc,activity:'前往約定地點'},{time:a.time+(a.duration??30),loc:DEPT_PLACES[p.dept],activity:'繼續自己的安排'});}
 const byTime=new Map();for(const e of events)byTime.set(e.time,e);const sorted=[...byTime.values()].sort((a,b)=>a.time-b.time);let last='gate';const segments=[];for(let i=0;i<sorted.length;i++){const e=sorted[i],end=sorted[i+1]?.time??1440,r=route(last,e.loc);segments.push({...e,end,from:last,route:r});last=e.loc;}return segments;}
-export function personState(s,p,time=s.time){const seg=dayPlan(s,p).filter(e=>e.time<=time).at(-1);const elapsed=time-seg.time;let coords=BY_ID[seg.loc],location=seg.loc,activity=seg.activity;if(elapsed<seg.route.minutes){let remain=elapsed;const ns=seg.route.nodes;for(let i=1;i<ns.length;i++){const a=BY_ID[ns[i-1]],b=BY_ID[ns[i]],mins=route(a.id,b.id).minutes;if(remain<mins){const t=remain/mins;coords={x:a.x+(b.x-a.x)*t,y:a.y+(b.y-a.y)*t};break;}remain-=mins;}location=null;activity='移動中';}
+export function personState(s,p,time=s.time){const stay=s.partnerStay;if(stay?.person===p.id&&['completed','breakfast'].includes(stay.status)&&stay.day===s.day-1&&time>=480&&time<540&&s.relations[p.id]?.romance?.stage==='dating')return {location:'home',x:BY_ID.home.x,y:BY_ID.home.y,activity:'準備早餐與出門',destination:'home'};const seg=dayPlan(s,p).filter(e=>e.time<=time).at(-1);const elapsed=time-seg.time;let coords=BY_ID[seg.loc],location=seg.loc,activity=seg.activity;if(elapsed<seg.route.minutes){let remain=elapsed;const ns=seg.route.nodes;for(let i=1;i<ns.length;i++){const a=BY_ID[ns[i-1]],b=BY_ID[ns[i]],mins=route(a.id,b.id).minutes;if(remain<mins){const t=remain/mins;coords={x:a.x+(b.x-a.x)*t,y:a.y+(b.y-a.y)*t};break;}remain-=mins;}location=null;activity='移動中';}
 return {location,x:coords.x,y:coords.y,activity,destination:seg.loc};}
 export function log(s,text){s.journal.unshift({at:s.time,day:s.day,text});s.journal=s.journal.slice(0,70);}
 export function resolveAppointments(s){
@@ -95,7 +100,7 @@ export function resolveAppointments(s){
       if(!r.days.includes(s.day))r.days.push(s.day);
       if(!r.sharedDays.includes(s.day))r.sharedDays.push(s.day);
       r.memories.push(`${gameDate(s.day)}一起在${BY_ID[a.loc].name}見面`);
-      log(s,`你如約見到${p.name}。對方留出半小時，可以一起好好聊聊。`);
+      log(s,`你如約見到${p.name}。對方留出${a.duration??30}分鐘，可以一起好好相處。`);
     }else if(s.time>a.time+20){a.status='missed';relationship(s,a.person).trust-=2;log(s,`你錯過與${p.name}的約定。可以下次見面時解釋。`);}
   }
 }
@@ -117,7 +122,7 @@ export function nextDay(s){for(const a of s.appointments.filter(a=>a.day===s.day
 export function talk(s,p,topic){const st=personState(s,p);if(st.location!==s.location)return '對方已經離開這裡，改天再聊吧。';if(st.activity==='上課中')return '現在在上課，我們下課再聊，好嗎？';const key=`${s.day}:${p.id}:${topic}`,count=s.interactionCounts[key]??0;s.interactionCounts[key]=count+1;const r=relationship(s,p.id);if(count>=2)return '剛才好像聊過這個了。下次再分享新的事情吧。';r.days??=[];if(!r.days.includes(s.day))r.days.push(s.day);let text;if(topic==='greet'){r.familiar+=2;text=r.familiar<=2?`你好，我是${p.name}，${DEPTS[p.dept]}系的。最近想${p.goal}。你呢？`:`又見面了。今天過得怎麼樣？我剛在忙${st.activity==='自由活動'?'自己的事情':st.activity}。`;}else if(topic==='interest'){r.familiar+=2;r.attraction+=romanticFit(p)?1:0;text=`我喜歡${p.hobby}。有時候一投入，就會忘記時間。下次有機會可以一起試試。`;r.memories.push(`你知道我喜歡${p.hobby}`);}else if(topic==='study'){r.familiar+=1;r.trust+=1;text=s.knowledge>=3?'你剛才的想法蠻有幫助的，謝謝。我也想把自己的部分做好。':'最近的作業有點忙，不過慢慢整理應該可以完成。我們可以互相討論。';}else{r.trust+=1;text=`最近最在意的是${p.goal}。謝謝你願意聽我說。`;}
 advance(s,4);log(s,`你和${p.name}聊了${{greet:'近況',interest:'興趣',study:'課業',listen:'最近的心事'}[topic]}。`);return text;}
 export const romanticFit=p=>p.sex==='女'?p.id%5!==3:p.id%7===5;
-export function isBooked(s,day,time,exceptId){return s.appointments.some(a=>a.id!==exceptId&&['confirmed','met'].includes(a.status)&&a.day===day&&Math.abs(a.time-time)<60);}
+export function isBooked(s,day,time,exceptId){return s.appointments.some(a=>a.id!==exceptId&&['confirmed','met'].includes(a.status)&&a.day===day&&a.time<time+60&&a.time+(a.duration??60)>time);}
 export function createAppointment(s,props){const a={id:`a-${s.day}-${s.time}-${s.appointments.length}`,kind:'meal',...props};s.appointments.push(a);return a;}
 export function invite(s,p){
   const st=personState(s,p);
