@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: campus-go-ai
+    runtime: node
+    plan: free
+    buildCommand: npm install --ignore-scripts
+    startCommand: npm start
+    healthCheckPath: /api/status
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
+      - key: ALLOWED_ORIGIN
+        value: https://campus-go-xyw8.onrender.com
+      - key: AI_DAILY_LIMIT
+        value: "200"
+      - key: DATABASE_URL
+        sync: false

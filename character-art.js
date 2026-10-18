@@ -13,4 +13,4 @@ export const DOCUMENT_REFERENCE_ART = Object.freeze({
 });
 export function characterCode(id){return Number.isInteger(id)&&id>=0&&id<=998?`S${String(id+1).padStart(3,'0')}`:null;}
 export function characterArt(id){return Object.hasOwn(APPROVED_ART,id)?APPROVED_ART[id]:Object.hasOwn(DOCUMENT_REFERENCE_ART,id)?DOCUMENT_REFERENCE_ART[id]:Object.hasOwn(SECOND_BATCH_ART,id)?SECOND_BATCH_ART[id]:null;}
-export function artStatus(id){return Object.hasOwn(APPROVED_ART,id)?'approved_sample':Object.hasOwn(DOCUMENT_REFERENCE_ART,id)?'document_reference_imported':Object.hasOwn(SECOND_BATCH_ART,id)?'approved_sample':'missing';}
+export function artStatus(id){return Object.hasOwn(APPROVED_ART,id)?'approved_sample':Object.hasOwn(DOCUMENT_REFERENCE_ART,id)?'document_reference_imported':Object.hasOwn(SECOND_BATCH_ART,id)?'sample_pending_review':'missing';}

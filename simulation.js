@@ -56,11 +56,28 @@ export function newGame(){return {version:3,day:1,time:540,location:'plaza',ener
 export const absolute=(s)=> (s.day-1)*1440+s.time;
 export const clock=(t)=>`${String(Math.floor(t/60)%24).padStart(2,'0')}:${String(Math.floor(t%60)).padStart(2,'0')}`;
 export function relationship(s,id){return s.relations[id]??(s.relations[id]={familiar:0,trust:0,attraction:0,lastProactive:0,memories:[]});}
-function ordinaryEvents(p,day){const own=DEPT_PLACES[p.dept],club=CLUB_PLACES[p.club];const option=['library','cafe','plaza',own,'park','canteen'];const events=[{time:0,loc:'gate',activity:'在校外休息'},{time:480,loc:'plaza',activity:'準備今天的課程'},{time:540,loc:own,activity:'上課中'},{time:600,loc:p.id%3===0?'language':own,activity:'上課中'},{time:660,loc:option[(p.id+day)%6],activity:'自由活動'},{time:720,loc:p.id%4===0?'cafe':'canteen',activity:'午餐時間'},{time:780,loc:own,activity:'課後討論'},{time:840,loc:club,activity:'社團活動'},{time:960,loc:option[(p.id*3+day)%6],activity:'安排自己的時間'},{time:1080,loc:p.id%3===0?'cafe':'canteen',activity:'晚餐時間'},{time:1140,loc:p.id%2===0?'library':'park',activity:'晚間自由活動'},{time:1260,loc:'gate',activity:'回到校外住處'}];
-if(p.id<3)Object.assign(events.find(e=>e.time===540),{loc:'plaza',activity:'課前自由活動'});
-if(p.id%4===day%4){events.push({time:864,loc:p.id%2===0?'rest':'shop',activity:p.id%2===0?'暫時休息':'買飲料'},{time:879,loc:club,activity:'回社團繼續活動'});}
-if(p.transfer&&day===3){events.push({time:540,loc:'admin',activity:'辦理轉入報到'},{time:600,loc:own,activity:'認識新同學'});}
-return events;}
+export function ordinaryEvents(p,day){
+ const own=DEPT_PLACES[p.dept],club=CLUB_PLACES[p.club],seed=p.id*17+day*13,weekend=(day-1)%7>=5;
+ const options=['library','cafe','plaza',own,'park','canteen','office','shop'];
+ const free=(n)=>options[(seed+n)%options.length];
+ const morning=!weekend&&(p.id+day)%4!==0,afternoon=!weekend&&(p.id+day*2)%3===0;
+ const lunch=660+(seed%5)*20;
+ const events=[{time:0,loc:'gate',activity:'在校外休息'},
+ {time:480+(seed%3)*15,loc:morning?own:free(1),activity:morning?'課前準備':'安排早上的空檔'},
+ {time:540,loc:morning?own:free(2),activity:morning?'上課中':'自由活動'},
+ {time:630,loc:free(3),activity:'課間處理自己的事情'},
+ {time:lunch,loc:p.id%7===0?'cafe':'canteen',activity:'吃飯、與朋友聊天'},
+ {time:780,loc:afternoon?own:(seed%2?'canteen':free(4)),activity:afternoon?'上課中':seed%2?'午後用餐與休息':'下午自由安排'},
+ {time:870,loc:seed%5===0?'canteen':(seed%4===0?'office':club),activity:seed%5===0?'吃晚午餐、整理筆記':seed%4===0?'與老師討論課業':'社團練習與交流'},
+ {time:960,loc:seed%3===0?'canteen':free(5),activity:seed%3===0?'吃點東西、整理筆記':'自習或與朋友見面'},
+ {time:1050+(seed%3)*15,loc:'canteen',activity:'晚餐時間'},
+ {time:1140,loc:p.club===3||seed%4===0?'court':seed%3===0?club:free(6),activity:p.club===3||seed%4===0?'晚間打球':seed%3===0?'晚間社團活動':'晚間自由活動'},
+ {time:1260+(seed%3)*15,loc:'gate',activity:'回到校外住處'}];
+ if(p.id<3&&day===1)Object.assign(events.find(e=>e.time===540),{loc:'plaza',activity:'課前自由活動'});
+ if(seed%4===0)events.push({time:900,loc:'rest',activity:'暫時去洗手間'},{time:915,loc:club,activity:'繼續社團活動'});
+ if(p.transfer&&day===3)events.push({time:540,loc:'admin',activity:'辦理轉入報到'},{time:600,loc:own,activity:'認識新同學'});
+ return events;
+}
 export function dayPlan(s,p){const events=ordinaryEvents(p,s.day);for(const a of s.appointments.filter(a=>a.person===p.id&&a.day===s.day&&['confirmed','met'].includes(a.status))){const before=events.filter(e=>e.time<a.time).sort((a,b)=>a.time-b.time).at(-1);let travel=route(before.loc,a.loc).minutes;for(let i=events.length-1;i>=0;i--)if(events[i].time>=a.time-travel&&events[i].time<a.time+30)events.splice(i,1);events.push({time:a.time-travel,loc:a.loc,activity:'前往約定地點'},{time:a.time+30,loc:DEPT_PLACES[p.dept],activity:'繼續自己的安排'});}
 const byTime=new Map();for(const e of events)byTime.set(e.time,e);const sorted=[...byTime.values()].sort((a,b)=>a.time-b.time);let last='gate';const segments=[];for(let i=0;i<sorted.length;i++){const e=sorted[i],end=sorted[i+1]?.time??1440,r=route(last,e.loc);segments.push({...e,end,from:last,route:r});last=e.loc;}return segments;}
 export function personState(s,p,time=s.time){const seg=dayPlan(s,p).filter(e=>e.time<=time).at(-1);const elapsed=time-seg.time;let coords=BY_ID[seg.loc],location=seg.loc,activity=seg.activity;if(elapsed<seg.route.minutes){let remain=elapsed;const ns=seg.route.nodes;for(let i=1;i<ns.length;i++){const a=BY_ID[ns[i-1]],b=BY_ID[ns[i]],mins=route(a.id,b.id).minutes;if(remain<mins){const t=remain/mins;coords={x:a.x+(b.x-a.x)*t,y:a.y+(b.y-a.y)*t};break;}remain-=mins;}location=null;activity='移動中';}
