@@ -2,7 +2,7 @@ import {SECOND_BATCH_ART} from './character-art-batch.js';
 // Campus Go v0.14: explicit character image mapping, no shared face fallback.
 export const APPROVED_ART = Object.freeze({
   0: Object.freeze({code:'S001',name:'林知夏',portrait:'assets/characters/S001-W01-portrait.webp',fullbody:'assets/characters/S001-W01-fullbody.webp',outfit:'W01',version:'v02'}),
-  1: Object.freeze({code:'S002',name:'陳以晴',portrait:'assets/characters/S002-W01-portrait.webp',fullbody:'assets/characters/S002-W01-fullbody.webp',outfit:'W01',version:'v02'}),
+  1: Object.freeze({code:'S002',name:'陳以晴',portrait:'assets/characters/S002-W01-portrait-v03.png',fullbody:'assets/characters/S002-W01-fullbody-v03.png',outfit:'W01',version:'v03-clear-skin'}),
   2: Object.freeze({code:'S003',name:'沈若寧',portrait:'assets/characters/S003-W01-portrait.webp',fullbody:'assets/characters/S003-W01-fullbody.webp',outfit:'W01',version:'v02'}),
   3: Object.freeze({code:'S004',name:'許可欣',portrait:'assets/characters/S004-W01-portrait.webp',fullbody:'assets/characters/S004-W01-fullbody.webp',outfit:'W01',version:'v02'}),
   4: Object.freeze({code:'S005',name:'李承佑',portrait:'assets/characters/S005-W01-portrait.webp',fullbody:'assets/characters/S005-W01-fullbody.webp',outfit:'W01',version:'v02'}),

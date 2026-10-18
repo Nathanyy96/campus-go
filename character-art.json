@@ -20,13 +20,13 @@
       "id": 1,
       "code": "S002",
       "name": "陳以晴",
-      "version": "v02",
+      "version": "v03-clear-skin",
       "outfit": "W01",
       "status": "approved_sample",
-      "portrait": "assets/characters/S002-W01-portrait.webp",
-      "fullbody": "assets/characters/S002-W01-fullbody.webp",
-      "reference": "assets/characters/S002-reference-v02.png",
-      "source_sha256": "629fa84cc7b6f764cbcb8eb0306e323e54db24ed85bf727e60a834f2243f4c3f"
+      "portrait": "assets/characters/S002-W01-portrait-v03.png",
+      "fullbody": "assets/characters/S002-W01-fullbody-v03.png",
+      "reference": "assets/characters/S002-W01-portrait-v03.png",
+      "source_sha256": "37cda2ba23e8ff86dbb5a213fa05badb51a55ea010a4a980084848671208d1ac"
     },
     {
       "id": 2,

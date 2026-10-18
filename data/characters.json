@@ -80,10 +80,10 @@
       "face": "較圓的橢圓臉",
       "eyes": "自然雙眼皮、眼型較圓",
       "hair": "栗棕中長微捲髮",
-      "skin": "暖淺膚色、鼻樑和面頰少量雀斑",
+      "skin": "自然暖膚色，膚色均勻、無雀斑，保留真實皮膚紋理",
       "body": "中等自然體態",
       "height": 162,
-      "feature": "雀斑、較飽滿的雙頰與自然笑容",
+      "feature": "溫和微笑與自然波浪栗棕髮",
       "outfit": "鼠尾草綠T恤、米色寬鬆長褲、帆布鞋"
     },
     "outfits": [
@@ -144,7 +144,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": "assets/characters/S002-reference-v02.png",
+    "image": "assets/characters/S002-W01-portrait-v03.png",
     "name": "陳以晴"
   },
   {
