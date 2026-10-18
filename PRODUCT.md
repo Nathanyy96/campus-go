@@ -31,3 +31,8 @@ Friendships continue through familiarity, comfortable conversation, mutual trust
 未來計畫包含週末小旅行、畢業／進修方向和共同生活習慣；需兩個不同日子當面討論且信任16才達成共識，三天後在指定地點花20分鐘實踐；小旅行需$100、進修需玩家知識6。已同意的日期不會因繼續討論而被悄悄推遲，完成僅記錄一次，不替角色直接搬家或改職涯。AI情境包含自己的計畫與穿搭記憶。
 
 陳以晴所有目前人物近景、全身、12格親密動作和三套新造型統一為無雀斑版本；人物描述同步。兩張包含舊臉的早期六人合成圖已備份至工作區後移出公開遊戲，相關舊背景引用移除。其他角色外觀特徵保留。現有圖片進行檔案解碼、引用路徑與視覺縮圖檢查；此項不代表81名學生都已具備圖片，已有圖的角色仍為17名。
+
+
+## v0.25 · Additional student artwork
+
+Added distinct portrait/full-body W01 prototype plates for 蕭佳蓉 (S017), 胡珮珊 (S018), 謝星妤 (S019), and 程立群 (S020). All four are pending appearance approval. The directory and conversation/profile views reuse the existing two-view renderer. Twenty-one students now have individual artwork, including six original W01 identities and Yang’s document references; remaining students retain name markers. No save migration is required.

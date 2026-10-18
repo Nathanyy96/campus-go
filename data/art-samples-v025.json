@@ -1,0 +1,71 @@
+{
+  "generator": "built-in imagegen",
+  "status": "sample_pending_review",
+  "prompts": [
+    {
+      "id": 16,
+      "code": "S017",
+      "name": "蕭佳蓉",
+      "prompt": "Photorealistic natural editorial ADULT university character reference for S017 蕭佳蓉, 21 years old, woman, Taiwanese. Landscape 3:2 canvas divided into EXACTLY TWO EQUAL VERTICAL PANELS split at the precise center 50 percent. LEFT: chest-up portrait with entire head, hair and shoulders safely within left half. RIGHT: the SAME IDENTICAL person standing naturally head-to-shoes completely inside the right half, entire head, both hands and shoes visible with generous head and foot margins. One person, two views, not different identities. Face 較窄的心形臉; eyes 細長單眼皮; hair 深棕及肩直髮、偏分; skin 帶暖色的健康膚色; body 較圓潤、輪廓柔和, height 175cm; distinguishing feature 眉尾一側稍淡. Wardrobe in BOTH panels exactly 海軍藍素色T恤、米白直筒長褲、棕色樂福鞋. Relaxed ordinary adult student expression; personality 慢熱而細心. Preserve natural anatomy, real adult skin and individual facial geometry. Clearly differentiate this identity from standardized idol faces, do not use anime or generic repeated AI face. Warm gray seamless studio background, soft natural daylight, consistent lighting. No text, labels, names, watermark, borders or other people. FULLBODY must have all footwear inside image and natural proportional limbs. Keep both panels EXACT equal width. All clothing ordinary fully clothed everyday wear."
+    },
+    {
+      "id": 17,
+      "code": "S018",
+      "name": "胡珮珊",
+      "prompt": "Photorealistic natural editorial ADULT university character reference for S018 胡珮珊, 22 years old, woman, Taiwanese. Landscape 3:2 canvas divided into EXACTLY TWO EQUAL VERTICAL PANELS split at the precise center 50 percent. LEFT: chest-up portrait with entire head, hair and shoulders safely within left half. RIGHT: the SAME IDENTICAL person standing naturally head-to-shoes completely inside the right half, entire head, both hands and shoes visible with generous head and foot margins. One person, two views, not different identities. Face 俐落的長方臉; eyes 窄雙眼皮、略下垂眼尾; hair 黑褐俐落短髮、側分; skin 中性自然膚色; body 小巧結實、重心穩定, height 159cm; distinguishing feature 笑時左臉有淺酒窩. Wardrobe in BOTH panels exactly 鼠尾草綠棉質襯衫、暖米色直筒長褲、灰白休閒鞋. Relaxed ordinary adult student expression; personality 開朗、喜歡合作. Preserve natural anatomy, real adult skin and individual facial geometry. Clearly differentiate this identity from standardized idol faces, do not use anime or generic repeated AI face. Warm gray seamless studio background, soft natural daylight, consistent lighting. No text, labels, names, watermark, borders or other people. FULLBODY must have all footwear inside image and natural proportional limbs. Keep both panels EXACT equal width. All clothing ordinary fully clothed everyday wear."
+    },
+    {
+      "id": 18,
+      "code": "S019",
+      "name": "謝星妤",
+      "prompt": "Photorealistic natural editorial ADULT university character reference for S019 謝星妤, 23 years old, woman, Taiwanese. Landscape 3:2 canvas divided into EXACTLY TWO EQUAL VERTICAL PANELS split at the precise center 50 percent. LEFT: chest-up portrait with entire head, hair and shoulders safely within left half. RIGHT: the SAME IDENTICAL person standing naturally head-to-shoes completely inside the right half, entire head, both hands and shoes visible with generous head and foot margins. One person, two views, not different identities. Face 較長的橢圓臉; eyes 較圓眼型、自然雙眼皮; hair 栗棕鎖骨長髮、微捲; skin 自然偏白膚色; body 偏纖細、肩線自然, height 166cm; distinguishing feature 鼻樑有自然少量雀斑. Wardrobe in BOTH panels exactly 炭灰素色T恤、霧藍直筒長褲、白色帆布鞋. Relaxed ordinary adult student expression; personality 安靜但有自己的想法. Preserve natural anatomy, real adult skin and individual facial geometry. Clearly differentiate this identity from standardized idol faces, do not use anime or generic repeated AI face. Warm gray seamless studio background, soft natural daylight, consistent lighting. No text, labels, names, watermark, borders or other people. FULLBODY must have all footwear inside image and natural proportional limbs. Keep both panels EXACT equal width. All clothing ordinary fully clothed everyday wear."
+    },
+    {
+      "id": 19,
+      "code": "S020",
+      "name": "程立群",
+      "prompt": "Photorealistic natural editorial ADULT university character reference for S020 程立群, 24 years old, man, Taiwanese. Landscape 3:2 canvas divided into EXACTLY TWO EQUAL VERTICAL PANELS split at the precise center 50 percent. LEFT: chest-up portrait with entire head, hair and shoulders safely within left half. RIGHT: the SAME IDENTICAL person standing naturally head-to-shoes completely inside the right half, entire head, both hands and shoes visible with generous head and foot margins. One person, two views, not different identities. Face 輪廓清楚的方圓臉; eyes 單眼皮、眼距自然; hair 自然黑短髮、兩側收整; skin 帶少量雀斑的自然膚色; body 中等體態、四肢勻稱, height 178cm; distinguishing feature 下唇稍厚、唇峰較平. Wardrobe in BOTH panels exactly 磚紅棉質襯衫、黑色直筒長褲、深色帆布鞋. Relaxed ordinary adult student expression; personality 直率、重視守約. Preserve natural anatomy, real adult skin and individual facial geometry. Clearly differentiate this identity from standardized idol faces, do not use anime or generic repeated AI face. Warm gray seamless studio background, soft natural daylight, consistent lighting. No text, labels, names, watermark, borders or other people. FULLBODY must have all footwear inside image and natural proportional limbs. Keep both panels EXACT equal width. All clothing ordinary fully clothed everyday wear."
+    }
+  ],
+  "assets": [
+    {
+      "id": 16,
+      "code": "S017",
+      "name": "蕭佳蓉",
+      "path": "assets/characters/S017-W01-sample-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "48817fa956a4ccacd9fe878e6c80ef102fb23ba31d968ed6d0672ae4fd0a50ef"
+    },
+    {
+      "id": 17,
+      "code": "S018",
+      "name": "胡珮珊",
+      "path": "assets/characters/S018-W01-sample-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "475ada3a8ef8db185b82a35777427eccd6e240dfde177b648f93b4ab821aa83f"
+    },
+    {
+      "id": 18,
+      "code": "S019",
+      "name": "謝星妤",
+      "path": "assets/characters/S019-W01-sample-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "012aea9e95dd45578e1ca961e8b23efc00c59741dff522809266fe10ba6b2ae2"
+    },
+    {
+      "id": 19,
+      "code": "S020",
+      "name": "程立群",
+      "path": "assets/characters/S020-W01-sample-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6615187a91ee4c1b5dfe100b3eee6ff121c778afd3231df011c2db7e24d342b8"
+    }
+  ],
+  "reviewNotes": [
+    "Four separate adult identities, complete full-body framing; appearance and body shape remain prototypes pending user review."
+  ]
+}

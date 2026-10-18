@@ -1202,7 +1202,7 @@
         "name": "上課日常",
         "items": "海軍藍素色T恤、米白直筒長褲、棕色樂福鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S017-W02",
@@ -1254,7 +1254,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S017-W01-sample-v01.png",
     "name": "蕭佳蓉"
   },
   {
@@ -1276,7 +1276,7 @@
         "name": "上課日常",
         "items": "鼠尾草綠棉質襯衫、暖米色直筒長褲、灰白休閒鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S018-W02",
@@ -1328,7 +1328,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S018-W01-sample-v01.png",
     "name": "胡珮珊"
   },
   {
@@ -1350,7 +1350,7 @@
         "name": "上課日常",
         "items": "炭灰素色T恤、霧藍直筒長褲、白色帆布鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S019-W02",
@@ -1402,7 +1402,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S019-W01-sample-v01.png",
     "name": "謝星妤"
   },
   {
@@ -1424,7 +1424,7 @@
         "name": "上課日常",
         "items": "磚紅棉質襯衫、黑色直筒長褲、深色帆布鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S020-W02",
@@ -1476,7 +1476,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S020-W01-sample-v01.png",
     "name": "程立群"
   },
   {

@@ -103,5 +103,45 @@ export const SECOND_BATCH_ART = Object.freeze({
     "layout": "two-view",
     "split": 0.498046875,
     "version": "v01"
+  },
+  "16": {
+    "code": "S017",
+    "name": "蕭佳蓉",
+    "portrait": "assets/characters/S017-W01-sample-v01.png",
+    "fullbody": "assets/characters/S017-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "version": "v01"
+  },
+  "17": {
+    "code": "S018",
+    "name": "胡珮珊",
+    "portrait": "assets/characters/S018-W01-sample-v01.png",
+    "fullbody": "assets/characters/S018-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "version": "v01"
+  },
+  "18": {
+    "code": "S019",
+    "name": "謝星妤",
+    "portrait": "assets/characters/S019-W01-sample-v01.png",
+    "fullbody": "assets/characters/S019-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "version": "v01"
+  },
+  "19": {
+    "code": "S020",
+    "name": "程立群",
+    "portrait": "assets/characters/S020-W01-sample-v01.png",
+    "fullbody": "assets/characters/S020-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "version": "v01"
   }
 });
