@@ -1,4 +1,4 @@
-// New generated samples; identity approval pending.
+// Generated identity samples; user identity approval pending.
 export const SECOND_BATCH_ART = Object.freeze({
   "6": {
     "code": "S007",
@@ -58,6 +58,50 @@ export const SECOND_BATCH_ART = Object.freeze({
     "outfit": "W01",
     "status": "sample_pending_review",
     "layout": "two-view",
+    "version": "v01"
+  },
+  "12": {
+    "code": "S013",
+    "name": "葉青禾",
+    "portrait": "assets/characters/S013-W01-sample-v01.png",
+    "fullbody": "assets/characters/S013-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "split": 0.5358072916666666,
+    "version": "v01"
+  },
+  "13": {
+    "code": "S014",
+    "name": "蘇曼婷",
+    "portrait": "assets/characters/S014-W01-sample-v01.png",
+    "fullbody": "assets/characters/S014-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "split": 0.5787760416666666,
+    "version": "v01"
+  },
+  "14": {
+    "code": "S015",
+    "name": "梁舒雅",
+    "portrait": "assets/characters/S015-W01-sample-v01.png",
+    "fullbody": "assets/characters/S015-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "split": 0.498046875,
+    "version": "v01"
+  },
+  "15": {
+    "code": "S016",
+    "name": "方芮",
+    "portrait": "assets/characters/S016-W01-sample-v01.png",
+    "fullbody": "assets/characters/S016-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "split": 0.498046875,
     "version": "v01"
   }
 });

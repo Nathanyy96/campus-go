@@ -1,3 +1,4 @@
+import {gameDate,weekday,datedText} from './calendar.js';
 import {STUDENT_NAMES} from './names.js';
 export const DEPTS=['資訊工程','企業管理','視覺設計','外國語文','傳播媒體','心理學','運動休閒','餐旅管理'];
 export const CLUBS=['音樂社','攝影社','桌遊社','籃球社','舞蹈社','料理社','志工社','學生自治'];
@@ -57,7 +58,7 @@ export const absolute=(s)=> (s.day-1)*1440+s.time;
 export const clock=(t)=>`${String(Math.floor(t/60)%24).padStart(2,'0')}:${String(Math.floor(t%60)).padStart(2,'0')}`;
 export function relationship(s,id){return s.relations[id]??(s.relations[id]={familiar:0,trust:0,attraction:0,lastProactive:0,memories:[]});}
 export function ordinaryEvents(p,day){
- const own=DEPT_PLACES[p.dept],club=CLUB_PLACES[p.club],seed=p.id*17+day*13,weekend=(day-1)%7>=5;
+ const own=DEPT_PLACES[p.dept],club=CLUB_PLACES[p.club],seed=p.id*17+day*13,weekend=weekday(day)>=5;
  const options=weekend?['library','cafe','park','court','shop','canteen','gym','plaza']:['library','cafe','plaza',own,'park','canteen','office','shop'];
  const free=(n)=>options[(seed+n)%options.length];
  const leisure=loc=>({library:'閱讀與整理筆記',cafe:'喝咖啡、與朋友聊天',park:'散步與攝影',court:'自主打球',shop:'採買生活用品',canteen:'用餐與休息',gym:'自主健身',plaza:'逛市集與碰見朋友',office:'處理課務與諮詢'}[loc]||'自習與整理作業');
@@ -74,7 +75,7 @@ export function ordinaryEvents(p,day){
  {time:1050+(seed%3)*15,loc:'canteen',activity:'晚餐時間'},
  {time:1140,loc:p.club===3||seed%4===0?'court':seed%3===0?club:free(6),activity:p.club===3||seed%4===0?'晚間打球':seed%3===0?'晚間社團活動':'晚間自由活動'},
  {time:1260+(seed%3)*15,loc:'gate',activity:'回到校外住處'}];
- if(p.id<3&&day===1)Object.assign(events.find(e=>e.time===540),{loc:'plaza',activity:'課前自由活動'});
+ if(p.id<3&&day===1)Object.assign(events.find(e=>e.time===540),{loc:'plaza',activity:'在廣場認識新朋友'});
  if(seed%4===0)events.push({time:900,loc:'rest',activity:'暫時去洗手間'},{time:915,loc:club,activity:'繼續社團活動'});
  if(p.transfer&&day===3)events.push({time:540,loc:'admin',activity:'辦理轉入報到'},{time:600,loc:own,activity:'認識新同學'});
  return events;
@@ -93,7 +94,7 @@ export function resolveAppointments(s){
       r.days??=[];r.sharedDays??=[];
       if(!r.days.includes(s.day))r.days.push(s.day);
       if(!r.sharedDays.includes(s.day))r.sharedDays.push(s.day);
-      r.memories.push(`第${s.day}天一起在${BY_ID[a.loc].name}見面`);
+      r.memories.push(`${gameDate(s.day)}一起在${BY_ID[a.loc].name}見面`);
       log(s,`你如約見到${p.name}。對方留出半小時，可以一起好好聊聊。`);
     }else if(s.time>a.time+20){a.status='missed';relationship(s,a.person).trust-=2;log(s,`你錯過與${p.name}的約定。可以下次見面時解釋。`);}
   }
@@ -112,7 +113,7 @@ export function advance(s,minutes){
   }
   s.energy=Math.max(0,s.energy-Math.ceil(spent/45));
 }
-export function nextDay(s){for(const a of s.appointments.filter(a=>a.day===s.day&&a.status==='confirmed')){a.status='missed';relationship(s,a.person).trust-=2;}s.day++;s.time=480;s.energy=100;s.location='home';if(s.day===3&&!s.transferAdded){s.people.push({id:80,name:'何映澄',sex:'女',age:22,dept:2,club:1,trait:'慢熱、喜歡仔細觀察',hobby:'攝影',goal:'適應新的科系並完成作品',portrait:null,friend:2,transfer:true});s.transferAdded=true;log(s,'班級公告：今天有一位設計系轉學生報到，上午可到行政接待處詢問。');}log(s,`第${s.day}天開始，今天又有新的安排。`);}
+export function nextDay(s){for(const a of s.appointments.filter(a=>a.day===s.day&&a.status==='confirmed')){a.status='missed';relationship(s,a.person).trust-=2;}s.day++;s.time=480;s.energy=100;s.location='home';if(s.day===3&&!s.transferAdded){s.people.push({id:80,name:'何映澄',sex:'女',age:22,dept:2,club:1,trait:'慢熱、喜歡仔細觀察',hobby:'攝影',goal:'適應新的科系並完成作品',portrait:null,friend:2,transfer:true});s.transferAdded=true;log(s,'班級公告：今天有一位設計系轉學生報到，上午可到行政接待處詢問。');}log(s,`${gameDate(s.day)}開始，今天又有新的安排。`);}
 export function talk(s,p,topic){const st=personState(s,p);if(st.location!==s.location)return '對方已經離開這裡，改天再聊吧。';if(st.activity==='上課中')return '現在在上課，我們下課再聊，好嗎？';const key=`${s.day}:${p.id}:${topic}`,count=s.interactionCounts[key]??0;s.interactionCounts[key]=count+1;const r=relationship(s,p.id);if(count>=2)return '剛才好像聊過這個了。下次再分享新的事情吧。';r.days??=[];if(!r.days.includes(s.day))r.days.push(s.day);let text;if(topic==='greet'){r.familiar+=2;text=r.familiar<=2?`你好，我是${p.name}，${DEPTS[p.dept]}系的。最近想${p.goal}。你呢？`:`又見面了。今天過得怎麼樣？我剛在忙${st.activity==='自由活動'?'自己的事情':st.activity}。`;}else if(topic==='interest'){r.familiar+=2;r.attraction+=romanticFit(p)?1:0;text=`我喜歡${p.hobby}。有時候一投入，就會忘記時間。下次有機會可以一起試試。`;r.memories.push(`你知道我喜歡${p.hobby}`);}else if(topic==='study'){r.familiar+=1;r.trust+=1;text=s.knowledge>=3?'你剛才的想法蠻有幫助的，謝謝。我也想把自己的部分做好。':'最近的作業有點忙，不過慢慢整理應該可以完成。我們可以互相討論。';}else{r.trust+=1;text=`最近最在意的是${p.goal}。謝謝你願意聽我說。`;}
 advance(s,4);log(s,`你和${p.name}聊了${{greet:'近況',interest:'興趣',study:'課業',listen:'最近的心事'}[topic]}。`);return text;}
 export const romanticFit=p=>p.sex==='女'?p.id%5!==3:p.id%7===5;
@@ -131,11 +132,11 @@ export function invite(s,p){
   if(isBooked(s,day,time))return {text:'你這個時段已有其他約定，先把時間安排好吧。'};
   const a=createAppointment(s,{person:p.id,day,time,loc:'cafe',status:counter?'proposed':'confirmed',origin:counter?'counter':'player'});
   if(counter){
-    const text=`這天有點忙，改成第${day}天18:00在樹影咖啡，好嗎？請在當天17:30前回覆，我再留出時間。`;
+    const text=`這天有點忙，改成${gameDate(day)}18:00在樹影咖啡，好嗎？請在當天17:30前回覆，我再留出時間。`;
     s.messages.unshift({person:p.id,day:s.day,time:s.time,text,kind:'proposal',appointmentId:a.id,read:false});
     log(s,`${p.name}提出改期，等待你在訊息中確認。`);return {text};
   }
-  log(s,`你與${p.name}約好第${day}天18:00在樹影咖啡見。`);
-  return {text:`好啊，第${day}天18:00在樹影咖啡見。我會記得的。`};
+  log(s,`你與${p.name}約好${gameDate(day)}18:00在樹影咖啡見。`);
+  return {text:`好啊，${gameDate(day)}18:00在樹影咖啡見。我會記得的。`};
 }
 export function askLocation(s,p){const last=s.pendingMessages.find(m=>m.person===p.id&&!m.delivered);if(last)return '已經傳訊息了，給對方一點回覆時間。';s.pendingMessages.push({person:p.id,at:absolute(s)+10+(p.id%4)*5,delivered:false});log(s,`你傳訊息給${p.name}，詢問今天的安排。`);return '訊息已送出。對方有空時會回覆，等待或做其他事會推進時間。';}

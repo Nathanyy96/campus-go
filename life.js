@@ -1,3 +1,4 @@
+import {gameDate,weekday,datedText} from './calendar.js';
 import {syncNames} from './names.js';
 import {advance, relationship, personState, log, CLUB_PLACES, CLUBS, createAppointment} from './simulation.js';
 
@@ -27,7 +28,7 @@ export function lifeAction(s,action){
   if(action==='buy'){l.ingredients+=2;l.money-=120;l.ledger.unshift({day:s.day,amount:-120,text:c.label});}
   if(action==='cook'){l.ingredients--;l.cooking++;s.energy=Math.min(100,s.energy+18);l.cleanliness=Math.max(0,l.cleanliness-10);}
   if(action==='work'){l.money+=300;l.ledger.unshift({day:s.day,amount:300,text:c.label});}
-  if(action==='practice'){l.practice++;for(const p of peers){const r=relationship(s,p.id);r.familiar++;r.trust++;r.days??=[];r.sharedDays??=[];if(!r.days.includes(s.day))r.days.push(s.day);if(!r.sharedDays.includes(s.day))r.sharedDays.push(s.day);r.memories.push(`第${s.day}天一起參與${CLUBS[l.club]}合作`);}}
+  if(action==='practice'){l.practice++;for(const p of peers){const r=relationship(s,p.id);r.familiar++;r.trust++;r.days??=[];r.sharedDays??=[];if(!r.days.includes(s.day))r.days.push(s.day);if(!r.sharedDays.includes(s.day))r.sharedDays.push(s.day);r.memories.push(`${gameDate(s.day)}一起參與${CLUBS[l.club]}合作`);}}
   log(s,`${c.label}完成。${action==='practice'?`與${peers.length}位社員一起合作。`:''}`);return `${c.label}完成，時間過了${c.minutes}分鐘。`;
 }
 export function joinClub(s){migrate(s);const club=CLUB_PLACES.indexOf(s.location);if(club<0)return '請到社團教室申請。';if(s.life.club===club)return '你已是這個社團的成員。';if(s.life.club!==null)return '試玩版目前可加入一個社團，先累積共同經驗吧。';if(s.time+10>1380)return '今晚太晚了，明天再申請。';s.life.club=club;advance(s,10);log(s,`你加入了${CLUBS[club]}，合作活動開放於14:00–16:00。`);return `歡迎加入${CLUBS[club]}。` ;}
@@ -42,7 +43,7 @@ export function inviteHome(s,p){
   const day=s.time<1020?s.day:s.day+1;
   // Reserve ingredients now, so subsequent cooking cannot consume the guest's meal.
   l.ingredients-=2;createAppointment(s,{person:p.id,day,time:1080,loc:'home',status:'confirmed',kind:'home',reservedFood:2});
-  log(s,`你與${p.name}約好第${day}天18:00在住處共餐，已備妥兩份食材。`);
-  return `好，第${day}天18:00到你家吃飯。謝謝你先問我，我會準時到。`;
+  log(s,`你與${p.name}約好${gameDate(day)}18:00在住處共餐，已備妥兩份食材。`);
+  return `好，${gameDate(day)}18:00到你家吃飯。謝謝你先問我，我會準時到。`;
 }
 export function lifeNextDay(s){migrate(s);s.life.cleanliness=Math.max(0,s.life.cleanliness-12);}

@@ -1,0 +1,76 @@
+{
+  "generator": "built-in imagegen",
+  "status": "sample_pending_review",
+  "prompts": [
+    {
+      "id": 12,
+      "code": "S013",
+      "name": "葉青禾",
+      "prompt": "Create a photorealistic character reference plate for a fictional adult Taiwanese university life game, landscape 1536x1024. Exactly two equal vertical panels. LEFT half: natural chest-up frontal portrait, face and hair fully visible. RIGHT half: SAME identifiable adult, head-to-toe, shoes fully inside frame with margin. Identical hairstyle and clothing in both panels. Neutral warm-gray seamless studio backdrop, soft daylight, realistic skin pores, ordinary candid university-student appearance, subtle asymmetry and individual facial structure. No anime, doll face, beauty-filter plastic skin, celebrity likeness, letters, labels, watermark or extra people. Natural adult anatomy and proportions. Subject Ye Qinghe, woman age22, 170cm, slender but natural shoulders. Soft SQUARE face with gently defined jaw, MONOLID eyes at natural spacing, slightly prominent ears, natural eyebrow spacing. Longish dark-brown CURLY hair with wispy hairs over forehead, naturally fair skin. Curious, relaxed smile, calm open posture. Outfit exact: plain olive-green T-shirt, white straight-leg trousers, white canvas sneakers. Distinctive softly square face, not generic V-shaped face."
+    },
+    {
+      "id": 13,
+      "code": "S014",
+      "name": "蘇曼婷",
+      "prompt": "Create a photorealistic character reference plate for a fictional adult Taiwanese university life game, landscape 1536x1024. Exactly two equal vertical panels. LEFT half: natural chest-up frontal portrait, face and hair fully visible. RIGHT half: SAME identifiable adult, head-to-toe, shoes fully inside frame with margin. Identical hairstyle and clothing in both panels. Neutral warm-gray seamless studio backdrop, soft daylight, realistic skin pores, ordinary candid university-student appearance, subtle asymmetry and individual facial structure. No anime, doll face, beauty-filter plastic skin, celebrity likeness, letters, labels, watermark or extra people. Natural adult anatomy and proportions. Subject Su Manting, woman age23, 177cm tall, balanced medium build. Rounded face, inner-double eyelids with subtly upturned outer corners, fine light FRECKLES and small mole on right cheek. Black-brown EAR-LENGTH BOB with natural bangs, no long hair. Practical friendly expression, realistic tall adult frame. Outfit exact: pale-blue cotton button-up shirt, khaki straight-leg trousers, brown loafers. Round freckles-and-bob identity must remain consistent in both panels."
+    },
+    {
+      "id": 14,
+      "code": "S015",
+      "name": "梁舒雅",
+      "prompt": "Create a photorealistic character reference plate for a fictional adult Taiwanese university life game, landscape 1536x1024. Exactly two equal vertical panels. LEFT half: natural chest-up frontal portrait, face and hair fully visible. RIGHT half: SAME identifiable adult, head-to-toe, shoes fully inside frame with margin. Identical hairstyle and clothing in both panels. Neutral warm-gray seamless studio backdrop, soft daylight, realistic skin pores, ordinary candid university-student appearance, subtle asymmetry and individual facial structure. No anime, doll face, beauty-filter plastic skin, celebrity likeness, letters, labels, watermark or extra people. Natural adult anatomy and proportions. Subject Liang Shuya, woman age24, 161cm, compact ATHLETIC build with naturally broader shoulders and back, no exaggerated muscles. LONG NARROW face, inner-double eyelids with straight outer corners, cool pale skin. Chestnut-brown LONG hair with natural CENTER part. Reserved slight smile that gently narrows the outer eyes. Outfit exact: oatmeal plain T-shirt, forest-green straight-leg trousers, off-white gray casual sneakers. Make face noticeably long and narrow and adult, not round or identical to another student's face."
+    },
+    {
+      "id": 15,
+      "code": "S016",
+      "name": "方芮",
+      "prompt": "Create a photorealistic character reference plate for a fictional adult Taiwanese university life game, landscape 1536x1024. Exactly two equal vertical panels. LEFT half: natural chest-up frontal portrait, face and hair fully visible. RIGHT half: SAME identifiable adult, head-to-toe, shoes fully inside frame with margin. Identical hairstyle and clothing in both panels. Neutral warm-gray seamless studio backdrop, soft daylight, realistic skin pores, ordinary candid university-student appearance, subtle asymmetry and individual facial structure. No anime, doll face, beauty-filter plastic skin, celebrity likeness, letters, labels, watermark or extra people. Natural adult anatomy and proportions. Subject Fang Rui, woman age20, 168cm, naturally long limbs, lean balanced body. SHORT OVAL face, clear double eyelids with long narrow eye shape, natural WHEATEN TAN skin. Straight black LONG hair tied into a LOW PONYTAIL, subtly asymmetrical eyebrow peaks. Playful restrained warm grin. Outfit exact: misty-lavender cotton button-up shirt, gray straight-leg trousers, white canvas sneakers. Tan complexion, low ponytail and individual eyebrow asymmetry distinguish this identity."
+    }
+  ],
+  "assets": {
+    "12": {
+      "code": "S013",
+      "name": "葉青禾",
+      "portrait": "assets/characters/S013-W01-sample-v01.png",
+      "fullbody": "assets/characters/S013-W01-sample-v01.png",
+      "outfit": "W01",
+      "status": "sample_pending_review",
+      "layout": "two-view",
+      "split": 0.5358072916666666,
+      "version": "v01"
+    },
+    "13": {
+      "code": "S014",
+      "name": "蘇曼婷",
+      "portrait": "assets/characters/S014-W01-sample-v01.png",
+      "fullbody": "assets/characters/S014-W01-sample-v01.png",
+      "outfit": "W01",
+      "status": "sample_pending_review",
+      "layout": "two-view",
+      "split": 0.5787760416666666,
+      "version": "v01"
+    },
+    "14": {
+      "code": "S015",
+      "name": "梁舒雅",
+      "portrait": "assets/characters/S015-W01-sample-v01.png",
+      "fullbody": "assets/characters/S015-W01-sample-v01.png",
+      "outfit": "W01",
+      "status": "sample_pending_review",
+      "layout": "two-view",
+      "split": 0.498046875,
+      "version": "v01"
+    },
+    "15": {
+      "code": "S016",
+      "name": "方芮",
+      "portrait": "assets/characters/S016-W01-sample-v01.png",
+      "fullbody": "assets/characters/S016-W01-sample-v01.png",
+      "outfit": "W01",
+      "status": "sample_pending_review",
+      "layout": "two-view",
+      "split": 0.498046875,
+      "version": "v01"
+    }
+  }
+}
