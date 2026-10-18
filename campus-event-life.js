@@ -1,0 +1,13 @@
+import {eventOnDay,eventParticipants} from './campus-events.js';
+import {scheduleConflict} from './schedule-rules.js';
+import {advance,personState,log} from './simulation.js';
+import {bond} from './social.js';
+import {migrate} from './life.js';
+import {gameDate} from './calendar.js';
+export function eventState(s){s.campusEvents??={history:[]};s.campusEvents.history??=[];s.personalPlans??=[];return s.campusEvents;}
+export function registerCampusEvent(s,day){eventState(s);const e=eventOnDay(day);if(!e||day<s.day||day>s.day+7||day===s.day&&s.time>e.time)return '請選尚未開始的本週活動。';if(s.personalPlans.some(p=>p.campusEvent===e.id))return '這場活動已在日程裡，不需要重複報名。';if(scheduleConflict(s,{day,time:e.time,duration:e.duration}))return '活動時間與既有邀約或行程重疊，請先調整。';s.personalPlans.push({id:e.id,campusEvent:e.id,day,time:e.time,duration:e.duration,loc:e.loc,label:e.title,kind:'campusEvent',done:false});log(s,`你把${gameDate(day)}的${e.title}加入日程。`);return '已加入日程與今日提醒，到場後再參加。';}
+export function attendCampusEvent(s,day){const state=eventState(s),e=eventOnDay(day);if(!e||day!==s.day||s.time<e.time||s.time>e.time+15)return '請在活動當天開始後15分鐘內到場，尚未開始可以先探索。';if(s.location!==e.loc)return '請先前往活動地點，再開始參加。';if(state.history.some(h=>h.id===e.id))return '這場活動已完成，回憶已保存，不能重複領取成長。';const plan=s.personalPlans.find(p=>p.campusEvent===e.id);if(scheduleConflict(s,{day,time:s.time,duration:e.time+e.duration-s.time,exceptId:plan?.id})&&s.appointments.some(a=>a.day===day&&['confirmed','met'].includes(a.status)&&a.time<e.time+e.duration&&a.time+(a.duration??30)>s.time))return '接下來有其他約會，請先調整行程再參加。';if(s.personalPlans.some(p=>p!==plan&&p.day===day&&!p.done&&p.time<e.time+e.duration&&p.time+p.duration>s.time))return '接下來有其他個人行程，請先調整再參加。';if(s.energy<15)return '精力不足，先休息，下次再參加。';
+ const peers=eventParticipants(s,e).filter(p=>personState(s,p).location===e.loc),connected=[];
+ for(const p of peers){const r=bond(s,p.id);if(r.romance.stage==='ended'&&s.day-(r.romance.endedDay??s.day)<3)continue;r.familiar+=2;r.trust++;if(!r.days.includes(day))r.days.push(day);if(!r.sharedDays.includes(day))r.sharedDays.push(day);r.memories.push(`${gameDate(day)}一起參加${e.title}，和不同科系的同學交流`);connected.push(p.id);}
+ migrate(s);s.knowledge+=e.knowledge??0;s.life.cooking+=e.cooking??0;const minutes=e.time+e.duration-s.time;advance(s,minutes);s.energy=Math.max(0,Math.min(100,s.energy-10+(e.energy??0)));if(plan)plan.done=true;
+ state.history.push({id:e.id,day,title:e.title,participants:connected});state.history=state.history.slice(-24);log(s,`你完成${e.title}，和${connected.length}位同學留下共同經歷。`);return `${e.title}完成。${e.reward}；認識並與${connected.length}位同學交流，回憶已保存。`;}

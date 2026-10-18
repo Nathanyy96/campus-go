@@ -1,3 +1,4 @@
+import {eventOnDay,eventParticipants} from './campus-events.js';
 import {scheduleConflict} from './schedule-rules.js';
 import {gameDate,weekday,datedText} from './calendar.js';
 import {STUDENT_NAMES} from './names.js';
@@ -86,7 +87,14 @@ export function ordinaryEvents(p,day){
  if(p.transfer&&day===3)events.push({time:540,loc:'admin',activity:'辦理轉入報到'},{time:600,loc:own,activity:'認識新同學'});
  return events;
 }
-export function dayPlan(s,p){const events=ordinaryEvents(p,s.day);for(const plan of s.npcBrains?.[p.id]?.plans??[]){if(plan.day!==s.day)continue;const slot=events.find(e=>e.time===plan.time);if(slot&&!/上課|課前|餐|吃|洗手間|回到/.test(slot.activity)&&BY_ID[plan.loc])Object.assign(slot,{loc:plan.loc,activity:plan.activity});}for(const a of s.appointments.filter(a=>a.person===p.id&&a.day===s.day&&['confirmed','met'].includes(a.status)).sort((a,b)=>a.time-b.time)){const before=events.filter(e=>e.time<a.time).sort((a,b)=>a.time-b.time).at(-1);let travel=route(before.loc,a.loc).minutes;for(let i=events.length-1;i>=0;i--)if(events[i].time>=a.time-travel&&events[i].time<a.time+(a.duration??30))events.splice(i,1);events.push({time:a.time-travel,loc:a.loc,activity:'前往約定地點'},{time:a.time+(a.duration??30),loc:DEPT_PLACES[p.dept],activity:'繼續自己的安排'});}
+export function dayPlan(s,p){const events=ordinaryEvents(p,s.day);for(const plan of s.npcBrains?.[p.id]?.plans??[]){if(plan.day!==s.day)continue;const slot=events.find(e=>e.time===plan.time);if(slot&&!/上課|課前|餐|吃|洗手間|回到/.test(slot.activity)&&BY_ID[plan.loc])Object.assign(slot,{loc:plan.loc,activity:plan.activity});}
+ const event=eventOnDay(s.day);
+ if(event&&eventParticipants(s,event).some(person=>person.id===p.id)){
+  const before=events.filter(e=>e.time<event.time).sort((a,b)=>a.time-b.time).at(-1),travel=route(before.loc,event.loc).minutes;
+  for(let i=events.length-1;i>=0;i--)if(events[i].time>=event.time-travel&&events[i].time<event.time+event.duration)events.splice(i,1);
+  events.push({time:event.time-travel,loc:event.loc,activity:'前往'+event.title},{time:event.time,loc:event.loc,activity:event.title},{time:event.time+event.duration,loc:CLUB_PLACES[p.club],activity:'活動結束，繼續自己的安排'});
+ }
+ for(const a of s.appointments.filter(a=>a.person===p.id&&a.day===s.day&&['confirmed','met'].includes(a.status)).sort((a,b)=>a.time-b.time)){const before=events.filter(e=>e.time<a.time).sort((a,b)=>a.time-b.time).at(-1);let travel=route(before.loc,a.loc).minutes;for(let i=events.length-1;i>=0;i--)if(events[i].time>=a.time-travel&&events[i].time<a.time+(a.duration??30))events.splice(i,1);events.push({time:a.time-travel,loc:a.loc,activity:'前往約定地點'},{time:a.time+(a.duration??30),loc:DEPT_PLACES[p.dept],activity:'繼續自己的安排'});}
 const byTime=new Map();for(const e of events)byTime.set(e.time,e);const sorted=[...byTime.values()].sort((a,b)=>a.time-b.time);let last='gate';const segments=[];for(let i=0;i<sorted.length;i++){const e=sorted[i],end=sorted[i+1]?.time??1440,r=route(last,e.loc);segments.push({...e,end,from:last,route:r});last=e.loc;}return segments;}
 export function personState(s,p,time=s.time){const stay=s.partnerStay;if(stay?.person===p.id&&['completed','breakfast'].includes(stay.status)&&stay.day===s.day-1&&time>=480&&time<540&&s.relations[p.id]?.romance?.stage==='dating')return {location:'home',x:BY_ID.home.x,y:BY_ID.home.y,activity:'準備早餐與出門',destination:'home'};const seg=dayPlan(s,p).filter(e=>e.time<=time).at(-1);const elapsed=time-seg.time;let coords=BY_ID[seg.loc],location=seg.loc,activity=seg.activity;if(elapsed<seg.route.minutes){let remain=elapsed;const ns=seg.route.nodes;for(let i=1;i<ns.length;i++){const a=BY_ID[ns[i-1]],b=BY_ID[ns[i]],mins=route(a.id,b.id).minutes;if(remain<mins){const t=remain/mins;coords={x:a.x+(b.x-a.x)*t,y:a.y+(b.y-a.y)*t};break;}remain-=mins;}location=null;activity='移動中';}
 return {location,x:coords.x,y:coords.y,activity,destination:seg.loc};}

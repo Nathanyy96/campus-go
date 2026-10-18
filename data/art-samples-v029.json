@@ -1,0 +1,79 @@
+{
+  "generator": "built-in imagegen",
+  "status": "sample_pending_review",
+  "prompts": [
+    {
+      "id": 24,
+      "code": "S025",
+      "name": "余映竹",
+      "prompt": "Use case photorealistic-natural. Create a distinct BEAUTIFUL fictional Taiwanese ADULT university woman S025 余映竹, age24. Attractive fresh clear campus appearance, approachable, elegant, realistic, individual identity rather than standardized idol face. Exact face/hair/body specification: Beautiful soft SHORT OVAL face, delicately narrow double-lidded eyes with slightly downturned ends, compact softly rounded nose and small cupid-bow mouth, fine arched brows with one sparse tail; clear fair natural skin; straight dark-brown shoulder length hair SIDE PART. Gentle reserved closed-lip smile, petite slim natural shoulders,162cm. Preserve real skin texture and subtle asymmetry, light natural grooming, warm lively eyes. Keep her identity visibly different from the other women by jaw length, eyelid shape, nose and mouth proportions, not just hairstyle. Outfit BOTH views exactly 海軍藍素色T恤、米白直筒長褲、白色帆布鞋. Landscape1536x1024, two EXACTLY EQUAL vertical panels split at x768. LEFT: chest-up portrait, complete head/hair safely inside half. RIGHT: SAME IDENTICAL ADULT woman fully standing head-to-shoes with generous top/foot margins, both hands relaxed visible at sides. Match face, hairstyle, clothes and body between views. Plain warm gray seamless studio background, flattering soft daylight. Photorealistic naturally attractive university fashion. No anime, childlike features, plastic beauty filter, harsh caricature, text, names, watermarks, borders or other people. Entire footwear visible, natural balanced anatomy. All ordinary fully clothed.",
+      "version": "v01"
+    },
+    {
+      "id": 27,
+      "code": "S028",
+      "name": "溫雅慧",
+      "prompt": "Use case photorealistic-natural. Create a distinct BEAUTIFUL fictional Taiwanese ADULT university woman S028 溫雅慧, age22. Attractive fresh clear campus appearance, approachable, elegant, realistic, individual identity rather than standardized idol face. Exact face/hair/body specification: Beautiful LONG OVAL face, naturally narrow hooded inner-double eyelids with subtly lifted outer ends, long straight nose and fuller lower lip with flat cupid bow, thick low straight brows; healthy light-wheat tan skin; naturally black SHOULDER-LENGTH LAYERED hair and airy bangs. Lively confident asymmetrical smile, long proportional limbs but160cm overall. Preserve real skin texture and subtle asymmetry, light natural grooming, warm lively eyes. Keep her identity visibly different from the other women by jaw length, eyelid shape, nose and mouth proportions, not just hairstyle. Outfit BOTH views exactly 磚紅棉質襯衫、黑色直筒長褲、白色帆布鞋. Landscape1536x1024, two EXACTLY EQUAL vertical panels split at x768. LEFT: chest-up portrait, complete head/hair safely inside half. RIGHT: SAME IDENTICAL ADULT woman fully standing head-to-shoes with generous top/foot margins, both hands relaxed visible at sides. Match face, hairstyle, clothes and body between views. Plain warm gray seamless studio background, flattering soft daylight. Photorealistic naturally attractive university fashion. No anime, childlike features, plastic beauty filter, harsh caricature, text, names, watermarks, borders or other people. Entire footwear visible, natural balanced anatomy. All ordinary fully clothed.",
+      "version": "v01"
+    },
+    {
+      "id": 34,
+      "code": "S035",
+      "name": "孟紫菱",
+      "prompt": "Use case photorealistic-natural. Create a distinct BEAUTIFUL fictional Taiwanese ADULT university woman S035 孟紫菱, age24. Attractive fresh clear campus appearance, approachable, elegant, realistic, individual identity rather than standardized idol face. Exact face/hair/body specification: Beautiful NARROW HEART face with high cheekbones, defined delicate small chin, subtle hooded inner double lids gently upward at outer ends, softly aquiline narrow nose and wide softly shaped lips; warm healthy natural skin with just a few tiny nose freckles, NOT a dense freckle mask; CHESTNUT COLLARBONE WAVY hair, deep side part. Calm thoughtful warm expression, fuller soft natural curvy figure,163cm. Preserve real skin texture and subtle asymmetry, light natural grooming, warm lively eyes. Keep her identity visibly different from the other women by jaw length, eyelid shape, nose and mouth proportions, not just hairstyle. Outfit BOTH views exactly 炭灰素色T恤、霧藍直筒長褲、棕色樂福鞋. Landscape1536x1024, two EXACTLY EQUAL vertical panels split at x768. LEFT: chest-up portrait, complete head/hair safely inside half. RIGHT: SAME IDENTICAL ADULT woman fully standing head-to-shoes with generous top/foot margins, both hands relaxed visible at sides. Match face, hairstyle, clothes and body between views. Plain warm gray seamless studio background, flattering soft daylight. Photorealistic naturally attractive university fashion. No anime, childlike features, plastic beauty filter, harsh caricature, text, names, watermarks, borders or other people. Entire footwear visible, natural balanced anatomy. All ordinary fully clothed.",
+      "version": "v01"
+    },
+    {
+      "id": 35,
+      "code": "S036",
+      "name": "戴蓓琳",
+      "prompt": "Use case photorealistic-natural. BRAND NEW FACIAL IDENTITY for fictional Taiwanese adult university woman Dai Beilin S036, age20. A beautiful approachable fresh ADULT campus face with unmistakable natural individual facial anatomy. FACE GEOMETRY MUST BE PRECISE: a SHORT SOFT SQUARE FACE, noticeable width across lower cheeks and softly defined horizontal jaw, SHORT rounded chin, low forehead. Eyes are SMALL NARROW PHOENIX-shaped hooded INNER-DOUBLE/near-monolid eyes with almost no visible lid crease and level outer ends, naturally WIDER eye spacing. Delicate STRAIGHT HORIZONTAL eyebrows set lower, NOT arched idol brows. A SHORT NOSE with LOW-MEDIUM bridge and a slightly WIDE ROUND uplifted tip, clearly NOT long high narrow straight model nose. A WIDE mouth, full cupid-bow UPPER lip and balanced LOWER lip, smile reveals subtle teeth. Compact balanced midface, natural subtly asymmetric cheeks. Attractive soft healthy youthful adult face with refined proportions and warm lively expression, not harsh, not caricature, not a standard oval V-chin or big double-lidded idol template. Clear natural medium-light warm skin with subtle texture, minimal makeup. BLACK shoulder-length hair tied into a simple LOW PONYTAIL, center part and hair pulled away from face, no heavy bangs. NO glasses so all facial anatomy visible. Fit natural170cm body. Outfit same in both views: BRICK-RED cotton shirt worn untucked, BLACK straight trousers, GRAY-WHITE sneakers. LANDSCAPE1536x1024, two EXACTLY EQUAL vertical halves at x768. LEFT chest-up frontal portrait, complete hair/head safely visible. RIGHT SAME IDENTICAL WOMAN fully standing from complete head to complete shoes with generous top/foot margins, hands relaxed at sides visible. Face anatomy and identity consistent across both views. Warm-gray seamless studio backdrop, flattering soft daylight. High-quality realistic attractive ordinary adult student. No anime, filters, airbrushed plastic skin, text, watermark, borders, extra people or limbs. Do not default to long narrow oval face, large almond double eyelids, arched brows, long thin nose, narrow soft lips or long sharp chin; those belong to another character.",
+      "version": "v02"
+    }
+  ],
+  "assets": [
+    {
+      "id": 24,
+      "code": "S025",
+      "name": "余映竹",
+      "path": "assets/characters/S025-W01-sample-v01.png",
+      "version": "v01",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ca63654076dd0ee065a7f0b2df727ebcf717ddfcb0261c328c2a8e08aaa31cbe"
+    },
+    {
+      "id": 27,
+      "code": "S028",
+      "name": "溫雅慧",
+      "path": "assets/characters/S028-W01-sample-v01.png",
+      "version": "v01",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9e91779a7d65d9b8f6f57a62c057d890b65f530278dcf1e35fabd0642b5b960a"
+    },
+    {
+      "id": 34,
+      "code": "S035",
+      "name": "孟紫菱",
+      "path": "assets/characters/S035-W01-sample-v01.png",
+      "version": "v01",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "52176351a5a89d66c89c5fb4cb043ad81a364eacbf30bf025163068203581bb4"
+    },
+    {
+      "id": 35,
+      "code": "S036",
+      "name": "戴蓓琳",
+      "path": "assets/characters/S036-W01-sample-v02.png",
+      "version": "v02",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a75c6490078ffac2076347c83140289d539b15a5bb6c52d8c317ed03e7915aaf"
+    }
+  ],
+  "reviewNotes": [
+    "Four separate adult identities, complete full-body framing; appearance and body shape remain prototypes pending user review."
+  ]
+}
