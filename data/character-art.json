@@ -1,0 +1,143 @@
+{
+  "schema": "campus-character-art-v1",
+  "version": "0.15.0",
+  "description": "S001–S006 approved sample W01 images; S047 safely imported document references for display, NOT a verified W01 outfit. Other 74 students remain missing.",
+  "source": "Existing v0.14 assets unchanged; S047 four embedded images extracted without change from its Google Doc PDF; show portrait/fullbody derived from one source (image 2).",
+  "characters": [
+    {
+      "id": 0,
+      "code": "S001",
+      "name": "林知夏",
+      "version": "v02",
+      "outfit": "W01",
+      "status": "approved_sample",
+      "portrait": "assets/characters/S001-W01-portrait.webp",
+      "fullbody": "assets/characters/S001-W01-fullbody.webp",
+      "reference": "assets/characters/S001-reference-v02.png",
+      "source_sha256": "00b80944a93aa31239b0a7ba04b865c53f0bf969070276437aff780276626528"
+    },
+    {
+      "id": 1,
+      "code": "S002",
+      "name": "陳以晴",
+      "version": "v02",
+      "outfit": "W01",
+      "status": "approved_sample",
+      "portrait": "assets/characters/S002-W01-portrait.webp",
+      "fullbody": "assets/characters/S002-W01-fullbody.webp",
+      "reference": "assets/characters/S002-reference-v02.png",
+      "source_sha256": "629fa84cc7b6f764cbcb8eb0306e323e54db24ed85bf727e60a834f2243f4c3f"
+    },
+    {
+      "id": 2,
+      "code": "S003",
+      "name": "沈若寧",
+      "version": "v02",
+      "outfit": "W01",
+      "status": "approved_sample",
+      "portrait": "assets/characters/S003-W01-portrait.webp",
+      "fullbody": "assets/characters/S003-W01-fullbody.webp",
+      "reference": "assets/characters/S003-reference-v02.png",
+      "source_sha256": "47569fd3c9ba66de6cf843263a8405fceee54339881b4098e4aa4f13963d956d"
+    },
+    {
+      "id": 3,
+      "code": "S004",
+      "name": "許可欣",
+      "version": "v02",
+      "outfit": "W01",
+      "status": "approved_sample",
+      "portrait": "assets/characters/S004-W01-portrait.webp",
+      "fullbody": "assets/characters/S004-W01-fullbody.webp",
+      "reference": "assets/characters/S004-reference-v02.png",
+      "source_sha256": "004d0e621c64f1ca79a3e04d0a10de2487dbd66c0dad26ac71812f714f781712"
+    },
+    {
+      "id": 4,
+      "code": "S005",
+      "name": "李承佑",
+      "version": "v02",
+      "outfit": "W01",
+      "status": "approved_sample",
+      "portrait": "assets/characters/S005-W01-portrait.webp",
+      "fullbody": "assets/characters/S005-W01-fullbody.webp",
+      "reference": "assets/characters/S005-reference-v02.png",
+      "source_sha256": "6fd37248b4951a07c89f67aabdf5d16637a7b26ab4d7c666eaddd4f11c1446cd"
+    },
+    {
+      "id": 5,
+      "code": "S006",
+      "name": "吳子謙",
+      "version": "v02",
+      "outfit": "W01",
+      "status": "approved_sample",
+      "portrait": "assets/characters/S006-W01-portrait.webp",
+      "fullbody": "assets/characters/S006-W01-fullbody.webp",
+      "reference": "assets/characters/S006-reference-v02.png",
+      "source_sha256": "0a4db78eae622842deee88fe9b23b9fec28178c357211cf744c3c8a9653d545b"
+    },
+    {
+      "id": 46,
+      "code": "S047",
+      "name": "楊子晴",
+      "status": "document_reference_imported",
+      "outfit": "source_reference_not_W01",
+      "version": "doc-20261017",
+      "portrait": "assets/characters/S047-reference-portrait.webp",
+      "fullbody": "assets/characters/S047-reference-fullbody.webp",
+      "source_document": "https://docs.google.com/document/d/15TaBXQEPQyc6brjg3YLc0065bHtY_XJdj4Tv-DgxJz4/edit",
+      "source_pdf_embedded_image_count": 4,
+      "source_images": [
+        {
+          "file": "assets/characters/S047/S047-original-extracted-00.png",
+          "sha256": "d484da6f66a48c40b3dfa384fe1abeb7221ecc5c43952c12b2260bff4e24a32e",
+          "dimensions": [
+            1122,
+            1402
+          ],
+          "preview": "assets/characters/S047/S047-reference-00.webp"
+        },
+        {
+          "file": "assets/characters/S047/S047-original-extracted-01.png",
+          "sha256": "42555a8a2682472e8c6e90e2c3d96ca408f627aa1657061681e8a62ccf682b0d",
+          "dimensions": [
+            1133,
+            2048
+          ],
+          "preview": "assets/characters/S047/S047-reference-01.webp"
+        },
+        {
+          "file": "assets/characters/S047/S047-original-extracted-02.png",
+          "sha256": "0ab5210b0016f89246e7c79e8bff0ae8c1fe42b24bce67c294d662e7fc8af45b",
+          "dimensions": [
+            1133,
+            2048
+          ],
+          "preview": "assets/characters/S047/S047-reference-02.webp"
+        },
+        {
+          "file": "assets/characters/S047/S047-original-extracted-03.png",
+          "sha256": "525645ed55f004fa640e79cfa333464516d77c99658cf231bafdd43807316b18",
+          "dimensions": [
+            1133,
+            2048
+          ],
+          "preview": "assets/characters/S047/S047-reference-03.webp"
+        }
+      ],
+      "source_for_crop_index": 2,
+      "source_for_crop_sha256": "0ab5210b0016f89246e7c79e8bff0ae8c1fe42b24bce67c294d662e7fc8af45b",
+      "identity_review": "awaiting_user_approval_of_specific_reference",
+      "warning": "This image displays the original document reference clothing, which differs from S047-W01 planned outfit."
+    }
+  ],
+  "external_references": {
+    "S047": {
+      "status": "original_images_preserved_and_reference_assets_integrated",
+      "source_pdf_embedded_image_count": 4,
+      "user_submitted_image_count_from_design_record": 3,
+      "note": "All 4 embedded images retained, provenance of individual image cannot be confirmed; none overwritten. W01 artwork still missing.",
+      "document": "https://docs.google.com/document/d/15TaBXQEPQyc6brjg3YLc0065bHtY_XJdj4Tv-DgxJz4/edit"
+    }
+  }
+}

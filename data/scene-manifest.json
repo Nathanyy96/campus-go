@@ -1,0 +1,2537 @@
+{
+  "schema_version": "scene-manifest/0.1",
+  "release": "v0.12 prototype on available v0.5 ZIP",
+  "source": "dist/simulation.js (v0.5) + v0.11 design",
+  "map_view_box": [
+    0,
+    0,
+    1100,
+    800
+  ],
+  "asset_status": "P0 SVG prototypes; no photorealistic art is claimed",
+  "places": [
+    {
+      "place_id": "plaza",
+      "name": "中央廣場",
+      "map_position": {
+        "x": 550,
+        "y": 430
+      },
+      "original_type": "公共",
+      "original_description": "榕樹下有幾張長椅，遠處傳來社團排練的聲音。",
+      "zone": "校園中央／公共",
+      "priority": "P0",
+      "proposed_capacity": 30,
+      "neighbors": [
+        "west",
+        "east",
+        "canteen",
+        "rest",
+        "psych"
+      ],
+      "scene_type": "outdoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "廣場入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "榕樹旁長椅",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "活動公告",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "聚會中心",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "休息臺階",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "greet",
+        "wait",
+        "join_public_event"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/plaza.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "library",
+      "name": "圖書館",
+      "map_position": {
+        "x": 520,
+        "y": 130
+      },
+      "original_type": "學習",
+      "original_description": "靠窗座位灑進陽光。適合安靜閱讀與準備報告。",
+      "zone": "北側／學習",
+      "priority": "P0",
+      "proposed_capacity": 24,
+      "neighbors": [
+        "west",
+        "office"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "圖書館入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "雙人共學桌",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "借還書櫃台",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "書架",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "安靜角落",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "study",
+        "read",
+        "study_together"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/library.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "office",
+      "name": "教師辦公室",
+      "map_position": {
+        "x": 740,
+        "y": 130
+      },
+      "original_type": "行政",
+      "original_description": "門口貼著諮詢時間，偶爾有同學拿著資料進出。",
+      "zone": "北側／行政",
+      "priority": "P2",
+      "proposed_capacity": 6,
+      "neighbors": [
+        "library",
+        "admin",
+        "east"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "門口等候",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "敲門處",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "辦公桌",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "諮詢椅",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "knock",
+        "consult"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "admin",
+      "name": "行政接待處",
+      "map_position": {
+        "x": 915,
+        "y": 130
+      },
+      "original_type": "行政",
+      "original_description": "課務與轉入報到的窗口。",
+      "zone": "北側／行政",
+      "priority": "P1",
+      "proposed_capacity": 12,
+      "neighbors": [
+        "office",
+        "council"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "接待入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "等候位",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "第一櫃台",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "第二櫃台",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "register",
+        "consult"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "cs",
+      "name": "資訊工程教室",
+      "map_position": {
+        "x": 180,
+        "y": 290
+      },
+      "original_type": "科系",
+      "original_description": "白板上留著今天的程式題，桌邊擺著筆電。",
+      "zone": "教學A／科系",
+      "priority": "P0",
+      "proposed_capacity": 18,
+      "neighbors": [
+        "west",
+        "business"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "教室入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "前排雙人座",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "黑板",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "分組桌",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "後排座",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "class",
+        "study",
+        "study_together"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/cs.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "business",
+      "name": "企業管理教室",
+      "map_position": {
+        "x": 180,
+        "y": 395
+      },
+      "original_type": "科系",
+      "original_description": "幾位同學正在討論分組提案。",
+      "zone": "教學A／科系",
+      "priority": "P1",
+      "proposed_capacity": 18,
+      "neighbors": [
+        "cs",
+        "psych",
+        "canteen"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "門口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "討論桌",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "發表位置",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "白板",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "class",
+        "present",
+        "study_together"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "language",
+      "name": "外國語文教室",
+      "map_position": {
+        "x": 345,
+        "y": 290
+      },
+      "original_type": "科系",
+      "original_description": "書架上有外文讀物與交流活動海報。",
+      "zone": "教學A／科系",
+      "priority": "P1",
+      "proposed_capacity": 16,
+      "neighbors": [
+        "west",
+        "psych"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "門口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "雙人會話桌",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "外文書架",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "教學白板",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "class",
+        "conversation"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "psych",
+      "name": "心理學教室",
+      "map_position": {
+        "x": 345,
+        "y": 395
+      },
+      "original_type": "科系",
+      "original_description": "圓桌旁放著研究方法與討論課的講義。",
+      "zone": "教學A／科系",
+      "priority": "P1",
+      "proposed_capacity": 14,
+      "neighbors": [
+        "language",
+        "business",
+        "plaza"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "門口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "研究圓桌",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "教材白板",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "分組位",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "class",
+        "study_together"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "design",
+      "name": "視覺設計教室",
+      "map_position": {
+        "x": 755,
+        "y": 290
+      },
+      "original_type": "科系",
+      "original_description": "作品與草圖散在桌上，這裡有新的展覽公告。",
+      "zone": "教學B／科系",
+      "priority": "P0",
+      "proposed_capacity": 16,
+      "neighbors": [
+        "east",
+        "media",
+        "sport"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "教室入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "作品展示牆",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "雙人工作台",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "洗手台",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "評圖位置",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "class",
+        "make_art",
+        "critique"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/design.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "media",
+      "name": "傳播媒體教室",
+      "map_position": {
+        "x": 915,
+        "y": 290
+      },
+      "original_type": "科系",
+      "original_description": "攝影器材櫃旁貼著採訪分組表。",
+      "zone": "教學B／科系",
+      "priority": "P1",
+      "proposed_capacity": 16,
+      "neighbors": [
+        "design",
+        "hospitality"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "剪輯桌",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "器材櫃",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "訪談座",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "class",
+        "edit",
+        "interview"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "sport",
+      "name": "運動休閒教室",
+      "map_position": {
+        "x": 755,
+        "y": 395
+      },
+      "original_type": "科系",
+      "original_description": "運動課程的紀錄板上寫著本週的練習安排。",
+      "zone": "教學B／科系",
+      "priority": "P1",
+      "proposed_capacity": 16,
+      "neighbors": [
+        "design",
+        "hospitality",
+        "music"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "訓練板",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "前排座",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "設備角",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "class",
+        "plan_activity"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "hospitality",
+      "name": "餐旅管理教室",
+      "map_position": {
+        "x": 915,
+        "y": 395
+      },
+      "original_type": "科系",
+      "original_description": "今天的料理實作剛結束，空氣裡有淡淡香氣。",
+      "zone": "教學B／科系",
+      "priority": "P1",
+      "proposed_capacity": 16,
+      "neighbors": [
+        "media",
+        "sport",
+        "photo"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "示範台",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "備料台",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "洗滌區",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "class",
+        "cook"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "music",
+      "name": "音樂社",
+      "map_position": {
+        "x": 770,
+        "y": 535
+      },
+      "original_type": "社團",
+      "original_description": "譜架和吉他靠在牆邊，大家正在準備練習。",
+      "zone": "活動中心／社團",
+      "priority": "P0",
+      "proposed_capacity": 12,
+      "neighbors": [
+        "sport",
+        "photo",
+        "board",
+        "rest"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "社辦入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "麥克風練習位",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "吉他架",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "混音桌",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "旁聽長椅",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "club",
+        "practice_music",
+        "talk"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/music.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "photo",
+      "name": "攝影社",
+      "map_position": {
+        "x": 920,
+        "y": 535
+      },
+      "original_type": "社團",
+      "original_description": "一面照片牆記錄著校園的不同角落。",
+      "zone": "活動中心／社團",
+      "priority": "P1",
+      "proposed_capacity": 10,
+      "neighbors": [
+        "hospitality",
+        "music",
+        "dance"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "攝影作品牆",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "器材櫃",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "審片桌",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "club",
+        "photography"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "board",
+      "name": "桌遊社",
+      "map_position": {
+        "x": 770,
+        "y": 625
+      },
+      "original_type": "社團",
+      "original_description": "長桌上排著棋盤與卡牌，歡迎加入一局。",
+      "zone": "活動中心／社團",
+      "priority": "P1",
+      "proposed_capacity": 12,
+      "neighbors": [
+        "music",
+        "dance",
+        "cook"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "桌遊桌",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "觀戰長椅",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "收納架",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "club",
+        "play_board_game"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "basket",
+      "name": "籃球社",
+      "map_position": {
+        "x": 140,
+        "y": 180
+      },
+      "original_type": "社團",
+      "original_description": "隊員會在這裡集合，再一起去球場。",
+      "zone": "西北運動／社團",
+      "priority": "P2",
+      "proposed_capacity": 12,
+      "neighbors": [
+        "court"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "集合門口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "隊伍公告",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "器材架",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "候場長椅",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "club",
+        "meet"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "dance",
+      "name": "舞蹈社",
+      "map_position": {
+        "x": 920,
+        "y": 625
+      },
+      "original_type": "社團",
+      "original_description": "鏡牆映著整齊的排練空間。",
+      "zone": "活動中心／社團",
+      "priority": "P1",
+      "proposed_capacity": 12,
+      "neighbors": [
+        "photo",
+        "board",
+        "volunteer"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "排練中央",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "鏡牆",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "音響",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "club",
+        "practice_dance"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "cook",
+      "name": "料理社",
+      "map_position": {
+        "x": 770,
+        "y": 715
+      },
+      "original_type": "社團",
+      "original_description": "料理台旁貼著本週的共享食譜。",
+      "zone": "活動中心／社團",
+      "priority": "P1",
+      "proposed_capacity": 10,
+      "neighbors": [
+        "board",
+        "volunteer",
+        "gate"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "食譜板",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "雙人備料台",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "爐台",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "洗滌區",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "club",
+        "cook"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "volunteer",
+      "name": "志工社",
+      "map_position": {
+        "x": 920,
+        "y": 715
+      },
+      "original_type": "社團",
+      "original_description": "大家正在整理物資與週末活動的名單。",
+      "zone": "活動中心／社團",
+      "priority": "P2",
+      "proposed_capacity": 10,
+      "neighbors": [
+        "dance",
+        "cook"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "物資分裝桌",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "報名欄",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "儲物區",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "club",
+        "volunteer"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "council",
+      "name": "學生自治辦公室",
+      "map_position": {
+        "x": 915,
+        "y": 50
+      },
+      "original_type": "社團",
+      "original_description": "場地借用表、活動企劃與學生提案放在桌上。",
+      "zone": "北側／自治",
+      "priority": "P2",
+      "proposed_capacity": 8,
+      "neighbors": [
+        "admin"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "提案板",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "會議桌",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "文件櫃",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "meet",
+        "propose"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "court",
+      "name": "戶外球場",
+      "map_position": {
+        "x": 140,
+        "y": 70
+      },
+      "original_type": "運動",
+      "original_description": "午後常有人來這裡投籃。",
+      "zone": "西北／運動",
+      "priority": "P1",
+      "proposed_capacity": 20,
+      "neighbors": [
+        "gym",
+        "basket"
+      ],
+      "scene_type": "outdoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "球場入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "中線",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "籃框左",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "籃框右",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "場邊長椅",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "sport",
+        "spectate"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "gym",
+      "name": "體育館",
+      "map_position": {
+        "x": 325,
+        "y": 100
+      },
+      "original_type": "運動",
+      "original_description": "場館開放給體育課與社團練習。",
+      "zone": "西北／運動",
+      "priority": "P1",
+      "proposed_capacity": 30,
+      "neighbors": [
+        "west",
+        "court"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "場館入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "球場中心",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "看台",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "器材間",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "sport",
+        "spectate"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "canteen",
+      "name": "學生餐廳",
+      "map_position": {
+        "x": 345,
+        "y": 535
+      },
+      "original_type": "生活",
+      "original_description": "熱騰騰的餐點和聊天聲，是午間最熱鬧的地方。",
+      "zone": "南側／生活",
+      "priority": "P0",
+      "proposed_capacity": 30,
+      "neighbors": [
+        "plaza",
+        "shop",
+        "business"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "餐廳入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "點餐櫃台",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "靠窗雙人桌",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "第二餐桌",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "餐盤回收",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "buy_meal",
+        "eat_together",
+        "talk"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/canteen.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "cafe",
+      "name": "樹影咖啡",
+      "map_position": {
+        "x": 180,
+        "y": 625
+      },
+      "original_type": "生活",
+      "original_description": "玻璃窗外是樹影，適合輕鬆聊天。",
+      "zone": "校外街區／生活",
+      "priority": "P0",
+      "proposed_capacity": 14,
+      "neighbors": [
+        "shop",
+        "park"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "咖啡店入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "咖啡吧檯",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "窗邊雙人座",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "角落雙人座",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "取餐檯",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "buy_drink",
+        "part_time",
+        "talk"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/cafe.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "shop",
+      "name": "便利商店",
+      "map_position": {
+        "x": 345,
+        "y": 625
+      },
+      "original_type": "生活",
+      "original_description": "飲料、文具與簡單餐點都能在這裡找到。",
+      "zone": "校外街區／生活",
+      "priority": "P0",
+      "proposed_capacity": 12,
+      "neighbors": [
+        "home",
+        "cafe",
+        "canteen"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "商店入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "食材貨架",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "飲料冷藏櫃",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "文具架",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "結帳櫃台",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "buy_item",
+        "talk"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/shop.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "gate",
+      "name": "校門",
+      "map_position": {
+        "x": 550,
+        "y": 705
+      },
+      "original_type": "公共",
+      "original_description": "沿著步道走出校園，就是熟悉的生活街區。",
+      "zone": "南側／公共",
+      "priority": "P1",
+      "proposed_capacity": 24,
+      "neighbors": [
+        "rest",
+        "home",
+        "cook"
+      ],
+      "scene_type": "outdoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "校門內側",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "校門外側",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "公車站牌",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "等候處",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "travel",
+        "wait"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "home",
+      "name": "我的住處",
+      "map_position": {
+        "x": 345,
+        "y": 745
+      },
+      "original_type": "住處",
+      "original_description": "小小的套房，慢慢整理成自己的生活。",
+      "zone": "校外／私人",
+      "priority": "P0",
+      "proposed_capacity": 5,
+      "neighbors": [
+        "gate",
+        "park",
+        "shop"
+      ],
+      "scene_type": "private",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "玄關",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "書桌",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "廚房操作檯",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "雙人餐桌",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "衣櫃",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "rest",
+        "cook",
+        "tidy",
+        "eat_together",
+        "outfit_change"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/home.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "park",
+      "name": "河畔公園",
+      "map_position": {
+        "x": 145,
+        "y": 745
+      },
+      "original_type": "公共",
+      "original_description": "樹蔭和步道沿著河岸延伸，適合散步。",
+      "zone": "河畔／公共",
+      "priority": "P0",
+      "proposed_capacity": 24,
+      "neighbors": [
+        "home",
+        "cafe"
+      ],
+      "scene_type": "outdoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "河畔入口",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "步道",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "河畔雙人椅",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 2,
+          "kind": "paired_seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "開放草地",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "路燈旁",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "walk",
+        "talk",
+        "photography"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/park.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "west",
+      "name": "西側步道",
+      "map_position": {
+        "x": 345,
+        "y": 200
+      },
+      "original_type": "公共",
+      "original_description": "連接教學區、體育館與圖書館。",
+      "zone": "西側／步道",
+      "priority": "P0",
+      "proposed_capacity": 18,
+      "neighbors": [
+        "plaza",
+        "cs",
+        "language",
+        "gym",
+        "library"
+      ],
+      "scene_type": "outdoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "廣場端",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "教學A路口",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "通往體育館",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "通往圖書館",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "walk",
+        "greet"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/west.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "east",
+      "name": "東側步道",
+      "map_position": {
+        "x": 755,
+        "y": 200
+      },
+      "original_type": "公共",
+      "original_description": "通往專業教室與行政大樓。",
+      "zone": "東側／步道",
+      "priority": "P0",
+      "proposed_capacity": 18,
+      "neighbors": [
+        "plaza",
+        "office",
+        "design"
+      ],
+      "scene_type": "outdoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "廣場端",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "設計教室路口",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "行政大樓路口",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "道旁長椅",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "walk",
+        "greet"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": "./assets/scenes/east.svg",
+        "status": "prototype_vector",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    },
+    {
+      "place_id": "rest",
+      "name": "生活休息區",
+      "map_position": {
+        "x": 550,
+        "y": 555
+      },
+      "original_type": "公共",
+      "original_description": "飲水機、洗手間入口與可稍坐的長椅。",
+      "zone": "南側／公共",
+      "priority": "P1",
+      "proposed_capacity": 10,
+      "neighbors": [
+        "plaza",
+        "gate",
+        "music"
+      ],
+      "scene_type": "indoor",
+      "anchor_status": "proposal",
+      "anchors": [
+        {
+          "anchor_id": "a01",
+          "label": "廣場端",
+          "x_norm": 0.13,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a02",
+          "label": "飲水機",
+          "x_norm": 0.32,
+          "y_norm": 0.58,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a03",
+          "label": "長椅",
+          "x_norm": 0.53,
+          "y_norm": 0.6,
+          "capacity": 1,
+          "kind": "seat",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a04",
+          "label": "洗手間外指標",
+          "x_norm": 0.71,
+          "y_norm": 0.56,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        },
+        {
+          "anchor_id": "a05",
+          "label": "校門方向",
+          "x_norm": 0.86,
+          "y_norm": 0.78,
+          "capacity": 1,
+          "kind": "interaction",
+          "status": "proposal"
+        }
+      ],
+      "action_tags": [
+        "rest",
+        "drink_water"
+      ],
+      "open_rules": {
+        "status": "proposal",
+        "id": "existing_schedule_or_location_policy"
+      },
+      "asset": {
+        "overview": null,
+        "status": "missing",
+        "approved_for_final_art": false
+      },
+      "notes": "Never bake students into the background; use persistent per-character state."
+    }
+  ],
+  "edges": [
+    [
+      "plaza",
+      "west"
+    ],
+    [
+      "plaza",
+      "east"
+    ],
+    [
+      "plaza",
+      "canteen"
+    ],
+    [
+      "plaza",
+      "rest"
+    ],
+    [
+      "rest",
+      "gate"
+    ],
+    [
+      "gate",
+      "home"
+    ],
+    [
+      "home",
+      "park"
+    ],
+    [
+      "home",
+      "shop"
+    ],
+    [
+      "shop",
+      "cafe"
+    ],
+    [
+      "shop",
+      "canteen"
+    ],
+    [
+      "cafe",
+      "park"
+    ],
+    [
+      "west",
+      "cs"
+    ],
+    [
+      "west",
+      "language"
+    ],
+    [
+      "cs",
+      "business"
+    ],
+    [
+      "language",
+      "psych"
+    ],
+    [
+      "business",
+      "psych"
+    ],
+    [
+      "psych",
+      "plaza"
+    ],
+    [
+      "business",
+      "canteen"
+    ],
+    [
+      "west",
+      "gym"
+    ],
+    [
+      "gym",
+      "court"
+    ],
+    [
+      "court",
+      "basket"
+    ],
+    [
+      "west",
+      "library"
+    ],
+    [
+      "library",
+      "office"
+    ],
+    [
+      "office",
+      "admin"
+    ],
+    [
+      "office",
+      "east"
+    ],
+    [
+      "admin",
+      "council"
+    ],
+    [
+      "east",
+      "design"
+    ],
+    [
+      "design",
+      "media"
+    ],
+    [
+      "design",
+      "sport"
+    ],
+    [
+      "media",
+      "hospitality"
+    ],
+    [
+      "sport",
+      "hospitality"
+    ],
+    [
+      "sport",
+      "music"
+    ],
+    [
+      "hospitality",
+      "photo"
+    ],
+    [
+      "music",
+      "photo"
+    ],
+    [
+      "music",
+      "board"
+    ],
+    [
+      "photo",
+      "dance"
+    ],
+    [
+      "board",
+      "dance"
+    ],
+    [
+      "board",
+      "cook"
+    ],
+    [
+      "dance",
+      "volunteer"
+    ],
+    [
+      "cook",
+      "volunteer"
+    ],
+    [
+      "music",
+      "rest"
+    ],
+    [
+      "cook",
+      "gate"
+    ]
+  ]
+}
