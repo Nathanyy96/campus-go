@@ -63,13 +63,12 @@ export const SECOND_BATCH_ART = Object.freeze({
   "12": {
     "code": "S013",
     "name": "葉青禾",
-    "portrait": "assets/characters/S013-W01-sample-v01.png",
-    "fullbody": "assets/characters/S013-W01-sample-v01.png",
+    "portrait": "assets/characters/S013-W01-sample-v02.png",
+    "fullbody": "assets/characters/S013-W01-sample-v02.png",
     "outfit": "W01",
     "status": "sample_pending_review",
     "layout": "two-view",
-    "split": 0.5358072916666666,
-    "version": "v01"
+    "version": "v02"
   },
   "13": {
     "code": "S014",
@@ -107,12 +106,12 @@ export const SECOND_BATCH_ART = Object.freeze({
   "16": {
     "code": "S017",
     "name": "蕭佳蓉",
-    "portrait": "assets/characters/S017-W01-sample-v01.png",
-    "fullbody": "assets/characters/S017-W01-sample-v01.png",
+    "portrait": "assets/characters/S017-W01-sample-v02.png",
+    "fullbody": "assets/characters/S017-W01-sample-v02.png",
     "outfit": "W01",
     "status": "sample_pending_review",
     "layout": "two-view",
-    "version": "v01"
+    "version": "v02"
   },
   "17": {
     "code": "S018",
@@ -139,6 +138,26 @@ export const SECOND_BATCH_ART = Object.freeze({
     "name": "程立群",
     "portrait": "assets/characters/S020-W01-sample-v01.png",
     "fullbody": "assets/characters/S020-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "version": "v01"
+  },
+  "26": {
+    "code": "S027",
+    "name": "賴書妍",
+    "portrait": "assets/characters/S027-W01-sample-v01.png",
+    "fullbody": "assets/characters/S027-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "version": "v01"
+  },
+  "28": {
+    "code": "S029",
+    "name": "柯語桐",
+    "portrait": "assets/characters/S029-W01-sample-v01.png",
+    "fullbody": "assets/characters/S029-W01-sample-v01.png",
     "outfit": "W01",
     "status": "sample_pending_review",
     "layout": "two-view",

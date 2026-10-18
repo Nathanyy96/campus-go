@@ -906,7 +906,7 @@
         "name": "上課日常",
         "items": "橄欖綠素色T恤、白色直筒長褲、白色帆布鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S013-W02",
@@ -958,7 +958,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S013-W01-sample-v02.png",
     "name": "葉青禾"
   },
   {
@@ -1254,7 +1254,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": "assets/characters/S017-W01-sample-v01.png",
+    "image": "assets/characters/S017-W01-sample-v02.png",
     "name": "蕭佳蓉"
   },
   {
@@ -1942,7 +1942,7 @@
         "name": "上課日常",
         "items": "炭灰素色T恤、霧藍直筒長褲、灰白休閒鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S027-W02",
@@ -1994,7 +1994,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S027-W01-sample-v01.png",
     "name": "賴書妍"
   },
   {
@@ -2090,7 +2090,7 @@
         "name": "上課日常",
         "items": "橄欖綠素色T恤、白色直筒長褲、棕色樂福鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S029-W02",
@@ -2142,7 +2142,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S029-W01-sample-v01.png",
     "name": "柯語桐"
   },
   {

@@ -1,0 +1,79 @@
+{
+  "generator": "built-in imagegen",
+  "status": "sample_pending_review",
+  "prompts": [
+    {
+      "id": 12,
+      "code": "S013",
+      "name": "葉青禾",
+      "prompt": "Use case: photorealistic-natural. Create a realistic fictional Taiwanese ADULT university woman, age 22, character S013 葉青禾. Critical goal: immediately recognizable distinct facial identity, ordinary real student rather than standardized beauty-model face. Facial structure MUST follow this precise specification: A distinctly broad SOFT SQUARE face with a horizontal jaw and short blunt chin, small narrow true MONOLID eyes, straight thick low-set eyebrows, wide softly rounded nose with a low bridge, thin upper lip and wider mouth, slightly prominent ears. Natural pale skin. Deep brown medium-long curly hair with flyaways; slender 170cm. Calm serious attentive expression, lips closed. Do not create a tapered V jaw or large round double-lidded eyes. Clothing exact in both views: 橄欖綠素色T恤、白色直筒長褲、白色帆布鞋. Landscape 1536x1024 TWO EXACTLY EQUAL vertical halves divided at x=768. LEFT half chest-up frontal portrait, complete hair/head within panel. RIGHT half SAME IDENTICAL WOMAN full standing head-to-toe, complete shoes and generous top/bottom margins, natural hands relaxed at sides visible. Match face, hairstyle, body and clothes in both halves. Neutral warm-gray studio background, soft daylight, no heavy cosmetics, no airbrush, real skin pores and asymmetry. Natural proportional anatomy. No text, watermark, border, other people or extra limbs. No anime, idol template or beauty filter. All ordinary fully clothed everyday wear. Prioritize facial bone structure, eyes and nose differences rather than merely changing hair.",
+      "version": "v02"
+    },
+    {
+      "id": 16,
+      "code": "S017",
+      "name": "蕭佳蓉",
+      "prompt": "Use case: photorealistic-natural. Create a realistic fictional Taiwanese ADULT university woman, age 21, character S017 蕭佳蓉. Critical goal: immediately recognizable distinct facial identity, ordinary real student rather than standardized beauty-model face. Facial structure MUST follow this precise specification: A long NARROW HEART face, visibly wider forehead tapering into a small chin, exceptionally long narrow MONOLID eyes, long straight nose and thin lips, high arched eyebrows with one sparse tail. Warm healthy tan skin. Side-parted shoulder-length straight dark-brown hair. A tall 175cm FULLER ROUND BODY, soft substantial arms, fuller hips and waist, realistic plus-size university woman, not slim. Friendly reserved subtle smile. Face must remain narrow while body is fuller. Clothing exact in both views: 海軍藍素色T恤、米白直筒長褲、棕色樂福鞋. Landscape 1536x1024 TWO EXACTLY EQUAL vertical halves divided at x=768. LEFT half chest-up frontal portrait, complete hair/head within panel. RIGHT half SAME IDENTICAL WOMAN full standing head-to-toe, complete shoes and generous top/bottom margins, natural hands relaxed at sides visible. Match face, hairstyle, body and clothes in both halves. Neutral warm-gray studio background, soft daylight, no heavy cosmetics, no airbrush, real skin pores and asymmetry. Natural proportional anatomy. No text, watermark, border, other people or extra limbs. No anime, idol template or beauty filter. All ordinary fully clothed everyday wear. Prioritize facial bone structure, eyes and nose differences rather than merely changing hair.",
+      "version": "v02"
+    },
+    {
+      "id": 26,
+      "code": "S027",
+      "name": "賴書妍",
+      "prompt": "Use case: photorealistic-natural. Create a realistic fictional Taiwanese ADULT university woman, age 21, character S027 賴書妍. Critical goal: immediately recognizable distinct facial identity, ordinary real student rather than standardized beauty-model face. Facial structure MUST follow this precise specification: A distinctly LONG RECTANGULAR face, broad strong jaw with flat chin, short narrow true MONOLID eyes widely spaced naturally, thick straight eyebrows, a long high nose with slightly convex bridge, small narrow mouth with thin lips. Cool pale skin with a few tiny nose freckles. Collarbone chestnut slightly wavy hair with a middle part tucked behind one ear. Tall 176cm athletic solid build, broad shoulders and sturdy legs, not fashion-model thin. Reserved serious expression. Avoid round eyes, tiny nose and V-shaped chin. Clothing exact in both views: 炭灰素色T恤、霧藍直筒長褲、灰白休閒鞋. Landscape 1536x1024 TWO EXACTLY EQUAL vertical halves divided at x=768. LEFT half chest-up frontal portrait, complete hair/head within panel. RIGHT half SAME IDENTICAL WOMAN full standing head-to-toe, complete shoes and generous top/bottom margins, natural hands relaxed at sides visible. Match face, hairstyle, body and clothes in both halves. Neutral warm-gray studio background, soft daylight, no heavy cosmetics, no airbrush, real skin pores and asymmetry. Natural proportional anatomy. No text, watermark, border, other people or extra limbs. No anime, idol template or beauty filter. All ordinary fully clothed everyday wear. Prioritize facial bone structure, eyes and nose differences rather than merely changing hair.",
+      "version": "v01"
+    },
+    {
+      "id": 28,
+      "code": "S029",
+      "name": "柯語桐",
+      "prompt": "Use case: photorealistic-natural. Create a realistic fictional Taiwanese ADULT university woman, age 23, character S029 柯語桐. Critical goal: immediately recognizable distinct facial identity, ordinary real student rather than standardized beauty-model face. Facial structure MUST follow this precise specification: A distinctly SHORT BROAD SQUARE-ROUND face with full cheeks, broad horizontal jaw and rounded short chin, smaller hooded inner-double-eyelid eyes with horizontal outer corners, softly broad flat nose, wide mouth with a fuller upper lip, widely separated straight eyebrows and slightly prominent ears. Warm healthy medium-tan skin. Thick deep-brown medium-length curls with forehead wisps. 167cm FULLER ROUND BODY, visibly full arms, belly and hips, ordinary realistically curvy student. Bright open tooth-showing smile. Avoid narrow face, pointy chin, tiny nose, large doll eyes or slim body. Clothing exact in both views: 橄欖綠素色T恤、白色直筒長褲、棕色樂福鞋. Landscape 1536x1024 TWO EXACTLY EQUAL vertical halves divided at x=768. LEFT half chest-up frontal portrait, complete hair/head within panel. RIGHT half SAME IDENTICAL WOMAN full standing head-to-toe, complete shoes and generous top/bottom margins, natural hands relaxed at sides visible. Match face, hairstyle, body and clothes in both halves. Neutral warm-gray studio background, soft daylight, no heavy cosmetics, no airbrush, real skin pores and asymmetry. Natural proportional anatomy. No text, watermark, border, other people or extra limbs. No anime, idol template or beauty filter. All ordinary fully clothed everyday wear. Prioritize facial bone structure, eyes and nose differences rather than merely changing hair.",
+      "version": "v01"
+    }
+  ],
+  "assets": [
+    {
+      "id": 12,
+      "code": "S013",
+      "name": "葉青禾",
+      "path": "assets/characters/S013-W01-sample-v02.png",
+      "version": "v02",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7763519a93647371b59d51fa38dcdbd3b6365e8e649aba25185417779f79ca8c"
+    },
+    {
+      "id": 16,
+      "code": "S017",
+      "name": "蕭佳蓉",
+      "path": "assets/characters/S017-W01-sample-v02.png",
+      "version": "v02",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5f0fb386b2f43443a8ca829dbd2f6d7099997e0fd858c943488c52df6b083d2c"
+    },
+    {
+      "id": 26,
+      "code": "S027",
+      "name": "賴書妍",
+      "path": "assets/characters/S027-W01-sample-v01.png",
+      "version": "v01",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ee72523af524f039b5dc6853e4d38b822396b0db9e77c081e0a3d07e87acff37"
+    },
+    {
+      "id": 28,
+      "code": "S029",
+      "name": "柯語桐",
+      "path": "assets/characters/S029-W01-sample-v01.png",
+      "version": "v01",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8e48f8fe7c7131d3252cbc58877bcb1f0972991c2aa2c6cdf71247d9449785e0"
+    }
+  ],
+  "reviewNotes": [
+    "Four separate adult identities, complete full-body framing; appearance and body shape remain prototypes pending user review."
+  ]
+}

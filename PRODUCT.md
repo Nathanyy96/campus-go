@@ -36,3 +36,8 @@ Friendships continue through familiarity, comfortable conversation, mutual trust
 ## v0.25 · Additional student artwork
 
 Added distinct portrait/full-body W01 prototype plates for 蕭佳蓉 (S017), 胡珮珊 (S018), 謝星妤 (S019), and 程立群 (S020). All four are pending appearance approval. The directory and conversation/profile views reuse the existing two-view renderer. Twenty-one students now have individual artwork, including six original W01 identities and Yang’s document references; remaining students retain name markers. No save migration is required.
+
+
+## v0.26 · Facial identity differentiation
+
+Replaced pending W01 samples for 葉青禾/S013 and 蕭佳蓉/S017 with more distinct facial anatomy; added 賴書妍/S027 and 柯語桐/S029. All are adult, fully clothed two-view prototypes, pending user approval. Four individual face specifications emphasize jaw, eye, nose, mouth and body proportions rather than hair alone. S013 and S017 use new versioned paths; original samples remain archived in the repository. Twenty-three students now have individual artwork. Existing saves retain progress.
