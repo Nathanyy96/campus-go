@@ -46,3 +46,10 @@ Replaced pending W01 samples for 葉青禾/S013 and 蕭佳蓉/S017 with more dis
 ## v0.27 · More distinct student faces
 
 Added 郭采薇/S026 (narrow heart face, round double-lidded eyes, pixie haircut) and 顏秋月/S030 (broad cheekbones, elongated eyes, blunt bob, solid build). Each has a distinct fully clothed portrait/full-body W01 prototype pending review. Twenty-five students now have individual artwork. Existing save progress is preserved.
+
+
+## v0.28 · 情侶生活與邀約時間
+
+主選單新增情侶生活頁，以伴侶照片、感情狀態及交往日期優先，保留親密度、所有待進行約會、共同生活與回憶。支援切換各位交往對象、選未來兩週日期及自訂開始時間；時間以半開區間檢查，不再因同一人或已有其他邀約而一概阻擋。居家電影和同一人的留宿可共用在家時段，其他真實重疊仍會阻擋。電影院後可另安排到家留宿見面，不需先看居家電影；當面仍需獨立同意。取消留宿恢復原約會時長，不影響電影本身。個人活動衝突檢查使用約會完整時長。
+
+顏秋月改為v02清秀、柔和微笑版本，保留短鮑伯與小痣；未來人物以自然有吸引力、五官具個別差異為準，不刻意誇張硬朗輪廓。圖片仍為外觀試作。既有存檔保留。

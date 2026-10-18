@@ -1,3 +1,4 @@
+import {scheduleConflict} from './schedule-rules.js';
 import {gameDate,weekday,datedText} from './calendar.js';
 import {syncNames} from './names.js';
 import {advance, relationship, personState, log, CLUB_PLACES, CLUBS, createAppointment} from './simulation.js';
@@ -38,9 +39,9 @@ export function inviteHome(s,p){
   if(r.familiar<10||r.trust<4)return '謝謝邀請，但到家裡吃飯我還想再熟悉一點。先在學校相處吧。';
   if(l.cleanliness<60)return '你提到房間還沒整理好，等準備好了再約吧。';
   if(l.cooking<1)return '先練習一道拿手菜，下次再邀請對方品嚐。';
-  if(s.appointments.some(a=>['confirmed','proposed'].includes(a.status)))return '先完成已有的約定，再安排到家裡共餐。';
   if(l.ingredients<2)return '需要兩份食材，先去便利商店補齊。';
   const day=s.time<1020?s.day:s.day+1;
+  if(scheduleConflict(s,{day,time:1080,duration:30,person:p.id}))return '18:00與其他安排重疊，先調整日程再邀請。';
   // Reserve ingredients now, so subsequent cooking cannot consume the guest's meal.
   l.ingredients-=2;createAppointment(s,{person:p.id,day,time:1080,loc:'home',status:'confirmed',kind:'home',reservedFood:2});
   log(s,`你與${p.name}約好${gameDate(day)}18:00在住處共餐，已備妥兩份食材。`);

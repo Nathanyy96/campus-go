@@ -1,3 +1,4 @@
+import {scheduleConflict} from './schedule-rules.js';
 import {intimacyGate,earnIntimacy} from './intimacy.js';
 import {relationshipPreference,activePartners,hasUnclearCommitments} from './relationship-rules.js';
 import {gameDate,weekday,datedText} from './calendar.js';
@@ -52,7 +53,7 @@ export function syncSocial(s) {
   const people=s.people.filter(p=>{
     const r=bond(s,p.id);
     return r.familiar>=8 && r.trust>=3 && s.day-r.lastProactive>=2 &&
-      !s.appointments.some(a=>a.person===p.id && ['confirmed','proposed'].includes(a.status));
+      !scheduleConflict(s,{day:s.day,time:1080,duration:60,person:p.id});
   }).sort((a,b)=>hash(a.id*31+s.day)-hash(b.id*31+s.day));
   const p=people[0];
   if (!p) return;
@@ -69,7 +70,7 @@ export function replyProposal(s, id, accept) {
   syncSocial(s);
   const a=s.appointments.find(a=>a.id===id);
   if (!a || a.status!=='proposed') return '這則邀約已處理或過期，沒有新增約定。';
-  if (accept && isBooked(s,a.day,a.time,a.id)) return '這個時段已有約定，無法同時答應。可以先婉拒其中一個邀請。';
+  if (accept && isBooked(s,a.day,a.time,a.id,a.duration??30)) return '這個時段已有約定，無法同時答應。可以先婉拒其中一個邀請。';
   a.status=accept?'confirmed':'declined';
   const message=s.messages.find(m=>m.appointmentId===id);
   if (message) {message.read=true;message.reply=accept?'accepted':'declined';}

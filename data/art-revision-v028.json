@@ -1,0 +1,12 @@
+{
+  "generator": "built-in imagegen edit",
+  "code": "S030",
+  "name": "顏秋月",
+  "status": "sample_pending_review",
+  "path": "assets/characters/S030-W01-sample-v02.png",
+  "prompt": "Edit this fictional adult university character reference plate of Yan Qiuyue, woman age24, Taiwanese. User wants a more attractive approachable clear youthful ADULT university look, while remaining a distinct person. Redesign the face as a beautiful naturally elegant slightly broad-cheekboned OVAL face with graceful soft jaw, refined naturally straight medium nose, delicate elongated almond double-lidded eyes with lively warm catchlights, tidy natural brows and balanced softly shaped pink lips, a warm relaxed subtle smile, healthy clear natural skin with real texture, minimal fresh makeup. Preserve short dark brown chin-length blunt BOB with light airy bangs and a tiny RIGHT cheek beauty mole. Improve hair grooming and flattering daylight portrait lighting. Keep real believable adult anatomy, attractive balanced proportions and a naturally fit healthy physique, 174cm. The SAME IDENTICAL redesigned face must appear in both views. Keep the light blue cotton button shirt, khaki straight-leg pants and gray-white sneakers, ordinary fully clothed adult campus fashion, gently fitted neat tailoring. Keep landscape1536x1024 split into exactly equal vertical halves at center. LEFT chest-up portrait with complete head safely inside left half. RIGHT full standing head-to-shoes completely inside right half with generous top and foot margins and relaxed hands. Warm gray seamless studio background. Photorealistic natural style, not anime, not doll-face, not airbrushed plastic skin, not a celebrity, no text/watermark. Retain her individual short-bob identity while clearly improving beauty and expression. No exaggerated angular jaw or harsh masculine-looking contours.",
+  "source": "assets/characters/S030-W01-sample-v01.png",
+  "sha256": "70f394388751526008080ed63409a3a1c06cbb569509b0817a96d160a27245c4",
+  "width": 1536,
+  "height": 1024
+}

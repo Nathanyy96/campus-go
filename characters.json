@@ -2149,13 +2149,13 @@
     "id": 29,
     "code": "S030",
     "appearance": {
-      "face": "寬顴骨的橢圓臉",
-      "eyes": "清楚雙眼皮、眼型偏細長",
-      "hair": "黑褐耳下短鮑伯、自然瀏海",
+      "face": "寬顴骨的柔和橢圓臉，下顎線自然",
+      "eyes": "細長杏眼、自然雙眼皮，眼神明亮",
+      "hair": "黑褐短鮑伯、輕薄自然瀏海",
       "skin": "中性自然膚色",
       "body": "小巧結實、重心穩定",
       "height": 174,
-      "feature": "右臉頰有細小痣",
+      "feature": "右臉頰有細小痣，微笑時神情柔和",
       "outfit": "淺藍棉質襯衫、卡其直筒長褲、灰白休閒鞋"
     },
     "outfits": [
@@ -2216,7 +2216,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": "assets/characters/S030-W01-sample-v01.png",
+    "image": "assets/characters/S030-W01-sample-v02.png",
     "name": "顏秋月"
   },
   {

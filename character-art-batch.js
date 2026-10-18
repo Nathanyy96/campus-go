@@ -176,11 +176,11 @@ export const SECOND_BATCH_ART = Object.freeze({
   "29": {
     "code": "S030",
     "name": "顏秋月",
-    "portrait": "assets/characters/S030-W01-sample-v01.png",
-    "fullbody": "assets/characters/S030-W01-sample-v01.png",
+    "portrait": "assets/characters/S030-W01-sample-v02.png",
+    "fullbody": "assets/characters/S030-W01-sample-v02.png",
     "outfit": "W01",
     "status": "sample_pending_review",
     "layout": "two-view",
-    "version": "v01"
+    "version": "v02"
   }
 });
