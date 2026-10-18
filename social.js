@@ -1,3 +1,4 @@
+import {intimacyGate,earnIntimacy} from './intimacy.js';
 import {relationshipPreference,activePartners,hasUnclearCommitments} from './relationship-rules.js';
 import {gameDate,weekday,datedText} from './calendar.js';
 import {absolute, advance, BY_ID, clock, hash, log, personState, relationship, createAppointment, isBooked, romanticFit} from './simulation.js';
@@ -141,7 +142,8 @@ export function socialAction(s,p,action) {
     romance.openConsent=true;if(romance.stage==='dating')romance.agreement='open';r.memories.push(`${gameDate(s.day)}充分討論後，同意可以各自發展其他關係，仍要尊重每一方的界線與約定`);
     log(s,`你和${p.name}明確討論並同意非專一的關係安排。`);return '我願意在彼此知情的前提下，試著讓各自也能發展其他關係。時間、變動和界線仍要說清楚；其他當事人也需要自己答應。';
   }
-  if(!['confess','hand','hug','kiss','lean','hair'].includes(action)) return '先聊聊今天的生活吧。';
+  if(!['confess','hand','hug','kiss','lean','hair','forehead','cuddle'].includes(action)) return '先聊聊今天的生活吧。';
+  if(action!=='confess'&&romance.stage==='dating'){const gate=intimacyGate(s,p,action);if(gate)return gate;}
   if(romance.cooldownUntil>absolute(s)) return '剛才已經說過我的想法了，先聊點別的，給彼此一些時間。';
   if(romance.attempts[`${s.day}:${action}`]) return '今天已經聊過這件事，留點時間慢慢相處吧。';
   if(action==='confess'&&romance.stage==='dating') return '我們已經在交往了。比起再確認一次，我更想珍惜一起相處的時間。';
@@ -160,14 +162,15 @@ export function socialAction(s,p,action) {
   }
   if(romance.stage!=='dating') return refuse('這樣的接觸對我有特別的意思，我還沒有準備好。先像現在這樣相處吧。');
   if(!['home','park','cafe','plaza'].includes(s.location)) return refuse('這裡不太適合，我想留在比較自在的場合。');
-  if(['lean','hair'].includes(action)&&(s.location!=='home'||romance.firsts.hug===undefined))return refuse('我想先習慣擁抱，再在家裡慢慢試試，好嗎？');
+  if(['lean','hair','forehead','cuddle'].includes(action)&&(s.location!=='home'||romance.firsts.hug===undefined))return refuse('我想先習慣擁抱，再在家裡慢慢試試，好嗎？');
   if(action==='kiss'&&(romance.firsts.hand===undefined||romance.firsts.hug===undefined||romance.firsts.hand>=s.day||romance.firsts.hug>=s.day))
     return refuse('我想再慢一點，先習慣牽手、擁抱的相處，再說好嗎？');
   if(action==='hug'&&romance.firsts.hand===undefined) return refuse('我想先從牽手慢慢習慣，好嗎？');
   if(hash((p.id+1)*211+s.day*17)<.22) return refuse('我今天比較想保留一點自己的空間。我們說說話就好，好嗎？');
-  const names={hand:'牽手',hug:'擁抱',kiss:'接吻',lean:'依偎',hair:'撫摸頭髮'};
+  const names={hand:'牽手',hug:'擁抱',kiss:'接吻',lean:'依偎',hair:'撫摸頭髮',forehead:'額頭輕吻',cuddle:'靠著彼此休息'};
   const first=romance.firsts[action]===undefined;
   if(first) {romance.firsts[action]=s.day;r.memories.push(`${gameDate(s.day)}問過彼此意願後，第一次${names[action]}`);}
+  romance.lastAccepted={action,day:s.day,time:s.time};earnIntimacy(s,p.id,'touch');
   advance(s,minutes);log(s,`你詢問${p.name}的意願，對方答應了${names[action]}。`);
-  return {lean:'「可以。」你們肩靠著肩，安靜地陪彼此待了一會兒。',hair:'「好，輕一點喔。」你輕輕順過對方的頭髮，留意對方是否舒服。',hand:'「可以啊。」對方輕輕握住你的手，和你並肩待了一會兒。',hug:'「我願意。」你們靠近，給彼此一個溫暖的擁抱，再慢慢鬆開。',kiss:'「好。」確認彼此的心意後，你們輕輕接吻，笑著靠在一起。'}[action];
+  return {forehead:'「嗯，可以。」你輕輕吻過對方額頭，對方笑著握了握你的手。',cuddle:'「過來坐吧。」你們靠在沙發上，放鬆地陪著彼此；想換姿勢時就告訴對方。',lean:'「可以。」你們肩靠著肩，安靜地陪彼此待了一會兒。',hair:'「好，輕一點喔。」你輕輕順過對方的頭髮，留意對方是否舒服。',hand:'「可以啊。」對方輕輕握住你的手，和你並肩待了一會兒。',hug:'「我願意。」你們靠近，給彼此一個溫暖的擁抱，再慢慢鬆開。',kiss:'「好。」確認彼此的心意後，你們輕輕接吻，笑著靠在一起。'}[action];
 }
