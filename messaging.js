@@ -1,5 +1,5 @@
 import {relationship,absolute} from './simulation.js';
-export function migrateMessages(s){s.admirers??=[];s.chatQueue??=[];s.personalPlans??=[];s.chatSerial??=0;for(const m of s.pendingMessages??[]){if(!m.delivered&&!m.aiMigrated){m.delivered=true;m.aiMigrated=true;sendMessage(s,m.person,'今天有什麼安排？');}}}
+export function migrateMessages(s){s.admirers??=[];s.chatQueue??=[];s.personalPlans??=[];s.chatSerial??=0;for(const m of s.messages??[]){if(m.kind==='attention'&&m.direction==='system')m.text=m.text.replace('這表示對方願意多認識你，不代表已經有戀愛感情。','');}for(const m of s.pendingMessages??[]){if(!m.delivered&&!m.aiMigrated){m.delivered=true;m.aiMigrated=true;sendMessage(s,m.person,'今天有什麼安排？');}}}
 export function sendMessage(s,person,text,photo=null){
  migrateMessages(s);text=text.trim().slice(0,600);
  if(!s.people.some(p=>p.id===person)||(!text&&!photo))return null;
@@ -13,5 +13,5 @@ export function syncAttention(s){
  const candidates=s.people.filter(p=>!s.admirers.includes(p.id)&&relationship(s,p.id).familiar>=2);
  if(!candidates.length)return;
  const p=candidates[(s.day*7)%candidates.length];s.admirers.push(p.id);s.attentionDay=s.day;
- s.messages.unshift({person:p.id,source:'系統通知',direction:'system',text:`${p.name}開始關注你。這表示對方願意多認識你，不代表已經有戀愛感情。`,day:s.day,time:s.time,kind:'attention',read:false});
+ s.messages.unshift({person:p.id,source:'系統通知',direction:'system',text:`${p.name}開始關注你。`,day:s.day,time:s.time,kind:'attention',read:false});
 }
