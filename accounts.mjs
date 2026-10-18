@@ -16,7 +16,7 @@ export async function accountRoute(req,url,json){
  if(['register','login'].includes(action)&&req.method==='POST'){
   const key=req.socket.remoteAddress,now=Date.now(),hits=(attempts.get(key)||[]).filter(t=>now-t<900000);if(hits.length>=20){json(429,{error:'嘗試次數太多，請15分鐘後再試。'});return true;}hits.push(now);attempts.set(key,hits);
   const username=typeof data.username==='string'?data.username.trim().toLowerCase():'';const password=data.password;
-  if(!/^[a-z0-9_]{3,24}$/.test(username)||typeof password!=='string'||password.length<10||password.length>128){json(400,{error:'帳號需3–24個英文字母、數字或底線；密碼需10–128字元。'});return true;}
+  if(!/^[a-z0-9_]{3,24}$/.test(username)||typeof password!=='string'||password.length<8||password.length>128){json(400,{error:'帳號需3–24個英文字母、數字或底線；密碼需8–128字元。'});return true;}
   let user;
   if(action==='register'){const salt=randomBytes(16).toString('hex'),hash=await passwordHash(password,salt);try{user=(await pool.query('INSERT INTO campus_users(username,password_hash,salt) VALUES($1,$2,$3) RETURNING id,username',[username,hash,salt])).rows[0];}catch(e){if(e.code==='23505'){json(409,{error:'此帳號已被使用，請換一個名稱。'});return true;}throw e;}}
   else{user=(await pool.query('SELECT * FROM campus_users WHERE username=$1',[username])).rows[0];const hash=await passwordHash(password,user?.salt||'invalid-user-padding');if(!user||!timingSafeEqual(Buffer.from(hash,'hex'),Buffer.from(user.password_hash,'hex'))){json(401,{error:'帳號或密碼不正確。'});return true;}}
