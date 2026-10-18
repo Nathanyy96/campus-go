@@ -1,11 +1,12 @@
+import {resolveEndpoint,aiConnected} from './ai-connection.js';
 import {messengerMarkup} from './messenger-view.js';
 import {gameDate,weekday,datedText} from './calendar.js';
-import {brain,thinkingContext,applyThought} from './npc-brain.js';
+import {brain,thinkingContext,applyThought,needsThought} from './npc-brain.js';
 import {PLACES,BY_ID,personState,absolute,clock,advance,log,route} from './simulation.js';
 import {migrateMessages,sendMessage,syncAttention} from './messaging.js';
 import {characterArt} from './character-art.js';
 const esc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let active=null,processing=false,attachment=null,draft='',endpoint=localStorage.getItem('campus-ai-url')||'',status='AI 尚未連線',getGame,refresh;
+let active=null,processing=false,attachment=null,draft='',endpoint=resolveEndpoint(localStorage.getItem('campus-ai-url')||''),status='AI 尚未連線',getGame,refresh;
 let filter='recent',query='',limit=50,lastRendered=null,moreHistory=false;let drafts={};try{drafts=JSON.parse(sessionStorage.getItem('campus-chat-drafts')||'{}');}catch{}const photoDrafts={};
 function rememberDraft(){if(active!==null){drafts[active]=draft;photoDrafts[active]=attachment;try{sessionStorage.setItem('campus-chat-drafts',JSON.stringify(drafts));}catch{}}}
 function chooseThread(id,preset){rememberDraft();active=id;draft=id===null?'':preset??drafts[id]??'';attachment=photoDrafts[id]||null;limit=50;}
@@ -13,21 +14,21 @@ function sizeComposer(){const t=document.querySelector('#chatText');if(t){t.styl
 const db=new Promise((resolve,reject)=>{const r=indexedDB.open('campus-photos',1);r.onupgradeneeded=()=>r.result.createObjectStore('photos');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});
 async function photoStore(key,value){const d=await db;return new Promise((resolve,reject)=>{const t=d.transaction('photos',value?'readwrite':'readonly'),r=value?t.objectStore('photos').put(value,key):t.objectStore('photos').get(key);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
 function base(){return endpoint.replace(/\/$/,'');}
-async function check(){try{const r=await fetch(`${base()}/api/status`,{signal:AbortSignal.timeout(12000)});const data=await r.json();status=data.enabled?'OpenAI 已連線':'AI 尚未設定金鑰 · 訊息會保留';}catch{status='AI 尚未連線 · 訊息會保留';}return status;}
+async function check(){try{const r=await fetch(`${base()}/api/status`,{signal:AbortSignal.timeout(65000)});const data=await r.json();status=data.enabled?`${data.provider} 已連線`:'AI 尚未設定金鑰 · 訊息會保留';}catch{status='AI 尚未連線 · 訊息會保留';}return status;}
 export function communitySync(s){migrateMessages(s);syncAttention(s);pump(s);}
 let nextThoughtAt=0;
-async function pump(s){if(processing||status!=='OpenAI 已連線')return;
+async function pump(s){if(processing||!aiConnected(status))return;
  const q=s.chatQueue.find(q=>q.at<=absolute(s));
- const candidate=!q&&Date.now()>=nextThoughtAt?[...s.people].sort((a,b)=>Number(s.follow.includes(b.id)||personState(s,b).location===s.location)-Number(s.follow.includes(a.id)||personState(s,a).location===s.location)).find(p=>brain(s,p.id).day<s.day):null;
+ const candidate=!q&&Date.now()>=nextThoughtAt?[...s.people].sort((a,b)=>(Number(s.relations[b.id]?.romance?.stage==='dating')*2+Number(s.follow.includes(b.id)||personState(s,b).location===s.location))-(Number(s.relations[a.id]?.romance?.stage==='dating')*2+Number(s.follow.includes(a.id)||personState(s,a).location===s.location))).find(p=>needsThought(s,p)):null;
  if(!q&&!candidate)return;processing=true;
- try{if(candidate){nextThoughtAt=Date.now()+16000;const day=s.day;const r=await fetch(`${base()}/api/think`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person:candidate.id,context:thinkingContext(s,candidate)}),signal:AbortSignal.timeout(30000)});const data=await r.json();if(!r.ok)throw Error();if(s.day===day)applyThought(s,candidate,data.thought);return;}
+ try{if(candidate){nextThoughtAt=Date.now()+16000;const day=s.day;const r=await fetch(`${base()}/api/think`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person:candidate.id,context:thinkingContext(s,candidate)}),signal:AbortSignal.timeout(30000)});const data=await r.json();if(!r.ok)throw Error(data.error||'AI 暫時無法連線');if(s.day===day)applyThought(s,candidate,data.thought,data.source);return;}
  const p=s.people.find(p=>p.id===q.person),m=s.messages.find(m=>m.id===q.id);if(!p||!m){s.chatQueue=s.chatQueue.filter(x=>x!==q);return;}if(personState(s,p).activity==='上課中'){q.at=absolute(s)+20;return;}
  const history=s.messages.filter(x=>x.person===p.id&&x!==m&&x.direction!=='system').slice(0,10).reverse().map(x=>({role:x.direction==='out'?'user':'assistant',content:x.text||'分享照片'}));
  const photo=m.photo?await photoStore(m.photo):null;
- const r=await fetch(`${base()}/api/chat`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person:p.id,text:m.text,history,photo,context:thinkingContext(s,p)}),signal:AbortSignal.timeout(30000)});const data=await r.json();if(!r.ok)throw Error();
- s.messages.unshift({person:p.id,text:data.text,day:s.day,time:s.time,direction:'in',source:'OpenAI',read:false});s.chatQueue=s.chatQueue.filter(x=>x.id!==q.id);
+ const r=await fetch(`${base()}/api/chat`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person:p.id,text:m.text,history,photo,context:thinkingContext(s,p)}),signal:AbortSignal.timeout(30000)});const data=await r.json();if(!r.ok)throw Error(data.error||'AI 暫時無法連線');
+ s.messages.unshift({person:p.id,text:data.text,day:s.day,time:s.time,direction:'in',source:data.source,read:false});s.chatQueue=s.chatQueue.filter(x=>x.id!==q.id);
  const b=brain(s,p.id);b.memories=[...b.memories,`${gameDate(s.day)}，同學說：${m.text.slice(0,120)}；我的回覆：${data.text.slice(0,120)}`].slice(-12);
- }catch{status='AI 暫時無法連線 · 訊息保留，可重試';}finally{processing=false;refresh();}}
+ }catch(error){status=(error.message||'AI 暫時無法連線')+' · 訊息已保留';}finally{processing=false;refresh();}}
 export function renderChat(s){
  migrateMessages(s);const host=document.querySelector('#chatWorkspace');if(!host)return;
  if(active!==null&&!s.people.some(p=>p.id===active))chooseThread(null);
