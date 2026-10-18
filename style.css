@@ -68,3 +68,18 @@
 @media(max-width:600px){.conversation .hero-portrait.character-photo{height:190px}.conversation .hero-portrait.character-photo.fullbody{height:230px}.scene-people{left:9px;right:9px;gap:5px;bottom:95px}.scene-resident{height:105px;flex-basis:72px;padding:3px}.scene-resident .scene-cast-photo{height:80px}.scene-resident-name{font-size:9px}.scene-resident.needs-art{height:70px;flex-basis:65px}.character-art-pair{gap:8px}.character-art-pair img{height:235px}}
 
 .s047-references{margin:16px 0;padding:14px;background:#eef4ee;border:1px solid #dae5d8;border-radius:10px}.s047-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:10px 0}.s047-gallery a{display:block;overflow:hidden;border-radius:5px}.s047-gallery img{display:block;width:100%;height:150px;object-fit:cover;object-position:50% 18%;background:#fff}@media(max-width:600px){.s047-gallery img{height:105px}}
+
+/* Reference photographs keep their complete composition in every character view. */
+.character-art-pair.reference-art img,
+.portrait.character-photo.reference-photo,
+.conversation .hero-portrait.character-photo.reference-photo,
+.student .portrait.character-photo.reference-photo,
+.s047-gallery img{
+  object-fit:contain;
+  object-position:center;
+  background:#eeeae4;
+}
+@media(max-width:600px){
+  .s047-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .s047-gallery img{height:180px}
+}
