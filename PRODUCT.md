@@ -41,3 +41,8 @@ Added distinct portrait/full-body W01 prototype plates for 蕭佳蓉 (S017), 胡
 ## v0.26 · Facial identity differentiation
 
 Replaced pending W01 samples for 葉青禾/S013 and 蕭佳蓉/S017 with more distinct facial anatomy; added 賴書妍/S027 and 柯語桐/S029. All are adult, fully clothed two-view prototypes, pending user approval. Four individual face specifications emphasize jaw, eye, nose, mouth and body proportions rather than hair alone. S013 and S017 use new versioned paths; original samples remain archived in the repository. Twenty-three students now have individual artwork. Existing saves retain progress.
+
+
+## v0.27 · More distinct student faces
+
+Added 郭采薇/S026 (narrow heart face, round double-lidded eyes, pixie haircut) and 顏秋月/S030 (broad cheekbones, elongated eyes, blunt bob, solid build). Each has a distinct fully clothed portrait/full-body W01 prototype pending review. Twenty-five students now have individual artwork. Existing save progress is preserved.

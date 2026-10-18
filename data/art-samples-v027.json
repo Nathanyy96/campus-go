@@ -1,0 +1,45 @@
+{
+  "generator": "built-in imagegen",
+  "status": "sample_pending_review",
+  "prompts": [
+    {
+      "id": 25,
+      "code": "S026",
+      "name": "郭采薇",
+      "prompt": "Use case photorealistic-natural. Fictional Taiwanese ADULT university woman S026 郭采薇, age 20. Build a distinctly recognizable individual face, NOT a repeated pretty idol template. Exact identity: NARROW HEART-SHAPED face, tall forehead, sharply tapered little chin, larger ROUND eyes with visible double eyelids, high curved fine eyebrows, SHORT upturned nose with a rounded tip, thin upper and full lower lip, LEFT cheek dimple while smiling. Few tiny scattered freckles only, not a dense freckle mask. Very short asymmetric black-brown pixie haircut side-swept, ears exposed, NOT a bob, not shoulder length. Natural average 169cm body. Bright curious broad smile. This is a youthful ADULT age20; no childlike proportions. Clothing both views exactly 鼠尾草綠棉質襯衫、暖米色直筒長褲、棕色樂福鞋. Natural asymmetry, real skin pores, minimal makeup. Landscape1536x1024, TWO EXACTLY EQUAL vertical panels split at x768. LEFT chest-up natural portrait, entire head and hair visible. RIGHT SAME IDENTICAL WOMAN complete standing head-to-toe including every shoe with generous margins, relaxed hands visible at sides. Match hair, identity and clothing in both panels. Warm-gray seamless background, soft daylight, realistic anatomy. Fully clothed ordinary student. No text, watermark, borders, other people, anime, beauty filters or extra limbs. Prioritize individual jaw, eyes, nose and mouth, not hairstyle alone.",
+      "version": "v01"
+    },
+    {
+      "id": 29,
+      "code": "S030",
+      "name": "顏秋月",
+      "prompt": "Use case photorealistic-natural. Fictional Taiwanese ADULT university woman S030 顏秋月, age 24. Build a distinctly recognizable individual face, NOT a repeated pretty idol template. Exact identity: Broad CHEEKBONES and an OVAL face with a pronounced long midface and short rounded chin, narrow elongated double-eyelid eyes, low thick straight brows, broad straight nose with wide nostrils, full wide lips, a single small mole on RIGHT cheek. Dense black-brown straight EAR-LENGTH blunt BOB with a full natural fringe. Neutral medium skin, no freckles. Strong compact athletic build with solid arms and calves, 174cm, not slender. Composed neutral expression, closed lips. Adult age24. Clearly different bone structure from a narrow heart face. Clothing both views exactly 淺藍棉質襯衫、卡其直筒長褲、灰白休閒鞋. Natural asymmetry, real skin pores, minimal makeup. Landscape1536x1024, TWO EXACTLY EQUAL vertical panels split at x768. LEFT chest-up natural portrait, entire head and hair visible. RIGHT SAME IDENTICAL WOMAN complete standing head-to-toe including every shoe with generous margins, relaxed hands visible at sides. Match hair, identity and clothing in both panels. Warm-gray seamless background, soft daylight, realistic anatomy. Fully clothed ordinary student. No text, watermark, borders, other people, anime, beauty filters or extra limbs. Prioritize individual jaw, eyes, nose and mouth, not hairstyle alone.",
+      "version": "v01"
+    }
+  ],
+  "assets": [
+    {
+      "id": 25,
+      "code": "S026",
+      "name": "郭采薇",
+      "path": "assets/characters/S026-W01-sample-v01.png",
+      "version": "v01",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "21c11ebc632efff09dacbe7e0b07e1bf0dbfcaeba965819bbf99a3195c2e6205"
+    },
+    {
+      "id": 29,
+      "code": "S030",
+      "name": "顏秋月",
+      "path": "assets/characters/S030-W01-sample-v01.png",
+      "version": "v01",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "29e5915eb4f426583860f235fe47a1a64aaada6e9ce22ffbfc29249f46d08949"
+    }
+  ],
+  "reviewNotes": [
+    "Two separate adult identities, complete full-body framing; appearance and body shape remain prototypes pending user review."
+  ]
+}

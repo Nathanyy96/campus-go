@@ -1888,7 +1888,7 @@
         "name": "上課日常",
         "items": "鼠尾草綠棉質襯衫、暖米色直筒長褲、棕色樂福鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S026-W02",
@@ -1940,7 +1940,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S026-W01-sample-v01.png",
     "name": "郭采薇"
   },
   {
@@ -2184,7 +2184,7 @@
         "name": "上課日常",
         "items": "淺藍棉質襯衫、卡其直筒長褲、灰白休閒鞋",
         "occasion": "一般上課、校內走動",
-        "status": "設計稿，圖片待製作"
+        "status": "W01新製作近景與全身樣本，外觀待確認"
       },
       {
         "id": "S030-W02",
@@ -2236,7 +2236,7 @@
         "status": "設計稿，圖片待製作"
       }
     ],
-    "image": null,
+    "image": "assets/characters/S030-W01-sample-v01.png",
     "name": "顏秋月"
   },
   {

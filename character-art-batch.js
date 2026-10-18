@@ -143,6 +143,16 @@ export const SECOND_BATCH_ART = Object.freeze({
     "layout": "two-view",
     "version": "v01"
   },
+  "25": {
+    "code": "S026",
+    "name": "郭采薇",
+    "portrait": "assets/characters/S026-W01-sample-v01.png",
+    "fullbody": "assets/characters/S026-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "version": "v01"
+  },
   "26": {
     "code": "S027",
     "name": "賴書妍",
@@ -158,6 +168,16 @@ export const SECOND_BATCH_ART = Object.freeze({
     "name": "柯語桐",
     "portrait": "assets/characters/S029-W01-sample-v01.png",
     "fullbody": "assets/characters/S029-W01-sample-v01.png",
+    "outfit": "W01",
+    "status": "sample_pending_review",
+    "layout": "two-view",
+    "version": "v01"
+  },
+  "29": {
+    "code": "S030",
+    "name": "顏秋月",
+    "portrait": "assets/characters/S030-W01-sample-v01.png",
+    "fullbody": "assets/characters/S030-W01-sample-v01.png",
     "outfit": "W01",
     "status": "sample_pending_review",
     "layout": "two-view",
