@@ -20,7 +20,7 @@ export function affectionAction(s,p,action,{initiated=false}={}){
  if(['cuddle','forehead','kiss'].includes(action)&&!['home','park','cafe'].includes(s.location))return decline('這裡太忙了，我想找個能自在相處的場合，再看看當時的心情。');
  a.asked[action]=now;a.firsts[action]??=s.day;a.lastMeaning=meaning;a.lastAccepted={action,day:s.day,time:s.time,meaning,initiated};a.history.push({...a.lastAccepted});a.history=a.history.slice(-24);
  const key=`${s.day}:touch`;if(!a.rewards[key]){a.rewards[key]=true;r.memories.push(`${gameDate(s.day)}我們${initiated?'由我主動提議、你答應':'問過彼此想法後'}${TOUCH_NAMES[action]}，${dating?'交往中的自在親近':meaning==='friendly'?'我把它當成朋友間的親近，沒有因此開始交往':'這是有曖昧的親近，但還沒有確認交往'}`);}
- if(dating){rom.firsts[action]??=s.day;earnIntimacy(s,p.id,'touch');}rom.lastAccepted={...a.lastAccepted};witnessAffection(s,p,action,dating?'romantic':meaning);advance(s,2);log(s,`${p.name}${initiated?'主動提議，你答應':'答應了'}${TOUCH_NAMES[action]}。`);
+ if(dating)rom.firsts[action]??=s.day;earnIntimacy(s,p.id,'touch');rom.lastAccepted={...a.lastAccepted};witnessAffection(s,p,action,dating?'romantic':meaning);advance(s,2);log(s,`${p.name}${initiated?'主動提議，你答應':'答應了'}${TOUCH_NAMES[action]}。`);
  const gestures={hand:'對方握住你的手，放鬆地和你並肩走一小段。',hug:'你們給彼此一個溫暖的擁抱，再自在地鬆開。',hair:'你輕輕順過對方的頭髮，對方笑著看了你一眼。',lean:'你們肩靠著肩，慢慢聊起剛才的小事。',forehead:'你輕吻對方額頭，對方帶著笑意看著你。',kiss:'你們確認彼此的想法後，輕輕接吻。',cuddle:'你們靠著彼此，安靜地休息了一會兒。'};
  return `${initiated?'「那就過來吧。」':p.id===1?'「可以呀，別那麼緊張。」':p.id===46?'「嗯，這樣待一會兒也很好。」':'「可以，這樣我覺得自在。」'}${gestures[action]}${dating?'':meaning==='friendly'?'「對我來說，朋友也可以這樣親近。」':'你們沒有急著替這段關係下定義。'}`;
 }

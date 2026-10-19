@@ -2,7 +2,7 @@ import {affectionAction} from './affection.js';
 import {TOUCH_NAMES} from './affection-preferences.js';
 import {relationshipSceneAction} from './relationship-scenes.js';
 import {scheduleConflict} from './schedule-rules.js';
-import {intimacyGate,earnIntimacy} from './intimacy.js';
+import {intimacyGate,earnIntimacy,intimacy,liking} from './intimacy.js';
 import {relationshipPreference,activePartners,hasUnclearCommitments} from './relationship-rules.js';
 import {gameDate,weekday,datedText} from './calendar.js';
 import {absolute, advance, BY_ID, clock, hash, log, personState, relationship, createAppointment, isBooked, romanticFit} from './simulation.js';
@@ -27,6 +27,7 @@ export function bond(s, id) {
 export function relationshipLabel(s, id) {
   const r = bond(s, id);
   if(r.romance.stage==='ended')return s.day-(r.romance.endedDay??s.day)<3?'已結束交往 · 需要空間':'結束交往後，慢慢重新相處';
+  if(r.romance.stage==='dating'&&r.romance.trial)return '試著交往中';
   if (r.romance.stage === 'dating') return s.day-(r.romance.startedDay??s.day)>=7&&r.trust>=18&&r.sharedDays.length>=4?'穩定交往中':'正在交往';
   return friendshipStage(s,id).label;
 }
@@ -57,9 +58,11 @@ export function syncSocial(s) {
     const r=bond(s,p.id);
     return r.familiar>=8 && r.trust>=3 && s.day-r.lastProactive>=2 &&
       !scheduleConflict(s,{day:s.day,time:1080,duration:60,person:p.id});
-  }).sort((a,b)=>hash(a.id*31+s.day)-hash(b.id*31+s.day));
+  }).sort((a,b)=>Number(bond(s,b.id).romance.stage==='dating'&&liking(s,b.id)>=80&&intimacy(s,b.id).score>=80)-Number(bond(s,a.id).romance.stage==='dating'&&liking(s,a.id)>=80&&intimacy(s,a.id).score>=80)||hash(a.id*31+s.day)-hash(b.id*31+s.day));
   const p=people[0];
   if (!p) return;
+  const closeInvite=bond(s,p.id).romance.stage==='dating'&&liking(s,p.id)>=80&&intimacy(s,p.id).score>=80;
+  if(closeInvite&&!scheduleConflict(s,{day:s.day,time:1200,duration:45,person:p.id})&&(s.life?.cleanliness??0)>=60){const a=createAppointment(s,{person:p.id,day:s.day,time:1200,loc:'home',kind:'partner-stay',duration:45,status:'proposed',origin:'npc'});bond(s,p.id).lastProactive=s.day;s.social.lastInitiativeDay=s.day;s.messages.unshift({person:p.id,day:s.day,time:s.time,kind:'proposal',appointmentId:a.id,read:false,text:'今天20:00想去找你，吃點東西、聊聊天。要是都覺得自在，也想留下來；見面後再一起決定，好嗎？19:30前回我就好。'});return;}
   const walking=['散步','運動'].includes(p.hobby),homeVisit=bond(s,p.id).familiar>=18&&bond(s,p.id).trust>=8&&hash(p.id*59+s.day)<.25,loc=homeVisit?'guestHome':walking?'park':'cafe';
   const a=createAppointment(s,{person:p.id,day:s.day,time:1080,loc,kind:homeVisit?'visit':walking?'walk':'meal',duration:homeVisit?60:30,status:'proposed',origin:'npc'});
   bond(s,p.id).lastProactive=s.day;
@@ -107,6 +110,7 @@ function availableFor(s,p,minutes) {
 }
 
 export function socialAction(s,p,action) {
+  const trial=action==='tryDating';if(trial)action='confess';
   const r=bond(s,p.id),romance=r.romance;
   const minutes=action==='dateChat'?6:['confess','apologize','discussOpen','breakup'].includes(action)?4:2;
   const unavailable=availableFor(s,p,minutes);
@@ -158,12 +162,13 @@ export function socialAction(s,p,action) {
   const refuse=(text)=>{romance.cooldownUntil=absolute(s)+180;advance(s,2);log(s,`${p.name}表達了自己的界線，你停下邀請，給對方空間。`);return text;};
   if(!romanticFit(p)) return refuse('我很珍惜我們的相處，但對你是朋友的感覺。希望你能理解。');
   if(action==='confess') {
-    if(r.familiar<18||r.trust<9||r.attraction<5||r.days.length<3||r.sharedDays.length<2)
+    if(r.familiar<(trial?14:18)||r.trust<(trial?7:9)||r.attraction<5||r.days.length<3||r.sharedDays.length<(trial?1:2))
       return refuse('我還想多了解彼此。一起經歷些日常，再慢慢想這件事，好嗎？');
     if(hash((p.id+1)*211+s.day*17)<.18) return refuse('我最近有些事情要整理，還沒有準備好開始交往。可以再給我一點時間嗎？');
-    romance.stage='dating';romance.startedDay=s.day;romance.startedAt=absolute(s);romance.agreement=romance.openConsent?'open':'exclusive';advance(s,minutes);
+    romance.trial=trial;romance.stage='dating';romance.startedDay=s.day;romance.startedAt=absolute(s);romance.agreement=romance.openConsent?'open':'exclusive';advance(s,minutes);
     r.memories.push(`${gameDate(s.day)}彼此表達心意，決定開始交往`);
     log(s,`你與${p.name}確認了彼此的心意，開始交往。`);
+    if(trial)return '可以，我們先試著交往看看。這是雙方確認的交往，也保留慢慢認識與重新討論的空間。';
     return romance.agreement==='open'?'我願意。我們依照先前談好的安排交往，也讓每位當事人知情；有變動仍要說清楚。':'我也一直很期待和你見面。我願意和你專一地交往，我們慢慢認識交往後的彼此。';
   }
   return '我們可以先說說自己喜歡的相處方式。';
