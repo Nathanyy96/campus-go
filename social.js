@@ -27,6 +27,7 @@ export function bond(s, id) {
 export function relationshipLabel(s, id) {
   const r = bond(s, id);
   if(r.romance.stage==='ended')return s.day-(r.romance.endedDay??s.day)<3?'已結束交往 · 需要空間':'結束交往後，慢慢重新相處';
+  if(r.romance.stage==='dating'&&r.romance.soulmateDay!==undefined)return '靈魂伴侶 · 一起選擇的生活';
   if(r.romance.stage==='dating'&&r.romance.trial)return '試著交往中';
   if (r.romance.stage === 'dating') return s.day-(r.romance.startedDay??s.day)>=7&&r.trust>=18&&r.sharedDays.length>=4?'穩定交往中':'正在交往';
   return friendshipStage(s,id).label;
@@ -165,7 +166,7 @@ export function socialAction(s,p,action) {
     if(r.familiar<(trial?14:18)||r.trust<(trial?7:9)||r.attraction<5||r.days.length<3||r.sharedDays.length<(trial?1:2))
       return refuse('我還想多了解彼此。一起經歷些日常，再慢慢想這件事，好嗎？');
     if(hash((p.id+1)*211+s.day*17)<.18) return refuse('我最近有些事情要整理，還沒有準備好開始交往。可以再給我一點時間嗎？');
-    romance.trial=trial;romance.stage='dating';romance.startedDay=s.day;romance.startedAt=absolute(s);romance.agreement=romance.openConsent?'open':'exclusive';advance(s,minutes);
+    romance.trial=trial;romance.intimacy={points:0,earned:{},legacyBase:0};romance.stage='dating';romance.startedDay=s.day;romance.startedAt=absolute(s);romance.agreement=romance.openConsent?'open':'exclusive';advance(s,minutes);
     r.memories.push(`${gameDate(s.day)}彼此表達心意，決定開始交往`);
     log(s,`你與${p.name}確認了彼此的心意，開始交往。`);
     if(trial)return '可以，我們先試著交往看看。這是雙方確認的交往，也保留慢慢認識與重新討論的空間。';

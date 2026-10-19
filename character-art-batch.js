@@ -166,12 +166,12 @@ export const SECOND_BATCH_ART = Object.freeze({
   "26": {
     "code": "S027",
     "name": "賴書妍",
-    "portrait": "assets/characters/S027-W01-sample-v01.png",
-    "fullbody": "assets/characters/S027-W01-sample-v01.png",
+    "portrait": "assets/characters/S027-W01-sample-v02.png",
+    "fullbody": "assets/characters/S027-W01-sample-v02.png",
     "outfit": "W01",
     "status": "sample_pending_review",
     "layout": "two-view",
-    "version": "v01"
+    "version": "v02-candid"
   },
   "27": {
     "code": "S028",

@@ -1,0 +1,32 @@
+{
+  "release": "v0.33",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "path": "assets/romance/room-night-v1.png",
+      "kind": "shared environment",
+      "description": "Photorealistic small Taiwanese university rental apartment at night; warm lamp, books, camera, framed landscapes, two mugs, rainy city window; no people or text.",
+      "source": "exec-22246269-b7eb-4984-acac-84df6bdfe566.png"
+    },
+    {
+      "path": "assets/romance/S002-riverside-v1.png",
+      "kind": "character event illustration",
+      "character": 1,
+      "reference": "assets/characters/S002-W01-portrait-v03.png",
+      "description": "Preserve adult Chen Yiqing identity, clear skin without freckles, wavy brown hair and sage T-shirt; riverside sunset after rain, warm candid smile and open-hand invitation; fully clothed, no other face.",
+      "source": "exec-24c9646a-74ae-4b75-a397-f9d4233ca43e.png"
+    },
+    {
+      "path": "assets/characters/S027-W01-sample-v02.png",
+      "kind": "pending identity sample",
+      "character": 26,
+      "references": [
+        "assets/characters/S027-W01-sample-v01.png",
+        "User supplied 角色美術範例圖鑑.html, first embedded image (style only, not identity)"
+      ],
+      "description": "Two-view 50/50 portrait/full-body; preserve Lai Shuyan distinct face, long side-part dark brown hair, charcoal T-shirt, blue trousers and grey shoes. Replace stiff neutral studio staging with gentle candid expression and bright campus daylight; realistic skin and hands; no text.",
+      "source": "exec-fb0edcef-4baa-48ed-99c5-f7d695e0f7f2.png"
+    }
+  ],
+  "verification": "All three images visually inspected. New character sample is not user-approved final art. The second pilot CG generation was interrupted and has not been included. Reference document scripts were never executed."
+}
