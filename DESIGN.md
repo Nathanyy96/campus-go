@@ -99,9 +99,30 @@ components:
     textColor: "{colors.forest-action}"
     rounded: "{rounded.app-icon}"
     size: "58px"
+  contact-art:
+    width: "100px"
+    height: "134px"
+    rounded: "{rounded.control}"
+  encounter-art:
+    width: "72px"
+    height: "96px"
+  priority-person:
+    width: "116px"
+    padding: "0 0 10px"
+  interest-choice:
+    padding: "0 0 12px"
+  current-goal:
+    padding: "0 0 24px"
+  intimacy-number:
+    textColor: "{colors.muted-ink}"
+    typography: "{typography.label}"
+  messenger-sidebar:
+    width: "230px"
+  wash-column-preview:
+    width: "min(100%,270px)"
 ---
 
-# Design System: Campus Go · v0.35
+# Design System: Campus Go · v0.36
 
 ## Overview
 
@@ -139,7 +160,11 @@ Noto Serif TC with serif fallback is the heading voice; Noto Sans TC with sans-s
 
 Above (900px), the desktop container is capped at (1760px), with grid columns `minmax(340px,.9fr) minmax(460px,1.1fr)`, a (24px) gutter and (24px) outer padding. The character panel stays sticky at (24px), with height `calc(100svh - 48px)`; the phone has the same minimum height. The full-body illustration occupies the flexible upper area, followed by a compact paper copy block. Anime art uses an SVG viewport derived from the right-hand panel of the (1536 × 1024) source at its authored split, with `preserveAspectRatio="xMidYMid meet"`; fit the complete panel without cover cropping or copy overlay. Copy padding is (18px 24px 20px), with text on the left and relationship meter/action on the right. Between (901px) and (1350px), padding becomes (16px 20px), heading and supporting text span both columns, and the meter/action share the final row. At (900px) and below, the character panel disappears and the single phone spans a container capped at (600px); its frame radius and shadow disappear. At (430px) and below, screen padding becomes (22px 18px). Desktop phone content uses (26px) padding; mobile uses (24px).
 
-Six top navigation destinations stay available, followed by a greeting, resources and daily slots in their relevant surfaces. The launcher has four columns; home wardrobe thumbnails have five, wash designs two. Lists use separators rather than a card for every row. Content can scroll; do not make the page an unscrollable phone screenshot.
+Six top navigation destinations stay available, followed by a greeting, resources and daily slots in their relevant surfaces. The launcher has four columns; home wardrobe thumbnails have five, wash designs two; completed four-column wash sheets use four choices at viewport widths of (1450px) and above. Lists use separators rather than a card for every row. Content can scroll; do not make the page an unscrollable phone screenshot.
+
+The guided opening progresses through ceremony, contact introductions, one active club booth and multi-person interests. Introduction and recruitment rows use a (100px) art column, (134px) art height, (20px) gap and (24px) vertical padding; at (430px) and below the column is (80px) with a (14px) gap. Interest choices use three columns and (20px 14px) gaps, reducing to two columns on narrow phones. Priority people form a horizontal scrolling strip with (116px) choices and (130px) art; other encounters stay compact rows with (72 × 96px) art and a (16px) text gap. The current goal is a flat, ruled section with (24px) bottom padding and margin.
+
+The original Mu-Xun workspace docks edge-to-edge inside the phone using an inline-size container. Its wide layout has a (230px) conversation sidebar; at container widths of (620px) and below it shows either the list or selected conversation with a back button. This container threshold is independent of the phone shell's (900px) viewport breakpoint. Dock margins cancel screen padding: (-26px) desktop, (-24px) phone and (-22px -18px) narrow phone. Messenger height is `calc(var(--app-viewport,100svh) - 170px)` with (460px) minimum, changing below (430px) to a (145px) subtraction and (300px) minimum.
 
 ## Elevation & Depth
 
@@ -153,7 +178,15 @@ Soft rectangular surfaces use the frontmatter radius scale. App icons have a dis
 
 Primary forest buttons commit actions; paper buttons handle secondary actions; icon buttons are transparent. Inputs are full width with clear labels, pale surfaces and a clay caret. The selected navigation destination carries a forest underline (3px), stronger weight and aria-current. Notifications are full-width sage rows with a line icon, title and short preview. Stage chips summarize progression with quiet neutral or completed sage fills.
 
-Scene dialogs show character art, affection/stage, narrative choices and an explicit exit. At narrow widths they fill the viewport. Home scenes composite a selected atlas outfit onto an illustrated room; wash outfits, short towels and robes display character-and-product design templates. Their selected state persists through bedtime and reload without granting affection. Preserve the distinction between these two display formats.
+Scene dialogs show character art, affection/stage, narrative choices and an explicit exit. At narrow widths they fill the viewport. Home scenes composite a selected atlas outfit onto an illustrated room; wash outfits, short towels and robes display character-and-product design templates. Completed wash columns isolate one fourth of a sheet at aspect ratio (.375), with the sheet at (400%) width and (100%) height. The enlarged selected column is capped at (270px). The room atlas actor is centered, full height and uses aspect ratio (.39), with authored atlas cropping rather than a stretched body. Their selected state persists through bedtime and reload without granting affection. Preserve the distinction between these two display formats.
+
+Guided play uses the incumbent paper controls and ruled lists: ceremony has a wrapping four-step list and (17px), line-height (2) dialogue; the mobile ceremony illustration is contained at a maximum height of (230px). Contact introductions offer both exchange and decline actions. Club tabs wrap, with forest-filled selected state, one booth visible at a time, weekly schedule copy and distinct contact/join actions. Interest choices expose `aria-pressed` and use a (3px) forest outline with (2px) offset. A visible selected-count status supports multiple choices and later adjustment.
+
+The current goal pairs a (22px) heading and practical explanation with a primary next action and secondary play guide. Independent intimacy appears as (12px) muted tabular numerals beneath affection; invitation options state current values and make the person's present answer visible. Numeric eligibility never implies consent.
+
+Mu-Xun retains search, recent/unread/all filters, drafts, photos, quick phrases, older history, delivery queue and retry. The selected thread uses a sage fill; ordinary rows remain flat, with (15px 17px) padding. Connection and pending-message copy must distinguish retained messages from actual AI replies. System notices do not count as unread personal messages.
+
+Chen/Yang's four wash sets use completed full-body columns. Other unfinished sets retain explicit pending labels and completed full-body short towel/robe alternatives; a previously saved pending wash choice displays the completed robe with explanatory copy without resetting that choice. Existing home atlas art remains labelled an old draft that does not yet match the requested template. These accepted limitations do not establish unfinished art as a visual target.
 
 Account-gate CSS is a deferred surface, not the active default: it uses a centered (440px) form, warm cream, green ink, Georgia/Noto Serif headings and (48px) controls. Its presence does not establish enabled cloud accounts. The current settings must describe local browser saving, export/import and separately retained legacy progress accurately.
 

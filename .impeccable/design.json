@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T05:13:03.779462+00:00",
-  "title": "Design System: Campus Go · v0.35",
+  "generatedAt": "2026-10-20T00:00:00-07:00",
+  "title": "Design System: Campus Go · v0.36",
   "extensions": {
     "colorMeta": {
       "forest-ink": {
@@ -285,6 +285,15 @@
       {
         "name": "narrow",
         "value": "430px"
+      },
+      {
+        "name": "messenger-single-pane-container",
+        "value": "620px",
+        "type": "container"
+      },
+      {
+        "name": "four-wash-choices",
+        "value": "1450px"
       }
     ],
     "wallpapers": {
@@ -314,7 +323,10 @@
       "semester-phone.css",
       "semester-phone.js",
       "home-wardrobe-ui.js",
-      "account-gate.css"
+      "account-gate.css",
+      "semester-guide-ui.js",
+      "messenger-view.js",
+      "community-ui.js"
     ],
     "tonalRampNote": "Synthesized OKLCH display ramps; not implementation overrides.",
     "desktopLayout": {
@@ -337,6 +349,56 @@
       "copyPadding": "18px 24px 20px",
       "compactCopyPadding": "16px 20px",
       "compactCopyMaxWidth": "1350px"
+    },
+    "guidedLayout": {
+      "contactColumns": "100px minmax(0,1fr)",
+      "contactArtHeight": "134px",
+      "contactGap": "20px",
+      "contactPadding": "24px 0",
+      "narrowContactColumn": "80px",
+      "narrowContactGap": "14px",
+      "interestColumns": 3,
+      "narrowInterestColumns": 2,
+      "interestGap": "20px 14px",
+      "priorityArtHeight": "130px",
+      "encounterGap": "16px",
+      "encounterRowsGap": "12px",
+      "selectedInterestOutline": "3px solid #285c49",
+      "selectedInterestOutlineOffset": "2px",
+      "ceremonyDialogueFontSize": "17px",
+      "ceremonyDialogueLineHeight": 2,
+      "mobileCeremonyMaxHeight": "230px",
+      "goalHeadingSize": "22px",
+      "goalBottomMargin": "24px"
+    },
+    "messengerDock": {
+      "containerType": "inline-size",
+      "wideColumns": "230px minmax(0,1fr)",
+      "singlePaneMaxContainerWidth": "620px",
+      "margin": "-26px",
+      "phoneMargin": "-24px",
+      "narrowPhoneMargin": "-22px -18px",
+      "height": "calc(var(--app-viewport,100svh) - 170px)",
+      "minHeight": "460px",
+      "narrowHeight": "calc(var(--app-viewport,100svh) - 145px)",
+      "narrowMinHeight": "300px",
+      "threadPadding": "15px 17px",
+      "selectedThreadBackground": "#e3eddd",
+      "hoverThreadBackground": "#edf2e8"
+    },
+    "wardrobeLayout": {
+      "washColumnAspectRatio": ".375",
+      "washSheetWidth": "400%",
+      "washSheetHeight": "100%",
+      "wideWashChoices": 4,
+      "wideWashMinViewport": "1450px",
+      "roomActorAspectRatio": ".39",
+      "roomActorLeft": "50%",
+      "roomActorTransform": "translateX(-50%)",
+      "roomActorAtlasWidth": "769.23077%",
+      "roomActorAtlasLeft": "calc(var(--atlas-col,0)*-153.84615%)",
+      "pendingWashFallback": "completed full-body short robe or towel; explicit pending label; saved wash choice retained",
+      "homeAtlasStatus": "old draft; not matched to requested template"
     }
   },
   "components": [
@@ -403,6 +465,38 @@
       "description": "Paper copy below the complete fitted illustration; compact two-column arrangement adapts at 1350px. Artwork is outside this specimen.",
       "html": "<div class=\"ds-feature-copy\"><h2>有些靠近，<br>從普通的一天開始。</h2><p>同學 · 日常</p><div class=\"ds-feature-bond\">相識 <progress value=\"20\" max=\"100\" aria-label=\"好感\"></progress></div><button>看看這位同學</button></div>",
       "css": ".ds-feature-copy{padding:18px 24px 20px;background:#f4f8ea;color:#213f32;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 18px;align-items:center;font-family:\"Noto Sans TC\",sans-serif}.ds-feature-copy h2{grid-column:1;grid-row:1;font-family:\"Noto Serif TC\",serif;font-size:24px;line-height:1.45;letter-spacing:-.025em;margin:0}.ds-feature-copy p{grid-column:1;grid-row:2;margin:0;font-size:14px;line-height:1.85}.ds-feature-bond{grid-column:2;grid-row:1;width:210px;font-size:12px}.ds-feature-bond progress{width:100%;accent-color:#285c49}.ds-feature-copy button{grid-column:2;grid-row:2;justify-self:end;min-height:42px;padding:10px 14px;background:#fbfcf7;color:#233e34;border:1px solid #cbd7c9;border-radius:10px;font:inherit;cursor:pointer;transition:background .18s,color .18s}.ds-feature-copy button:hover{background:#e1eadd;color:#1c4031}.ds-feature-copy button:focus-visible{outline:3px solid #a0533e;outline-offset:3px}@media(max-width:1350px){.ds-feature-copy{padding:16px 20px;grid-template-columns:1fr 1fr}.ds-feature-copy h2{grid-column:1/-1;font-size:22px}.ds-feature-copy p{grid-column:1/-1}.ds-feature-bond{grid-column:1;grid-row:3;width:100%}.ds-feature-copy button{grid-column:2;grid-row:3;font-size:12px}}"
+    },
+    {
+      "name": "Other Encounter",
+      "kind": "custom",
+      "refersTo": "encounter-art",
+      "description": "Compact non-priority person row.",
+      "html": "<button class=\"ds-encounter\"><span class=\"ds-art\" aria-hidden=\"true\"></span><span><strong>校園裡的新相遇</strong><small>地點 · 興趣</small></span></button>",
+      "css": ".ds-encounter{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:center;text-align:left;padding:0;overflow:hidden;background:#fbfcf7;color:#233e34;border:1px solid #cbd7c9;border-radius:10px;font-family:\"Noto Sans TC\",sans-serif;cursor:pointer}.ds-art{width:72px;height:96px;background:#e8eee5}.ds-encounter small{display:block;font-size:12px;color:#4b6659;margin-top:6px}.ds-encounter:hover{background:#e1eadd}.ds-encounter:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "Current Goal",
+      "kind": "custom",
+      "refersTo": "current-goal",
+      "description": "Ruled actionable next step using incumbent paper and forest actions.",
+      "html": "<section class=\"ds-goal\"><h2>現在的目標</h2><p>看清地點與時段，安排下一次相遇。</p><button>前往見面</button></section>",
+      "css": ".ds-goal{padding:0 0 24px;border-bottom:1px solid #cbd7c9;margin-bottom:24px;color:#233e34;font-family:\"Noto Sans TC\",sans-serif}.ds-goal h2{font:22px \"Noto Serif TC\",serif;margin-top:24px}.ds-goal p{font-size:14px;line-height:1.85}.ds-goal button{background:#285c49;color:#fff;border:1px solid #285c49;border-radius:10px;min-height:42px;padding:10px 14px;cursor:pointer}.ds-goal button:hover{background:#194431}.ds-goal button:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "Interest Choice",
+      "kind": "button",
+      "refersTo": "interest-choice",
+      "description": "Multiple priority interests; selected state is explicit and adjustable.",
+      "html": "<button class=\"ds-interest\" aria-pressed=\"true\"><span class=\"ds-interest-art\" aria-hidden=\"true\"></span><strong>想優先認識的同學</strong><small>已關注</small></button>",
+      "css": ".ds-interest{padding:0 0 12px;overflow:hidden;text-align:left;border:1px solid #cbd7c9;border-radius:10px;background:#fbfcf7;color:#233e34;font-family:\"Noto Sans TC\",sans-serif;cursor:pointer}.ds-interest-art{display:block;aspect-ratio:.85;background:#e8eee5}.ds-interest strong,.ds-interest small{display:block;margin:8px 10px 0}.ds-interest[aria-pressed=true]{outline:3px solid #285c49;outline-offset:2px}.ds-interest:hover{background:#e1eadd}.ds-interest:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "Independent Intimacy",
+      "kind": "custom",
+      "refersTo": "intimacy-number",
+      "description": "Separate current intimacy from affection; eligibility does not grant consent.",
+      "html": "<div class=\"ds-bond\">好感 40 /100<span>親密 20 /100</span></div>",
+      "css": ".ds-bond{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;font-size:12px}.ds-bond span{display:block;color:#4b6659;font-size:12px;margin-top:6px;font-variant-numeric:tabular-nums}"
     }
   ],
   "narrative": {

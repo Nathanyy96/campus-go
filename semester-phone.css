@@ -37,6 +37,76 @@ body.semester-mode{margin:0;background:#e8eee5;color:#223c34;overflow:auto!impor
  .s-feature-copy>button{grid-column:2;grid-row:2;margin:0;justify-self:end}
  .s-phone{min-height:calc(100svh - 48px)}
 }
+
+/* Guided play and the original Mu-Xun workspace share the semester shell. */
+.s-opening-steps{display:flex;gap:10px 20px;flex-wrap:wrap;padding-left:20px;margin:24px 0;color:var(--s-muted)}
+.s-opening-dialogue{padding:12px 0 28px;border-bottom:1px solid var(--s-line);margin-bottom:22px}
+#semesterApp .s-opening-dialogue>p{font-size:17px;line-height:2}
+.s-intro-list article,.s-recruit-members article{display:grid;grid-template-columns:100px minmax(0,1fr);gap:20px;padding:24px 0;border-bottom:1px solid var(--s-line)}
+.s-intro-list .s-art,.s-recruit-members .s-art{height:134px;border-radius:10px}
+#semesterApp .s-intro-list h2{margin:0 0 10px}
+.s-interest-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 14px;margin:24px 0}
+#semesterApp .s-interest-grid>button{padding:0 0 12px;overflow:hidden;text-align:left}
+.s-interest-grid .s-art{aspect-ratio:.85}
+.s-interest-grid strong,.s-interest-grid span,.s-interest-grid small{display:block;margin:8px 10px 0}
+.s-interest-grid span{font-size:12px;line-height:1.7}
+.s-interest-grid>button[aria-pressed=true]{outline:3px solid #285c49;outline-offset:2px}
+.s-club-booths>section{padding-bottom:26px;border-bottom:1px solid var(--s-line)}
+.s-booth-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 16px}.s-booth-tabs button[aria-pressed=true]{background:#285c49!important;color:#fff!important}
+.s-current-goal{padding:0 0 24px;border-bottom:1px solid var(--s-line);margin-bottom:24px}
+#semesterApp .s-current-goal h2{font-size:22px;margin-top:24px}
+.s-current-goal>button{margin:0 10px 8px 0}
+.s-priority-list>div{display:flex;gap:12px;overflow-x:auto;margin:16px 0}
+#semesterApp .s-priority-list>div>button{width:116px;flex-shrink:0;padding:0 0 10px;overflow:hidden}
+.s-priority-list .s-art{height:130px}.s-priority-list strong{display:block;font-size:13px;margin-top:8px}
+.s-other-encounters{margin:28px 0}
+.s-other-encounters .s-contact-list{display:grid;gap:12px}
+#semesterApp .s-other-encounters .s-contact-list>button{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:center;text-align:left;padding:0;overflow:hidden}
+.s-other-encounters .s-art{width:72px;height:96px}
+.s-other-encounters strong,.s-other-encounters span{display:block}
+.s-other-encounters span{font-size:12px;color:var(--s-muted);margin-top:6px}
+#semesterApp #chatWorkspace .thread-title{display:block}
+#semesterApp #chatWorkspace .thread-title strong{display:block;white-space:nowrap}
+#semesterApp #chatWorkspace .thread-title time{display:block;margin-top:4px}
+.s-intimacy-number{display:block;color:var(--s-muted);font-size:12px;margin-top:6px;font-variant-numeric:tabular-nums}
+.s-intimacy-options{padding-bottom:22px;border-bottom:1px solid var(--s-line)}
+.s-play-loop{padding-left:24px}.s-play-loop>li{padding-left:8px;margin-bottom:26px}
+.s-messenger-dock{container-type:inline-size;margin:-26px;--line:#cbd7c9}
+#semesterApp #chatWorkspace .messenger-app{height:calc(var(--app-viewport,100svh) - 170px);min-height:460px}
+#semesterApp #chatWorkspace .messenger-body{grid-template-columns:230px minmax(0,1fr)}
+#semesterApp #chatWorkspace h2{font-size:23px;margin:0 0 4px}
+#semesterApp #chatWorkspace .thread-row{border:0;border-radius:0;background:transparent;text-align:left;padding:15px 17px}
+#semesterApp #chatWorkspace .thread-row.selected{background:#e3eddd}
+#semesterApp #chatWorkspace .thread-row:hover{background:#edf2e8}
+#semesterApp #chatWorkspace .thread-filters button{border:0;background:transparent;font-size:12px;padding:7px 5px;min-height:34px}
+#semesterApp #chatWorkspace .thread-filters .active{background:#dfeada}
+#semesterApp #chatWorkspace .message-bubble p{margin:0;font-size:14px}
+#semesterApp #chatWorkspace .message-composer{padding:12px 18px 14px}
+#semesterApp #chatWorkspace .thread-heading{flex-wrap:wrap;gap:8px;padding:12px 16px}
+#semesterApp #chatWorkspace .thread-heading .quiet{padding:6px 8px;font-size:12px;min-height:32px}
+#semesterApp #chatWorkspace .send-message{background:#285b49;color:#fff;padding:10px;border:0;min-width:44px}
+#semesterApp #chatWorkspace .chat-delivery-actions button{min-height:28px;font-size:10px;padding:3px 0;border:0;background:transparent}
+@container(max-width:620px){
+ #semesterApp #chatWorkspace .messenger-body{display:flex}
+ #semesterApp #chatWorkspace .thread-sidebar{width:100%;border:0}
+ #semesterApp #chatWorkspace .thread-conversation{display:none;width:100%}
+ #semesterApp #chatWorkspace .has-thread .thread-sidebar{display:none}
+ #semesterApp #chatWorkspace .has-thread .thread-conversation{display:flex}
+ #semesterApp #chatWorkspace #chatBack{display:inline-flex;width:32px;background:transparent;padding:5px}
+}
+.s-swim-sheet img{width:100%;height:auto;display:block}
+.s-profile-intro:has(.s-swim-sheet){grid-template-columns:1fr}
+.s-opening-stage{flex:1;min-height:0;display:flex;align-items:center;background:#e8eee5}.s-opening-stage img{width:100%;height:100%;object-fit:contain;display:block}.s-opening-mobile-cg{display:none}
+.s-scene-stage:has(.s-beach-cg){height:min(58svh,620px);background:#c7dfdd}.s-beach-cg{width:auto;aspect-ratio:.5;margin:0 auto}.s-beach-cg img{height:100%;width:300%;object-fit:fill}
+.s-wash-crop.s-wash-columns{aspect-ratio:.375}
+.s-wash-columns img{width:400%!important;height:100%!important}
+.s-home-fashion>.s-wash-columns{width:min(100%,270px);margin:0 auto}
+.s-home-actor{left:50%;transform:translateX(-50%);width:auto;aspect-ratio:.39}
+.s-home-actor img{width:769.23077%!important;left:calc(var(--atlas-col,0)*-153.84615%)!important}
+@media(min-width:1450px){.s-wash-grid:has(.s-wash-columns){grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:900px){.s-messenger-dock{margin:-24px}}
+@media(max-width:900px){.s-opening-mobile-cg{display:block;width:100%;height:auto;max-height:230px;object-fit:contain;margin:18px 0}}
+@media(max-width:430px){.s-interest-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.s-messenger-dock{margin:-22px -18px}.s-intro-list article,.s-recruit-members article{gap:14px;grid-template-columns:80px minmax(0,1fr)}#semesterApp #chatWorkspace .messenger-app{height:calc(var(--app-viewport,100svh) - 145px);min-height:300px}.s-wardrobe-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media(min-width:901px) and (max-width:1350px){
  .s-feature-copy{padding:16px 20px;grid-template-columns:1fr 1fr}
  .s-feature-copy h2{grid-column:1/-1;font-size:22px!important}
