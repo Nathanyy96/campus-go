@@ -130,6 +130,15 @@
     "sha256": "7a034b53e9cd7088f986e06a1ab374c379656c8689835bd0182b7e8c51012ca9"
   },
   {
+    "id": 0,
+    "name": "林知夏",
+    "code": "S001",
+    "path": "assets/characters/anime-v036/S001-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional adult university woman 林知夏, age 24: long dark indigo hair, violet eyes, mature oval face. Replace the brown-haired model with 林知夏 consistently in all four columns, retaining her own face and hair. Keep the original four garment colors and designs, the matching garment flatlays beside each figure, and the clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure is standing neutrally, shown completely from head to both slippered feet, with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-50d9e254-f826-441f-a7c3-77769dc910dd.png",
+    "sha256": "0be965440c5ddc772014ee289b5d1a7a83d1ae04827d38de68199670dcdff3f7"
+  },
+  {
     "id": 1,
     "name": "陳以晴",
     "code": "S002",
@@ -138,6 +147,96 @@
     "prompt": "Use case: stylized-concept. Technical adult fashion design sheet,plain ivory studio. Reference1 fixes original fictional ADULT woman 陳以晴 age24 identity; reference2 fixes her four garment designs. Landscape1536x1024 EXACT FOUR EQUAL VERTICAL COLUMNS,each384x1024,reading left to right. Each column has ONE complete HEAD-TO-TOE upright neutral adult figure in LEFT65%,small exact matching bra/brief flatlays RIGHT35%. Fullbody mandatory: whole head,hair,knees,ankles,BOTH FEET and slippers visible with margin. Scale figure smaller to fit,do NOT crop below knees or use portraits. SAME mature7.5head adult woman all4columns,preserve face,hair and eye color,polished Japanese2D adult anime linework/celshading. Four opaque matching adult bra and high-waisted full-coverage brief sets precisely following reference2: sage botanical embroidery; pale blue floral/cat embroidery; ivory rose lace; burgundy rose/navy ribbon. Ivory plain dressing gown resting over arms. Neutral upright clothes catalogue pose,calm expression,no romantic narrative,bathroom,undressing action,suggestive posing or closeups. No lettering,watermarks or numbers. One row only,four equal portrait columns.",
     "original": "exec-06c46354-47cf-4b1c-8299-907562366ac4.png",
     "sha256": "2790a4ed291e1c90aa5da27111a1e46b065dbb70c6d0dc4be904c156ad2de8cd"
+  },
+  {
+    "id": 2,
+    "name": "沈若寧",
+    "code": "S003",
+    "portrait": "assets/characters/anime-v035/S003-W01-anime.png",
+    "path": "assets/characters/anime-v036/S003-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 沈若寧, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 沈若寧. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-fb7c079d-fd90-4072-af01-758e43c6d2eb.png",
+    "sha256": "6d818f0d9502f6f0ac41f5767eb99a218bea113aeb4007c8e686bb7957ba18c2"
+  },
+  {
+    "id": 3,
+    "name": "許可欣",
+    "code": "S004",
+    "portrait": "assets/characters/anime-v035/S004-W01-anime.png",
+    "path": "assets/characters/anime-v036/S004-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 許可欣, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 許可欣. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-f7f9775f-cb65-48fc-9a94-9bb5a1bbabe0.png",
+    "sha256": "39ca370fa178becf13f3d20d071890784e3cf42e2fc96a7a9404f110626812e8"
+  },
+  {
+    "id": 6,
+    "name": "唐雪棠",
+    "code": "S007",
+    "portrait": "assets/characters/anime-v035/S007-W01-anime.png",
+    "path": "assets/characters/anime-v036/S007-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 唐雪棠, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 唐雪棠. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-a0099b6b-2257-4319-8fa7-ae31523bc41f.png",
+    "sha256": "467a33da79d47348c70075f442b9c7814ed8da5e73aa397f4468d98b84a80d8a"
+  },
+  {
+    "id": 12,
+    "name": "葉青禾",
+    "code": "S013",
+    "portrait": "assets/characters/anime-v035/S013-W01-anime.png",
+    "path": "assets/characters/anime-v036/S013-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 葉青禾, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 葉青禾. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-0cf74aca-ec05-4eb9-89f2-9e4e4add5b02.png",
+    "sha256": "e59a8b51ad593b9f727ba9e147f9a43a5ac90ec9445055e3eec3459e69f2c9bc"
+  },
+  {
+    "id": 13,
+    "name": "蘇曼婷",
+    "code": "S014",
+    "portrait": "assets/characters/anime-v035/S014-W01-anime.png",
+    "path": "assets/characters/anime-v036/S014-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 蘇曼婷, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 蘇曼婷. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-7e14e706-05d5-4259-98c4-86825ca392c6.png",
+    "sha256": "3d09d5b0a3504d40590bc92f675743cb182903fedfb082b7428b0dd85e669e8c"
+  },
+  {
+    "id": 16,
+    "name": "蕭佳蓉",
+    "code": "S017",
+    "portrait": "assets/characters/anime-v035/S017-W01-anime.png",
+    "path": "assets/characters/anime-v036/S017-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 蕭佳蓉, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 蕭佳蓉. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-fc5b7ab4-9ffb-460f-81f9-53788e7c0d4c.png",
+    "sha256": "9cd7ae921d7fd4a98b7113a17558495eef860184a03bcd707b40a59a63379967"
+  },
+  {
+    "id": 17,
+    "name": "胡珮珊",
+    "code": "S018",
+    "portrait": "assets/characters/anime-v035/S018-W01-anime.png",
+    "path": "assets/characters/anime-v036/S018-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 胡珮珊, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 胡珮珊. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-80eb5d9e-78b1-4f02-a7e1-d0b4011b8e9e.png",
+    "sha256": "ac4663e19755179c4036d97cf613c5f8fc7f4f40900bf3a91ceef418b4030c70"
+  },
+  {
+    "id": 26,
+    "name": "賴書妍",
+    "code": "S027",
+    "portrait": "assets/characters/anime-v035/S027-W01-anime.png",
+    "path": "assets/characters/anime-v036/S027-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 賴書妍, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 賴書妍. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-eda2c862-0339-41a3-ba00-a7db66c0ebff.png",
+    "sha256": "96369b243bae66004804c1be5f2dcfb2d09340c8366b47aef8075584589c1967"
+  },
+  {
+    "id": 35,
+    "name": "戴蓓琳",
+    "code": "S036",
+    "portrait": "assets/characters/anime-v035/S036-W01-anime.png",
+    "path": "assets/characters/anime-v036/S036-wash-full.png",
+    "prompt": "Create a character-specific version of the supplied four-column anime clothing design sheet. Reference image 1 defines the exact layout and four matching embroidered bra-and-high-waisted-brief sets with an ivory open dressing gown and slippers. Reference image 2 defines ONLY the identity of fictional ADULT university woman 戴蓓琳, age 24. Preserve her individual face, eye color, skin tone, hairstyle, hair color and adult proportions from reference 2 consistently in all four columns. Replace the model of reference 1 with 戴蓓琳. Keep the original four garment colors and designs, matching garment flatlays beside each figure, and clean ivory background. Four equal vertical columns in a 1536x1024 sheet. Each adult figure stands neutrally, shown completely from head to both slippered feet with generous margins. Polished 2D anime fashion-catalog illustration, opaque garments and neutral presentation. No undressing action, nudity, sexual pose, text, logo or watermark.",
+    "original": "exec-1b229947-effd-405b-83a3-30adb5869462.png",
+    "sha256": "d6e88896cbcfc1f72b767b845e7c736a986391291bc098f65e6b79099e7bcf48"
   },
   {
     "id": 46,

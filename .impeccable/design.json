@@ -399,6 +399,18 @@
       "roomActorAtlasLeft": "calc(var(--atlas-col,0)*-153.84615%)",
       "pendingWashFallback": "completed full-body short robe or towel; explicit pending label; saved wash choice retained",
       "homeAtlasStatus": "old draft; not matched to requested template"
+    },
+    "washTemplateCoverage": {
+      "completedCoreCharacters": 12,
+      "pendingCoreCharacters": [
+        28
+      ],
+      "setsPerCharacter": 4,
+      "totalSets": 48,
+      "layout": "four full-body columns with matching garment flatlays",
+      "identity": "individual face, eyes and hair retained",
+      "historicalHalfBody": "archive only, not pending full-body work",
+      "homeAtlas": "separate draft; requested home template not yet complete"
     }
   },
   "components": [
