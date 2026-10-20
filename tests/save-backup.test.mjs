@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {newGame} from '../simulation.js';
+import {SAVE_KEYS,createBackup,readBackup,restoreBackup} from '../save-backup.js';
+function storage(){const data=new Map();return {getItem:key=>data.get(key)??null,setItem:(key,value)=>data.set(key,String(value)),removeItem:key=>data.delete(key)};}
+test('portable backup carries semester, separate free world and original archive to another device',async()=>{const a=storage(),b=storage();for(const [i,key] of SAVE_KEYS.entries()){const game=newGame();game.day=i+2;a.setItem(key,JSON.stringify(game));}const backup=await createBackup(a);const saves=await readBackup(JSON.stringify(backup));restoreBackup(b,saves);for(const key of SAVE_KEYS)assert.equal(b.getItem(key),a.getItem(key));assert.ok(b.getItem('campus-before-file-import'));});
+test('corrupt backups are rejected before replacing any save, while old exports stay supported',async()=>{const a=storage();a.setItem(SAVE_KEYS[0],JSON.stringify(newGame()));const backup=await createBackup(a);backup.saves[SAVE_KEYS[0]].day=99;await assert.rejects(()=>readBackup(JSON.stringify(backup)),/校驗失敗/);assert.equal((await readBackup(a.getItem(SAVE_KEYS[0])))[SAVE_KEYS[0]].day,1);await assert.rejects(()=>readBackup('{"__proto__":{}}'),/不支援/);});

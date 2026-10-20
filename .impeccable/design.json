@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T05:00:29.039361+00:00",
+  "title": "Design System: Campus Go · v0.35",
+  "extensions": {
+    "colorMeta": {
+      "forest-ink": {
+        "role": "primary",
+        "displayName": "Forest Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0378 168.51)",
+          "oklch(26% 0.0378 168.51)",
+          "oklch(38% 0.0378 168.51)",
+          "oklch(49% 0.0378 168.51)",
+          "oklch(61% 0.0378 168.51)",
+          "oklch(72% 0.0378 168.51)",
+          "oklch(84% 0.0378 168.51)",
+          "oklch(95% 0.0378 168.51)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0382 163.79)",
+          "oklch(26% 0.0382 163.79)",
+          "oklch(38% 0.0382 163.79)",
+          "oklch(49% 0.0382 163.79)",
+          "oklch(61% 0.0382 163.79)",
+          "oklch(72% 0.0382 163.79)",
+          "oklch(84% 0.0382 163.79)",
+          "oklch(95% 0.0382 163.79)"
+        ]
+      },
+      "forest-action": {
+        "role": "primary",
+        "displayName": "Forest Action",
+        "tonalRamp": [
+          "oklch(15% 0.0647 166.91)",
+          "oklch(26% 0.0647 166.91)",
+          "oklch(38% 0.0647 166.91)",
+          "oklch(49% 0.0647 166.91)",
+          "oklch(61% 0.0647 166.91)",
+          "oklch(72% 0.0647 166.91)",
+          "oklch(84% 0.0647 166.91)",
+          "oklch(95% 0.0647 166.91)"
+        ]
+      },
+      "forest-hover": {
+        "role": "primary",
+        "displayName": "Forest Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0587 161.95)",
+          "oklch(26% 0.0587 161.95)",
+          "oklch(38% 0.0587 161.95)",
+          "oklch(49% 0.0587 161.95)",
+          "oklch(61% 0.0587 161.95)",
+          "oklch(72% 0.0587 161.95)",
+          "oklch(84% 0.0587 161.95)",
+          "oklch(95% 0.0587 161.95)"
+        ]
+      },
+      "campus-paper": {
+        "role": "neutral",
+        "displayName": "Campus Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0067 115.70)",
+          "oklch(26% 0.0067 115.70)",
+          "oklch(38% 0.0067 115.70)",
+          "oklch(49% 0.0067 115.70)",
+          "oklch(61% 0.0067 115.70)",
+          "oklch(72% 0.0067 115.70)",
+          "oklch(84% 0.0067 115.70)",
+          "oklch(95% 0.0067 115.70)"
+        ]
+      },
+      "campus-ground": {
+        "role": "neutral",
+        "displayName": "Campus Ground",
+        "tonalRamp": [
+          "oklch(15% 0.0135 134.90)",
+          "oklch(26% 0.0135 134.90)",
+          "oklch(38% 0.0135 134.90)",
+          "oklch(49% 0.0135 134.90)",
+          "oklch(61% 0.0135 134.90)",
+          "oklch(72% 0.0135 134.90)",
+          "oklch(84% 0.0135 134.90)",
+          "oklch(95% 0.0135 134.90)"
+        ]
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Divider",
+        "tonalRamp": [
+          "oklch(15% 0.0230 141.23)",
+          "oklch(26% 0.0230 141.23)",
+          "oklch(38% 0.0230 141.23)",
+          "oklch(49% 0.0230 141.23)",
+          "oklch(61% 0.0230 141.23)",
+          "oklch(72% 0.0230 141.23)",
+          "oklch(84% 0.0230 141.23)",
+          "oklch(95% 0.0230 141.23)"
+        ]
+      },
+      "sage-surface": {
+        "role": "neutral",
+        "displayName": "Sage Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0143 128.63)",
+          "oklch(26% 0.0143 128.63)",
+          "oklch(38% 0.0143 128.63)",
+          "oklch(49% 0.0143 128.63)",
+          "oklch(61% 0.0143 128.63)",
+          "oklch(72% 0.0143 128.63)",
+          "oklch(84% 0.0143 128.63)",
+          "oklch(95% 0.0143 128.63)"
+        ]
+      },
+      "focus-clay": {
+        "role": "primary",
+        "displayName": "Focus Clay",
+        "tonalRamp": [
+          "oklch(15% 0.1074 36.19)",
+          "oklch(26% 0.1074 36.19)",
+          "oklch(38% 0.1074 36.19)",
+          "oklch(49% 0.1074 36.19)",
+          "oklch(61% 0.1074 36.19)",
+          "oklch(72% 0.1074 36.19)",
+          "oklch(84% 0.1074 36.19)",
+          "oklch(95% 0.1074 36.19)"
+        ]
+      },
+      "app-sage": {
+        "role": "secondary",
+        "displayName": "App Sage",
+        "tonalRamp": [
+          "oklch(15% 0.0209 140.90)",
+          "oklch(26% 0.0209 140.90)",
+          "oklch(38% 0.0209 140.90)",
+          "oklch(49% 0.0209 140.90)",
+          "oklch(61% 0.0209 140.90)",
+          "oklch(72% 0.0209 140.90)",
+          "oklch(84% 0.0209 140.90)",
+          "oklch(95% 0.0209 140.90)"
+        ]
+      },
+      "app-ochre": {
+        "role": "secondary",
+        "displayName": "App Ochre",
+        "tonalRamp": [
+          "oklch(15% 0.0358 79.67)",
+          "oklch(26% 0.0358 79.67)",
+          "oklch(38% 0.0358 79.67)",
+          "oklch(49% 0.0358 79.67)",
+          "oklch(61% 0.0358 79.67)",
+          "oklch(72% 0.0358 79.67)",
+          "oklch(84% 0.0358 79.67)",
+          "oklch(95% 0.0358 79.67)"
+        ]
+      },
+      "app-peach": {
+        "role": "secondary",
+        "displayName": "App Peach",
+        "tonalRamp": [
+          "oklch(15% 0.0194 41.80)",
+          "oklch(26% 0.0194 41.80)",
+          "oklch(38% 0.0194 41.80)",
+          "oklch(49% 0.0194 41.80)",
+          "oklch(61% 0.0194 41.80)",
+          "oklch(72% 0.0194 41.80)",
+          "oklch(84% 0.0194 41.80)",
+          "oklch(95% 0.0194 41.80)"
+        ]
+      },
+      "app-blue": {
+        "role": "secondary",
+        "displayName": "App Blue",
+        "tonalRamp": [
+          "oklch(15% 0.0109 256.70)",
+          "oklch(26% 0.0109 256.70)",
+          "oklch(38% 0.0109 256.70)",
+          "oklch(49% 0.0109 256.70)",
+          "oklch(61% 0.0109 256.70)",
+          "oklch(72% 0.0109 256.70)",
+          "oklch(84% 0.0109 256.70)",
+          "oklch(95% 0.0109 256.70)"
+        ]
+      },
+      "app-lilac": {
+        "role": "secondary",
+        "displayName": "App Lilac",
+        "tonalRamp": [
+          "oklch(15% 0.0206 311.08)",
+          "oklch(26% 0.0206 311.08)",
+          "oklch(38% 0.0206 311.08)",
+          "oklch(49% 0.0206 311.08)",
+          "oklch(61% 0.0206 311.08)",
+          "oklch(72% 0.0206 311.08)",
+          "oklch(84% 0.0206 311.08)",
+          "oklch(95% 0.0206 311.08)"
+        ]
+      },
+      "bond-rose": {
+        "role": "secondary",
+        "displayName": "Bond Rose",
+        "tonalRamp": [
+          "oklch(15% 0.0974 19.47)",
+          "oklch(26% 0.0974 19.47)",
+          "oklch(38% 0.0974 19.47)",
+          "oklch(49% 0.0974 19.47)",
+          "oklch(61% 0.0974 19.47)",
+          "oklch(72% 0.0974 19.47)",
+          "oklch(84% 0.0974 19.47)",
+          "oklch(95% 0.0974 19.47)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Phone greetings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Explanatory paragraphs."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Compact controls."
+      },
+      "narrative": {
+        "displayName": "Narrative",
+        "purpose": "Focused scene dialogue."
+      }
+    },
+    "shadows": [
+      {
+        "name": "phone",
+        "value": "0 18px 54px rgba(27,53,36,.13)",
+        "purpose": "Desktop phone elevation."
+      },
+      {
+        "name": "scene",
+        "value": "0 24px 80px #152c3460",
+        "purpose": "Focused story dialog."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control",
+        "value": "background .18s,color .18s",
+        "purpose": "Hover feedback."
+      },
+      {
+        "name": "gain",
+        "value": "1.6s ease-out",
+        "purpose": "Transient resource feedback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1300px"
+      },
+      {
+        "name": "phone-only",
+        "value": "900px"
+      },
+      {
+        "name": "narrow",
+        "value": "430px"
+      }
+    ],
+    "wallpapers": {
+      "rose": {
+        "ground": "#f2e7e3",
+        "paper": "#fff6f1",
+        "soft": "#f8e5dc",
+        "line": "#dfcbc2"
+      },
+      "night": {
+        "ground": "#222e32",
+        "paper": "#eef2f8",
+        "soft": "#dce5ef",
+        "line": "#b8c9c4"
+      }
+    },
+    "deferredAccountGate": {
+      "enabledByDefault": false,
+      "background": "#f5f2e9",
+      "ink": "#214c40",
+      "inputPaper": "#fffef8",
+      "focus": "#996c29",
+      "controlHeight": "48px",
+      "maxWidth": "440px"
+    },
+    "sourceFiles": [
+      "semester-phone.css",
+      "semester-phone.js",
+      "home-wardrobe-ui.js",
+      "account-gate.css"
+    ],
+    "tonalRampNote": "Synthesized OKLCH display ramps; not implementation overrides."
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Committed action.",
+      "html": "<button class=\"ds-button-primary\">儲存進度</button>",
+      "css": ".ds-button-primary{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;background:#285c49;color:#fff;min-height:42px;padding:10px 14px;border:1px solid #cbd7c9;border-radius:10px;cursor:pointer;transition:background .18s,color .18s}.ds-button-primary:hover{background:#194431}.ds-button-primary:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "Paper Button",
+      "kind": "button",
+      "refersTo": "button-paper",
+      "description": "Secondary action.",
+      "html": "<button class=\"ds-button-paper\">儲存進度</button>",
+      "css": ".ds-button-paper{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;background:#fbfcf7;color:#233e34;min-height:42px;padding:10px 14px;border:1px solid #cbd7c9;border-radius:10px;cursor:pointer;transition:background .18s,color .18s}.ds-button-paper:hover{background:#e1eadd}.ds-button-paper:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labeled full-width text entry.",
+      "html": "<label class=\"ds-field\">搜尋同學<input placeholder=\"輸入姓名\"></label>",
+      "css": ".ds-field{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;display:grid;gap:6px;font-size:13px;color:#4b6659}.ds-field input{font:inherit;color:#233e34;border:1px solid #cbd7c9;border-radius:8px;padding:10px;background:#fff;caret-color:#a0533e}.ds-field input:hover{border-color:#285c49}.ds-field input:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "Phone Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Representative top navigation destinations; actual phone has six.",
+      "html": "<nav class=\"ds-nav\"><button aria-current=\"page\">首頁</button><button>行程</button><button>人物</button></nav>",
+      "css": ".ds-nav{display:flex;gap:10px;background:#fbfcf7;border-bottom:1px solid #cbd7c9}.ds-nav button{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;background:transparent;border:0;padding:9px 10px;min-height:42px;font-size:11px;cursor:pointer}.ds-nav button[aria-current]{color:#285c49;border-bottom:3px solid #285c49;font-weight:700}.ds-nav button:hover{background:#e1eadd}.ds-nav button:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "Stage Chip",
+      "kind": "chip",
+      "refersTo": "stage-chip",
+      "description": "Noninteractive relationship stage marker.",
+      "html": "<span class=\"ds-stage\">相識</span>",
+      "css": ".ds-stage{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;display:inline-block;background:#eef0e8;color:#4d6256;border-radius:5px;padding:4px 7px;font-size:10px}"
+    },
+    {
+      "name": "Notification",
+      "kind": "card",
+      "refersTo": "notification",
+      "description": "Sage notification row with compact preview.",
+      "html": "<button class=\"ds-notice\"><strong>今日的訊息</strong><span>看看校園裡的新消息。</span></button>",
+      "css": ".ds-notice{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;display:grid;gap:6px;text-align:left;background:#edf2e8;border:0;border-radius:12px;padding:17px;cursor:pointer}.ds-notice strong{font-size:13px}.ds-notice span{font-size:12px;line-height:1.7}.ds-notice:hover{background:#e1eadd}.ds-notice:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "App Launcher Icon",
+      "kind": "custom",
+      "refersTo": "app-icon",
+      "description": "Rounded-square launcher and authored line icon.",
+      "html": "<button class=\"ds-app\"><span><svg viewBox=\"0 0 24 24\" width=\"27\" height=\"27\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M5 4h14v13H9l-4 3V4Z\"/><path d=\"M8 8h8M8 12h6\"/></svg></span>訊息</button>",
+      "css": ".ds-app{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;display:grid;justify-items:center;gap:9px;background:transparent;border:0;font-size:12px;cursor:pointer}.ds-app span{display:grid;place-items:center;width:58px;height:58px;background:#dfeadd;color:#285c49;border-radius:16px}.ds-app:hover span{background:#e1eadd}.ds-app:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "An illustrated university life with a usable personal phone",
+    "overview": "An illustrated university life with a usable personal phone. Restrained forest green ink and pale campus paper frame clean two-dimensional adult anime characters, distinct faces, clear linework and coherent cel shading. Chinese serif headings give the daily ritual warmth; sans-serif controls keep planning and conversation legible.\n\nThe character leads the desktop while the phone carries the daily actions. Soft app colors distinguish destinations without competing with the artwork. The system feels calm, personal and practical, with stronger cinematic depth reserved for focused story scenes.",
+    "keyCharacteristics": [
+      "Character-led desktop and phone-led mobile.",
+      "Forest ink, pale paper and softly colored app icons.",
+      "Chinese serif headings with readable sans-serif controls.",
+      "Honest artwork and persistence labels."
+    ],
+    "rules": [
+      {
+        "name": "Paper and Ink",
+        "body": "Use forest ink for readable content and forest actions for commitment; reserve the soft multicolor palette for destination identity.",
+        "section": "colors"
+      },
+      {
+        "name": "Artwork Truth",
+        "body": "Show the illustration in its actual format and name its completion level accurately.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do preserve distinct adult character faces and coherent two-dimensional anime rendering.",
+      "Do keep the current destination, daily slots and selected wardrobe state visible.",
+      "Do label clothing templates as design previews and disclose local saving.",
+      "Do retain keyboard focus, explicit scene exits and reduced motion support."
+    ],
+    "donts": [
+      "Don't describe character plates or clothing design previews as unique full-screen scene CGs.",
+      "Don't claim cloud saving, account availability or completed artwork without implementation evidence.",
+      "Don't give clothing choices an implied affection reward or consent to other interactions."
+    ]
+  }
+}

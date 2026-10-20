@@ -1,3 +1,4 @@
+import {ANIME_ART} from './character-art-anime.js';
 import {REVISED_ART} from './character-art-revisions.js';
 import {SECOND_BATCH_ART} from './character-art-batch.js';
 // Campus Go v0.14: explicit character image mapping, no shared face fallback.
@@ -14,5 +15,5 @@ export const DOCUMENT_REFERENCE_ART = Object.freeze({
 });
 export function characterCode(id){return Number.isInteger(id)&&id>=0&&id<=998?`S${String(id+1).padStart(3,'0')}`:null;}
 export function plateStyle(art){const split=art?.split??.5;return `--plate-left-width:${100/split}%;--plate-right-width:${100/(1-split)}%;--plate-right-offset:${-100*split/(1-split)}%;--plate-portrait-aspect:${split*1.5};--plate-body-aspect:${(1-split)*1.5};`;}
-export function characterArt(id){return Object.hasOwn(REVISED_ART,id)?REVISED_ART[id]:Object.hasOwn(APPROVED_ART,id)?APPROVED_ART[id]:Object.hasOwn(DOCUMENT_REFERENCE_ART,id)?DOCUMENT_REFERENCE_ART[id]:Object.hasOwn(SECOND_BATCH_ART,id)?SECOND_BATCH_ART[id]:null;}
-export function artStatus(id){return Object.hasOwn(REVISED_ART,id)?'sample_pending_review':Object.hasOwn(APPROVED_ART,id)?'approved_sample':Object.hasOwn(DOCUMENT_REFERENCE_ART,id)?'document_reference_imported':Object.hasOwn(SECOND_BATCH_ART,id)?'sample_pending_review':'missing';}
+export function characterArt(id){return Object.hasOwn(ANIME_ART,id)?ANIME_ART[id]:Object.hasOwn(REVISED_ART,id)?REVISED_ART[id]:Object.hasOwn(APPROVED_ART,id)?APPROVED_ART[id]:Object.hasOwn(DOCUMENT_REFERENCE_ART,id)?DOCUMENT_REFERENCE_ART[id]:Object.hasOwn(SECOND_BATCH_ART,id)?SECOND_BATCH_ART[id]:null;}
+export function artStatus(id){return Object.hasOwn(ANIME_ART,id)?'sample_pending_review':Object.hasOwn(REVISED_ART,id)?'sample_pending_review':Object.hasOwn(APPROVED_ART,id)?'approved_sample':Object.hasOwn(DOCUMENT_REFERENCE_ART,id)?'document_reference_imported':Object.hasOwn(SECOND_BATCH_ART,id)?'sample_pending_review':'missing';}

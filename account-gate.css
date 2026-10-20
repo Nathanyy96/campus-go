@@ -1,0 +1,20 @@
+
+.auth-locked body> :not(#accountGate){display:none!important}
+#accountGate{position:fixed;inset:0;z-index:10000;overflow:auto;background:#f5f2e9;color:#214c40;display:grid;place-items:center;padding:32px 20px}
+#accountGate[hidden]{display:none}
+.account-gate-content{width:min(100%,440px);padding:28px 0}
+.account-gate-content h1{font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(30px,7vw,42px);line-height:1.25;margin:0 0 24px}
+.account-gate-content p{line-height:1.8;margin:0 0 24px;color:#405b50}
+.account-gate-content form{display:grid;gap:18px}
+.account-gate-content label{display:grid;gap:8px;font-weight:600}
+.account-gate-content input{width:100%;min-height:48px;border:1px solid #8d9d8e;border-radius:8px;padding:10px 12px;background:#fffef8;color:#214c40;font:inherit;caret-color:#214c40}
+.account-gate-content button{display:block;width:100%;min-height:48px;padding:12px 16px;border:0;border-radius:8px;background:#214c40;color:#fffef8;font:inherit;cursor:pointer;margin-top:8px}
+.account-gate-content button:hover{background:#163b30}
+.account-gate-content button:disabled{opacity:.65;cursor:wait}
+.account-gate-content #switchRegister{background:transparent;color:#214c40;text-decoration:underline;text-underline-offset:4px}
+.account-gate-content :focus-visible{outline:3px solid #996c29;outline-offset:3px}
+.account-gate-content ::selection{background:#d4e4cb;color:#163b30}
+.account-gate-content .account-hint{font-size:14px;margin:0}
+.account-gate-content #loginNote:empty{display:none}
+
+#accountGate [hidden]{display:none!important}

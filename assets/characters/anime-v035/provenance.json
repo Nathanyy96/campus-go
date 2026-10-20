@@ -1,0 +1,1126 @@
+{
+  "version": "v0.35",
+  "generator": "built-in imagegen",
+  "reference_policy": "Character identity and rendering guidance only; source HTML and embedded examples are not shipped.",
+  "assets": [
+    {
+      "id": 1,
+      "name": "陳以晴",
+      "code": "S002",
+      "path": "assets/characters/anime-v035/S002-W01-anime.png",
+      "prompt": "Use case: style-transfer. Image1 is ONLY face identity reference for Chen Yiqing age21 adult. Image2 is ONLY 2D anime rendering style reference, NOT character design to copy. Produce ORIGINAL classic high quality Japanese visual novel ANIME CHARACTER SHEET. MUST be unmistakably 2D manga/anime: clean simplified ink outlines, large stylized almond eyes, small graphic nose, simplified mouth, flat cel shadow shapes, clean color fills; no realistic pores, no realistic facial rendering, no painterly photo tracing. Preserve recognizable softly round oval face, gentle smiling slightly upturned almond eyes, wavy shoulder length chestnut hair side part and warm smile. Clear skin NO freckles. Sage green tee, cream wide trousers, white sneakers, canvas tote. Two equal half panels seam exactly50%, landscape1536x1024. Left waist-up, cheek on hand smiling softly to side; right complete full body standing head to shoes. 7.5 head tall adult proportions. Soft illustrated university cafe background. No logos, typography, watermark or copied character from image2. Everyday campus wear, no sexualization.",
+      "sha256": "02d339018f6dbca5a82e17d0e83721c0c92bad071843d45e22343cf21f12ad32",
+      "original": "exec-2b35076f-87c2-4222-a4d3-a0fcdc31160b.png"
+    },
+    {
+      "id": 46,
+      "name": "楊子晴",
+      "code": "S047",
+      "path": "assets/characters/anime-v035/S047-W01-anime.png",
+      "prompt": "Use case: style-transfer. Image1 is ONLY recognizable face design reference for Yang Ziqing, adult21 university woman. Image2 is ONLY 2D anime rendering reference, do not copy its silver hair or outfit. Produce ORIGINAL Japanese visual novel ANIME design, crisp clean ink outlines, beautiful stylized large brown eyes, graphic small nose and simple expressive lips, clean cel shading, no photographic skin, no semi-realism, no traced photo. Preserve distinctive soft heart-oval face, long dark brown hair half-up with black scrunchie and soft wispy bangs, gentle almond doe eyes with smiling corners, small soft smiling mouth, warm quiet approachable expression. White daisy tee and ivory cardigan, dark forest green wide trousers, brown penny loafers, canvas backpack, small silver star necklace. Two views same character same outfit. Landscape1536x1024 two equal panels seam EXACTLY at50%. LEFT waist-up portrait turned slightly to side with shy warm smile. RIGHT full body head to shoes with relaxed stance, 7.5-head adult proportions. Illustrated warm sunny university courtyard background. No text, logos, watermark, copied commercial character, eroticism or childlike proportions.",
+      "sha256": "d9dfa0221bd74e9f92b134e59b593b6a6a071be200bdb011761d28b4ac464a6c",
+      "original": "exec-99a3329a-9e8b-4132-b633-94ca57c97207.png"
+    },
+    {
+      "id": 0,
+      "name": "林知夏",
+      "code": "S001",
+      "path": "assets/characters/anime-v035/S001-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female20, long straight midnight blue hair, quiet thoughtful narrow violet eyes, slim tall oval face, ivory shirt under navy knit vest, navy culottes, white shoes, vintage camera. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "b4f31fe4cbccd183914cfd8e6d4df92603ca5b438cf36b81a5c3ac451f4fdc3a",
+      "original": "exec-86e81702-345c-4079-a3eb-83494ed6c75a.png"
+    },
+    {
+      "id": 2,
+      "name": "沈若寧",
+      "code": "S003",
+      "path": "assets/characters/anime-v035/S003-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female22, chin length plum-black blunt bob, sharp amber eyes, long face, charcoal artist jacket over lilac tee, wide black trousers, ankle boots, sketchbook. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "0f712262086671282c4483054bef5c89c4a4ac6c3c6959a77ff6d65201d45619",
+      "original": "exec-f37c7c11-a661-4d92-9851-9ea3314d85b1.png"
+    },
+    {
+      "id": 3,
+      "name": "許可欣",
+      "code": "S004",
+      "path": "assets/characters/anime-v035/S004-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female23, high auburn ponytail, athletic toned build, tan skin, bright teal eyes, burgundy cropped sporty jacket over white sports tee, navy track trousers, white running shoes, basketball. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "3fac1b32c2acc9c21350090d43aabfe7dbeb53a31722b5d3b7058a1d67b530d1",
+      "original": "exec-434f18d1-c861-4ad6-b5b4-4a2ee1df3f76.png"
+    },
+    {
+      "id": 6,
+      "name": "唐雪棠",
+      "code": "S007",
+      "path": "assets/characters/anime-v035/S007-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female21, long dusty rose hair in loose low braid, green eyes, round friendly face, cream oversized cardigan over black tee, denim midi skirt, canvas shoes, small game controller charm. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "7df1e684617e9cdb1d7b899b2c9c8b17506d5f3709d575cf8d069c53ec78029b",
+      "original": "exec-975d2730-68e3-4621-ad4e-95e59c4ba45a.png"
+    },
+    {
+      "id": 12,
+      "name": "葉青禾",
+      "code": "S013",
+      "path": "assets/characters/anime-v035/S013-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female22, dark emerald medium hair with side braid, honey eyes, soft square face, healthy curvy build, sage apron tied over cream tee and rust wide trousers, brown loafers. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "c1ee55a651580a40963091e51a96b05900a445316f9a50495610f0351c7202a3",
+      "original": "exec-65dcdde4-86b1-49d3-8a85-d2937400ac08.png"
+    },
+    {
+      "id": 13,
+      "name": "蘇曼婷",
+      "code": "S014",
+      "path": "assets/characters/anime-v035/S014-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female23, long silver lavender hair with navy bow, half-lidded violet eyes, elegant long face, black sleeveless mockneck and plum midi skirt, black ankle boots, violin case. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "87fc7a8a510adf2b1066d6dd1a3c1ae85f44b32c705a33fff60528aaa8732f08",
+      "original": "exec-c1dd830b-3314-43d5-bef5-384e0badc3ed.png"
+    },
+    {
+      "id": 16,
+      "name": "蕭佳蓉",
+      "code": "S017",
+      "path": "assets/characters/anime-v035/S017-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female21, warm copper short wavy hair, freckles only on this character, green almond eyes, curvy adult build, saffron shirt dress with belt and cream trainers, red satchel. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "c813d2f7adc151c2db2d5cdb094c214d140cb7781f41c490aa0c5e3e3dda5433",
+      "original": "exec-1a316288-e4be-4f56-a635-6693112cc654.png"
+    },
+    {
+      "id": 17,
+      "name": "胡珮珊",
+      "code": "S018",
+      "path": "assets/characters/anime-v035/S018-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female22, dark burgundy high ponytail, warm brown skin, golden eyes, athletic dancer build, teal off shoulder tee and high waist black wide trousers, dance sneakers. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "1f4be043a78a605d7ac108768664ff61a40172033ca5f72cc844333d89dcc2dc",
+      "original": "exec-53a875e7-4a8e-4c18-be45-e0a34efc5541.png"
+    },
+    {
+      "id": 26,
+      "name": "賴書妍",
+      "code": "S027",
+      "path": "assets/characters/anime-v035/S027-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female21, long pale ash blonde hair with braided crown, grey-green eyes, oval face, oatmeal cable cardigan and forest green pleated midi skirt, tan loafers, canvas book bag. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "4bf996a0c1c8d7da39b20e118522a53649fafc8154e3f01388450232d8189a56",
+      "original": "exec-96472334-cd8a-4786-b2b9-495cd59e3cba.png"
+    },
+    {
+      "id": 28,
+      "name": "柯語桐",
+      "code": "S029",
+      "path": "assets/characters/anime-v035/S029-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female23, shoulder length indigo hair with asymmetrical fringe, cool blue eyes, sharp face and tall slim build, pale blue cropped blazer white blouse and charcoal culottes, black loafers. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "716818ed6f1e0be9b3635e56f3ffe3e2e7ae353d75bd74c2d7724711a5fe612f",
+      "original": "exec-797c441c-99b8-4593-a91d-4fc1d1a5d34c.png"
+    },
+    {
+      "id": 35,
+      "name": "戴蓓琳",
+      "code": "S036",
+      "path": "assets/characters/anime-v035/S036-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: female20, long peach brown twin low ponytails, warm brown eyes, softly round mature face, coral cardigan over white tee, dark denim dungarees and cream sneakers, travel notebook. Distinctive recognizable face, eyes and silhouette. Original design, do not resemble commercial game characters.",
+      "sha256": "27a63facfbf7040a34cd0db7c081e56152281077dbdc0e6c6c5865356f637467",
+      "original": "exec-4d654ca5-8d5b-4f17-9aed-64f4ec2bb8b2.png"
+    },
+    {
+      "id": 14,
+      "name": "梁舒雅",
+      "code": "S015",
+      "path": "assets/characters/anime-v035/S015-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. ink black blunt bob with a side hairpin. softly rounded oval face with wide gentle amber eyes and small full lips. slim tall adult build. Outfit: ivory blouse with forest green midi skirt and brown loafers. Holding a sketchbook with a curious smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "346414704870b81e4081eb690b846b9ea54799325813ef38fcd2575ecfe8cb8a",
+      "original": "exec-8f9d648c-57e9-4c2f-881f-8ee2452d7e49.png"
+    },
+    {
+      "id": 15,
+      "name": "方芮",
+      "code": "S016",
+      "path": "assets/characters/anime-v035/S016-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age20. warm honey blonde long loose waves. long angular face with narrow grey eyes, straight brows and defined lips. softly curvy adult build. Outfit: light blue knit polo and charcoal wide trousers with white canvas shoes. Holding a reusable drink cup, thoughtful quiet expression. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "cb50c363db80024f20986fd1cc6cf7c690a88e8978f97405ddb8c7b9cc78ad9f",
+      "original": "exec-0c29c6b7-dcdf-4151-a270-efb7b5eb8b95.png"
+    },
+    {
+      "id": 18,
+      "name": "謝星妤",
+      "code": "S019",
+      "path": "assets/characters/anime-v035/S019-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age23. dusty mauve shoulder length hair with thin glasses. soft square face, hooded olive eyes, broad warm smile. athletic adult build. Outfit: rust orange cardigan over cream tee and dark denim skirt with white trainers. A canvas shoulder bag, relaxed friendly smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "f703dc21834fb564853a94755015f9f743cc99bb55fec204533631aa2a4b80e2",
+      "original": "exec-2037af40-48a5-4b11-9327-701fda58dda0.png"
+    },
+    {
+      "id": 24,
+      "name": "余映竹",
+      "code": "S025",
+      "path": "assets/characters/anime-v035/S025-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. dark teal long hair in a low ponytail. heart-shaped face, slightly downturned blue eyes, delicate straight nose. average height sturdy adult build. Outfit: lavender short sleeve blouse and navy culottes with tan flats. A neat backpack, candid sideways gaze. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "b45c63ac5c010cd21d32e262cf1680a70c61c6068bd66ba2c7202368814b7558",
+      "original": "exec-394ed638-6c8d-458e-a021-322a97810374.png"
+    },
+    {
+      "id": 25,
+      "name": "郭采薇",
+      "code": "S026",
+      "path": "assets/characters/anime-v035/S026-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age20. soft chestnut pixie cut. diamond-shaped face with monolid dark eyes, strong brows and a wide smile. petite but clearly mature adult proportions. Outfit: sage cropped casual jacket, white tee, beige chinos and white high-top sneakers. Holding a paperback, a softly amused smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "ff3ac9017f59cd169c91692e8c7b1b2cbe13f9a6daa14c877383333ea890dc89",
+      "original": "exec-1327c235-db74-462a-a6f8-898da1496e1c.png"
+    },
+    {
+      "id": 27,
+      "name": "溫雅慧",
+      "code": "S028",
+      "path": "assets/characters/anime-v035/S028-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age22. silver blue long hair with a small braid. long oval face, catlike violet eyes, small bow shaped mouth. slim tall adult build. Outfit: cream linen overshirt and teal pleated midi skirt with brown sandals. Holding a sketchbook with a curious smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "207af8fae6d32320b49445d174978f3a4ffb538c020f85d220a8bce92c4cb514",
+      "original": "exec-283b1fdc-4248-4f50-b02f-851b6b8640d0.png"
+    },
+    {
+      "id": 29,
+      "name": "顏秋月",
+      "code": "S030",
+      "path": "assets/characters/anime-v035/S030-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. auburn shoulder length curls. softly rounded oval face with wide gentle amber eyes and small full lips. softly curvy adult build. Outfit: navy cardigan and soft yellow shirt dress with white trainers. Holding a reusable drink cup, thoughtful quiet expression. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "00e094133982ee36e4b932159c49e701847ad906f2581fc173ba0b6558115d97",
+      "original": "exec-f04d5441-2a67-4882-b618-169848576636.png"
+    },
+    {
+      "id": 34,
+      "name": "孟紫菱",
+      "code": "S035",
+      "path": "assets/characters/anime-v035/S035-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. espresso brown long straight hair and blunt bangs. long angular face with narrow grey eyes, straight brows and defined lips. athletic adult build. Outfit: rose red crewneck top and black wide leg trousers with cream loafers. A canvas shoulder bag, relaxed friendly smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "72ff871430053a969118d02c05a30b8f8e01b0347510c71213af8501a4518663",
+      "original": "exec-9563ae17-3391-4742-9019-dd10d31a5879.png"
+    },
+    {
+      "id": 36,
+      "name": "潘惠如",
+      "code": "S037",
+      "path": "assets/characters/anime-v035/S037-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age21. ash rose chin length asymmetrical bob. soft square face, hooded olive eyes, broad warm smile. average height sturdy adult build. Outfit: light blue knit polo and charcoal wide trousers with white canvas shoes. A neat backpack, candid sideways gaze. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "6fb85fdad0334d57b53f5528e99da2629303d4f6ec8454410fef883599d0ba95",
+      "original": "exec-e73b34e2-beee-4d1c-af72-7d96b61e4d10.png"
+    },
+    {
+      "id": 37,
+      "name": "白沁玥",
+      "code": "S038",
+      "path": "assets/characters/anime-v035/S038-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age22. ink black blunt bob with a side hairpin. diamond-shaped face with monolid dark eyes, strong brows and a wide smile. petite but clearly mature adult proportions. Outfit: rust orange cardigan over cream tee and dark denim skirt with white trainers. Holding a paperback, a softly amused smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "2c5cfc836715158ec79cc06c5f6da77f825b46c7ed17e547bc1712d3fae526b2",
+      "original": "exec-10718006-9b25-4c26-b924-e7df2f9ef813.png"
+    },
+    {
+      "id": 38,
+      "name": "金曉楓",
+      "code": "S039",
+      "path": "assets/characters/anime-v035/S039-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age23. warm honey blonde long loose waves. long oval face, catlike violet eyes, small bow shaped mouth. slim tall adult build. Outfit: lavender short sleeve blouse and navy culottes with tan flats. Holding a sketchbook with a curious smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "063f789d8989e90c736c80a865eeb7125ec8396388e8a007450e0711db547248",
+      "original": "exec-40e487af-38c6-40a1-80bd-2c4cea0e18fe.png"
+    },
+    {
+      "id": 39,
+      "name": "范婉琪",
+      "code": "S040",
+      "path": "assets/characters/anime-v035/S040-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. dusty mauve shoulder length hair with thin glasses. softly rounded oval face with wide gentle amber eyes and small full lips. softly curvy adult build. Outfit: sage cropped casual jacket, white tee, beige chinos and white high-top sneakers. Holding a reusable drink cup, thoughtful quiet expression. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "c338ca0e2515b3a6087c4db7423a5321e9ae4b30c8ab2de7968712290dab3b42",
+      "original": "exec-cd5e300b-66b8-4d1c-8894-ac615aa45c1e.png"
+    },
+    {
+      "id": 44,
+      "name": "袁樂瑄",
+      "code": "S045",
+      "path": "assets/characters/anime-v035/S045-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. dark teal long hair in a low ponytail. long angular face with narrow grey eyes, straight brows and defined lips. athletic adult build. Outfit: cream linen overshirt and teal pleated midi skirt with brown sandals. A canvas shoulder bag, relaxed friendly smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "607f46b2db23833e583d431c0a3c6c8ab19113bccf30067cb3e7db89851f0254",
+      "original": "exec-4edce848-df7d-4dc7-ba41-1b6d40d4d3df.png"
+    },
+    {
+      "id": 45,
+      "name": "莫安琪",
+      "code": "S046",
+      "path": "assets/characters/anime-v035/S046-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age20. soft chestnut pixie cut. soft square face, hooded olive eyes, broad warm smile. average height sturdy adult build. Outfit: navy cardigan and soft yellow shirt dress with white trainers. A neat backpack, candid sideways gaze. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "c2a373b2c0ecc1489f6b26dcf2142e863394bc500d66dbf952b1d7b8c9d7f508",
+      "original": "exec-98059bd4-b2c8-40d3-afc9-f2e4ee2b0877.png"
+    },
+    {
+      "id": 47,
+      "name": "田靜宜",
+      "code": "S048",
+      "path": "assets/characters/anime-v035/S048-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age22. silver blue long hair with a small braid. heart-shaped face, slightly downturned blue eyes, delicate straight nose. petite but clearly mature adult proportions. Outfit: rose red crewneck top and black wide leg trousers with cream loafers. Holding a paperback, a softly amused smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "485cd7370959a5836547805d750cae441241ddf5af9495bab0e400d5b3d2eb69",
+      "original": "exec-88540590-5f41-4df1-a833-29024ffabb32.png"
+    },
+    {
+      "id": 48,
+      "name": "汪若蘭",
+      "code": "S049",
+      "path": "assets/characters/anime-v035/S049-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age23. auburn shoulder length curls. diamond-shaped face with monolid dark eyes, strong brows and a wide smile. slim tall adult build. Outfit: ivory blouse with forest green midi skirt and brown loafers. Holding a sketchbook with a curious smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "fc24c410225a0b9792bb7ea2fe93f1b8d8482ec0e35ec45f14af4bf91c5bb3db",
+      "original": "exec-5dbac64d-f0c5-4efd-8547-029b8e0e7deb.png"
+    },
+    {
+      "id": 49,
+      "name": "呂海音",
+      "code": "S050",
+      "path": "assets/characters/anime-v035/S050-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. espresso brown long straight hair and blunt bangs. long oval face, catlike violet eyes, small bow shaped mouth. softly curvy adult build. Outfit: rust orange cardigan over cream tee and dark denim skirt with white trainers. Holding a reusable drink cup, thoughtful quiet expression. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "62cbb90f942e98514658347ca321bc6bc2b5f4b91890913210a4cecb381177e3",
+      "original": "exec-7e3d4319-ac23-4232-aa95-9bca763d017a.png"
+    },
+    {
+      "id": 54,
+      "name": "余敏慧",
+      "code": "S055",
+      "path": "assets/characters/anime-v035/S055-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. ash rose chin length asymmetrical bob. softly rounded oval face with wide gentle amber eyes and small full lips. athletic adult build. Outfit: lavender short sleeve blouse and navy culottes with tan flats. A canvas shoulder bag, relaxed friendly smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "316e06595e83265025898afa954456b8dce6e5a73c35e548461335ac9c6e4743",
+      "original": "exec-49b752a8-e1ac-4cf9-831e-26884bb94def.png"
+    },
+    {
+      "id": 55,
+      "name": "段芷芸",
+      "code": "S056",
+      "path": "assets/characters/anime-v035/S056-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age20. ink black blunt bob with a side hairpin. soft square face, hooded olive eyes, broad warm smile. average height sturdy adult build. Outfit: sage cropped casual jacket, white tee, beige chinos and white high-top sneakers. A neat backpack, candid sideways gaze. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "6a04766cecbcfa328bfce7809f78e4146e7a929b39108e3db2f22455686affc8",
+      "original": "exec-0fcf4c28-9655-467a-83ad-b187055b3031.png"
+    },
+    {
+      "id": 56,
+      "name": "雷丹妮",
+      "code": "S057",
+      "path": "assets/characters/anime-v035/S057-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age21. warm honey blonde long loose waves. heart-shaped face, slightly downturned blue eyes, delicate straight nose. petite but clearly mature adult proportions. Outfit: cream linen overshirt and teal pleated midi skirt with brown sandals. Holding a paperback, a softly amused smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "5f13afa01f7e434e85fe66a09c3b2052e28ecddcc96c5c4fb0395bd39cfa87d0",
+      "original": "exec-6f5a5fc6-faaf-43ed-9285-e8d8499a803d.png"
+    },
+    {
+      "id": 57,
+      "name": "廖美璇",
+      "code": "S058",
+      "path": "assets/characters/anime-v035/S058-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age22. dusty mauve shoulder length hair with thin glasses. diamond-shaped face with monolid dark eyes, strong brows and a wide smile. slim tall adult build. Outfit: navy cardigan and soft yellow shirt dress with white trainers. Holding a sketchbook with a curious smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "af77859edf5709818ad8607597ec320ca94bf839cb04d0afcbb32dd211a5e16e",
+      "original": "exec-0f5cf8b6-0cb7-45ce-b9ac-d5d83efbf017.png"
+    },
+    {
+      "id": 58,
+      "name": "倪虹潔",
+      "code": "S059",
+      "path": "assets/characters/anime-v035/S059-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age23. dark teal long hair in a low ponytail. long oval face, catlike violet eyes, small bow shaped mouth. softly curvy adult build. Outfit: rose red crewneck top and black wide leg trousers with cream loafers. Holding a reusable drink cup, thoughtful quiet expression. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "d3ac73ca3c82bcdf9824d56cbb987996f227fd92eef6c69819d15b121c6420e9",
+      "original": "exec-6b586b1f-2d5d-45c9-88bf-5cf09fc43d81.png"
+    },
+    {
+      "id": 62,
+      "name": "丁柔伊",
+      "code": "S063",
+      "path": "assets/characters/anime-v035/S063-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age22. soft chestnut pixie cut. softly rounded oval face with wide gentle amber eyes and small full lips. athletic adult build. Outfit: ivory blouse with forest green midi skirt and brown loafers. A canvas shoulder bag, relaxed friendly smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "35449de6ad1033b5dfef1f44bf940c7b27da356916e2be77f3a6c9a5ffbb1e00",
+      "original": "exec-de0f0602-fa89-4ea9-8bca-dcb67f9d4667.png"
+    },
+    {
+      "id": 63,
+      "name": "安莉蓁",
+      "code": "S064",
+      "path": "assets/characters/anime-v035/S064-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age23. silver blue long hair with a small braid. long angular face with narrow grey eyes, straight brows and defined lips. average height sturdy adult build. Outfit: light blue knit polo and charcoal wide trousers with white canvas shoes. A neat backpack, candid sideways gaze. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "c5a9b3917c2eaa301536ddae7a93ba4ef5d6c9667d47b560450fb5d7072331bb",
+      "original": "exec-32ee1bf7-ab50-4043-a0bd-aec82a7114a7.png"
+    },
+    {
+      "id": 64,
+      "name": "左怡君",
+      "code": "S065",
+      "path": "assets/characters/anime-v035/S065-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. auburn shoulder length curls. soft square face, hooded olive eyes, broad warm smile. petite but clearly mature adult proportions. Outfit: lavender short sleeve blouse and navy culottes with tan flats. Holding a paperback, a softly amused smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "ec9e0d44874a6936a7306b458821dc1a61f0cb83544843a208e4b5fff6a8b338",
+      "original": "exec-6edf3e05-ac2b-44da-926c-3fc9578d5a0a.png"
+    },
+    {
+      "id": 65,
+      "name": "滕玉珊",
+      "code": "S066",
+      "path": "assets/characters/anime-v035/S066-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age20. espresso brown long straight hair and blunt bangs. heart-shaped face, slightly downturned blue eyes, delicate straight nose. slim tall adult build. Outfit: sage cropped casual jacket, white tee, beige chinos and white high-top sneakers. Holding a sketchbook with a curious smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "1838afa60413b559817effce62ca6cc2297a6ee524777b77650fbabf2ae33e2c",
+      "original": "exec-96887ed8-c359-47fb-b40d-b4ad635a0d02.png"
+    },
+    {
+      "id": 66,
+      "name": "裴向葵",
+      "code": "S067",
+      "path": "assets/characters/anime-v035/S067-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age21. ash rose chin length asymmetrical bob. diamond-shaped face with monolid dark eyes, strong brows and a wide smile. softly curvy adult build. Outfit: cream linen overshirt and teal pleated midi skirt with brown sandals. Holding a reusable drink cup, thoughtful quiet expression. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "845082dc872729a56f5d8539edab39bc979e09f32315a3c2f9b2b911039e1335",
+      "original": "exec-6eaa2ebb-9b25-402f-a368-5002877e18fd.png"
+    },
+    {
+      "id": 67,
+      "name": "阮心瑜",
+      "code": "S068",
+      "path": "assets/characters/anime-v035/S068-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age22. ink black blunt bob with a side hairpin. softly rounded oval face with wide gentle amber eyes and small full lips. athletic adult build. Outfit: navy cardigan and soft yellow shirt dress with white trainers. A canvas shoulder bag, relaxed friendly smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "8b3802677ac405d0094e7718b0692eab3f216fd34e6ca889847fab0ddd93d064",
+      "original": "exec-2fdb4b04-b3d9-485b-b100-1b5e02a68382.png"
+    },
+    {
+      "id": 72,
+      "name": "趙夏蕾",
+      "code": "S073",
+      "path": "assets/characters/anime-v035/S073-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age22. warm honey blonde long loose waves. long angular face with narrow grey eyes, straight brows and defined lips. average height sturdy adult build. Outfit: rose red crewneck top and black wide leg trousers with cream loafers. A neat backpack, candid sideways gaze. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "8b757f1b0cb685c61500f4e7cad732aec2a3900832b130d63dd2e7bd6514cbb9",
+      "original": "exec-66bcb32e-ff29-4b19-8511-7905f0b453e4.png"
+    },
+    {
+      "id": 73,
+      "name": "陸詠絮",
+      "code": "S074",
+      "path": "assets/characters/anime-v035/S074-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age23. dusty mauve shoulder length hair with thin glasses. soft square face, hooded olive eyes, broad warm smile. petite but clearly mature adult proportions. Outfit: ivory blouse with forest green midi skirt and brown loafers. Holding a paperback, a softly amused smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "1c0924811d58d587764565c5a66f291e2d6e9e478474941992a303e2f14c3dd2",
+      "original": "exec-6cc30c2b-a60a-4842-9366-92a7144a81c5.png"
+    },
+    {
+      "id": 74,
+      "name": "黃芊穗",
+      "code": "S075",
+      "path": "assets/characters/anime-v035/S075-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. dark teal long hair in a low ponytail. heart-shaped face, slightly downturned blue eyes, delicate straight nose. slim tall adult build. Outfit: light blue knit polo and charcoal wide trousers with white canvas shoes. Holding a sketchbook with a curious smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "b7232167ae6e65f2a5fc9dd3d9d164d6a933c693ef56338d1a6a0d1dd21d7a2a",
+      "original": "exec-48707db7-36e7-476d-90da-ecaac95c8564.png"
+    },
+    {
+      "id": 75,
+      "name": "鄧碧蓉",
+      "code": "S076",
+      "path": "assets/characters/anime-v035/S076-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age20. soft chestnut pixie cut. diamond-shaped face with monolid dark eyes, strong brows and a wide smile. softly curvy adult build. Outfit: rust orange cardigan over cream tee and dark denim skirt with white trainers. Holding a reusable drink cup, thoughtful quiet expression. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "9040db16b43bd061af40c0d6acc71a8200a677d4bfddd6d65541928117cf8631",
+      "original": "exec-4a226733-4a43-4a39-9b20-459b72227efa.png"
+    },
+    {
+      "id": 76,
+      "name": "馬晨曦",
+      "code": "S077",
+      "path": "assets/characters/anime-v035/S077-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age21. silver blue long hair with a small braid. long oval face, catlike violet eyes, small bow shaped mouth. athletic adult build. Outfit: sage cropped casual jacket, white tee, beige chinos and white high-top sneakers. A canvas shoulder bag, relaxed friendly smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "622707d37f819315165fd6befc5cada968cfa30a95e70d3eeded2a8ab3b1d0ac",
+      "original": "exec-446664b0-86db-4412-9048-cc2d0bcff468.png"
+    },
+    {
+      "id": 78,
+      "name": "孫靈犀",
+      "code": "S079",
+      "path": "assets/characters/anime-v035/S079-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age23. auburn shoulder length curls. softly rounded oval face with wide gentle amber eyes and small full lips. average height sturdy adult build. Outfit: cream linen overshirt and teal pleated midi skirt with brown sandals. A neat backpack, candid sideways gaze. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "1f5569bbd6a0775d9214c9712457b7e17e324a51fc7cf7aeaa78b31f7625a511",
+      "original": "exec-ff5ebc23-45a2-49ea-bc7d-29a85ce90775.png"
+    },
+    {
+      "id": 79,
+      "name": "夏錦真",
+      "code": "S080",
+      "path": "assets/characters/anime-v035/S080-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age24. espresso brown long straight hair and blunt bangs. long angular face with narrow grey eyes, straight brows and defined lips. petite but clearly mature adult proportions. Outfit: navy cardigan and soft yellow shirt dress with white trainers. Holding a paperback, a softly amused smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "7efb13b20aeac19cf051b5310850bb18671844a6f0665d721e7c6a4da6826b91",
+      "original": "exec-fd185e87-4cd8-4429-a71b-bb876f9e75e1.png"
+    },
+    {
+      "id": 80,
+      "name": "何映澄",
+      "code": "S081",
+      "path": "assets/characters/anime-v035/S081-W01-anime.png",
+      "prompt": "Use case: stylized-concept. Original adult university romance game character, exquisite Japanese 2D anime visual novel illustration. Reference image is STYLE only, do not copy its character. Clean hand drawn outlines, expressive anime eyes, simplified nose and mouth, fine hair shapes, restrained cel shading, polished beautiful adult proportions. NOT photorealistic. Landscape1536x1024. TWO EQUAL PANELS exactly50% seam, LEFT waist-up face portrait with candid expression, RIGHT same person's complete full body head to shoes. Both views exactly same hair face and outfit. Soft painted campus background. No text, logos, signatures, watermark, extra people, sexualization, child proportions. Character design: Original female university student age22. ash rose chin length asymmetrical bob. soft square face, hooded olive eyes, broad warm smile. slim tall adult build. Outfit: rose red crewneck top and black wide leg trousers with cream loafers. Holding a sketchbook with a curious smile. Make this specific character's eyes, jaw, mouth and silhouette distinct. Left near portrait and right full body must be the same woman. No additional people, no text, no watermark.",
+      "sha256": "859d912e82542f59c31ca914c7f6ef22e902d69ab73891b7de6c809ca37c13f8",
+      "original": "exec-eacd4855-cee1-46c3-9837-bac8898e18ff.png"
+    },
+    {
+      "id": 1,
+      "name": "陳以晴",
+      "code": "S002",
+      "path": "assets/characters/anime-v035/S002-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 陳以晴, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep Chen Yiqing wavy chestnut shoulder length hair, soft round oval face, brown smiling almond eyes and clear skin NO freckles.",
+      "sha256": "2b1bf26fdeed90a50930966c516e77935cba7c129e57944acb0c2871c2dc3199",
+      "original": "exec-1983c83e-bd43-477c-b9e8-6dd55bdac650.png"
+    },
+    {
+      "id": 46,
+      "name": "楊子晴",
+      "code": "S047",
+      "path": "assets/characters/anime-v035/S047-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 楊子晴, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep Yang Ziqing half-up long dark hair with wispy bangs, gentle brown almond eyes and soft heart-oval face.",
+      "sha256": "9b38a13d0e35a8b28ca32c7be7a979876f9bd92928641a0ae428142d985442ee",
+      "original": "exec-9f6cdcd1-bcae-4302-b805-422505dc922b.png"
+    },
+    {
+      "id": 0,
+      "name": "林知夏",
+      "code": "S001",
+      "path": "assets/characters/anime-v035/S001-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 林知夏, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "fa2a365b806613eedabd20ea10db86e4c40e6bd75db1806f412f1ee6c3ba08ce",
+      "original": "exec-20a17469-2e7b-4a7a-9e13-6ebef9f37173.png"
+    },
+    {
+      "id": 2,
+      "name": "沈若寧",
+      "code": "S003",
+      "path": "assets/characters/anime-v035/S003-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 沈若寧, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "ae72819ea3fe9160bc8782c81b04ce8f0c2f86f936cc9fffafa7b965adf3d788",
+      "original": "exec-a0decbae-7597-44d3-8718-d24241d0a2c9.png"
+    },
+    {
+      "id": 3,
+      "name": "許可欣",
+      "code": "S004",
+      "path": "assets/characters/anime-v035/S004-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 許可欣, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "9ef90bd29cf10d6a74007a844177b77925d695a1b153bb1852a8f831723cc9df",
+      "original": "exec-d2f93ae1-5764-4e47-a7e2-443e35e9f1e6.png"
+    },
+    {
+      "id": 6,
+      "name": "唐雪棠",
+      "code": "S007",
+      "path": "assets/characters/anime-v035/S007-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 唐雪棠, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "3a07c987ba54a5309c9b1f225f9886d04dedc677a30d521a7531c6042ff93701",
+      "original": "exec-5c43ee93-086e-43e3-9875-221a9ae81854.png"
+    },
+    {
+      "id": 12,
+      "name": "葉青禾",
+      "code": "S013",
+      "path": "assets/characters/anime-v035/S013-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 葉青禾, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "379f2d97b7214e799a5d40a6866c3dedfef790ec06f521e7f44700b1a5c78ee8",
+      "original": "exec-a4ea3e3e-eb29-4014-b972-b2b09348608a.png"
+    },
+    {
+      "id": 13,
+      "name": "蘇曼婷",
+      "code": "S014",
+      "path": "assets/characters/anime-v035/S014-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 蘇曼婷, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "ab729e2f34ec18ad13e4c32fe7fc44f4905495e5fb169249fafe2454fda5bf00",
+      "original": "exec-31da5c07-3488-4ddd-bd64-aff56e49765b.png"
+    },
+    {
+      "id": 16,
+      "name": "蕭佳蓉",
+      "code": "S017",
+      "path": "assets/characters/anime-v035/S017-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 蕭佳蓉, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "71197ae6feaa9e5483577a38e3e92f2dff728a26431cdb8fef5a1aab01db1f3a",
+      "original": "exec-60f69983-e830-4730-a050-3c8dbd8a1caf.png"
+    },
+    {
+      "id": 17,
+      "name": "胡珮珊",
+      "code": "S018",
+      "path": "assets/characters/anime-v035/S018-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 胡珮珊, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "52e2818b6c282ae4d837b6878bb7c5237041cf951cd1a200758f3ca65ed60aee",
+      "original": "exec-e6f0b3fe-ac0c-4b0c-b670-3f23a96917ae.png"
+    },
+    {
+      "id": 26,
+      "name": "賴書妍",
+      "code": "S027",
+      "path": "assets/characters/anime-v035/S027-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 賴書妍, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "7dd484d788c54c83607c56adc3581da2d3301f6e96a3b482f37e2dad59bf3806",
+      "original": "exec-c0f3b735-8ddd-4b7f-8cc1-7115efa9d166.png"
+    },
+    {
+      "id": 28,
+      "name": "柯語桐",
+      "code": "S029",
+      "path": "assets/characters/anime-v035/S029-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 柯語桐, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "896a0e35a0a2f87b0584f276db697f73c63e8bdc7707dd7ab97f4e95ac15f64a",
+      "original": "exec-cc29c352-1f95-45b3-b5ea-f3185762b512.png"
+    },
+    {
+      "id": 35,
+      "name": "戴蓓琳",
+      "code": "S036",
+      "path": "assets/characters/anime-v035/S036-date-home.png",
+      "prompt": "Use case: identity-preserve. Reference image is the exact fictional adult university character 戴蓓琳, age21 or older. Preserve their same distinctive anime face, eye shape and color, hairstyle, hair color, adult body build, visual novel 2D line work and cel shading. Produce TWO FULL BODY OUTFIT VARIANTS of the SAME PERSON, landscape1536x1024 with exact50% seam. Left half is DATE outfit: elegant youthful casual date outfit, tasteful pastel blouse and midi skirt or summer dress, comfortable low shoes, coordinated with her hair color, original fashionable accessories. Right half is HOME outfit: soft modest coordinated cotton short-sleeve pajama top with lounge trousers and house slippers, relaxed cozy style. Whole head and complete shoes visible in BOTH panels,5% margins, same face identity exact, standing relaxed and warm expression. No waist-up view. Left illustrated cafe date backdrop, right illustrated warm tidy university apartment backdrop. No text, logos, watermark, sexualization, underwear or photo realism. Keep the exact reference character face, hair and proportions.",
+      "sha256": "baf771fdb3e454ff7e0e09fdf6a8a9fc5e7a82fa5a0a32b49add2d0ad1938271",
+      "original": "exec-d2269a6d-9f31-431e-be9b-3228c7b9fe60.png"
+    },
+    {
+      "id": 1,
+      "name": "陳以晴",
+      "code": "S002",
+      "path": "assets/characters/anime-v035/S002-beach-triptych.png",
+      "prompt": "Use case: illustration-story. Exact fictional 21-year-old adult university woman 陳以晴 from reference. Preserve same anime face, hair, eyes, adult build, clean 2D anime cel shading and mature adult proportions. Original romance game beach day CG TRIPTYCH: landscape1536x1024, three EQUAL VERTICAL PANELS with seams at exact one-third and two-thirds,512px per panel. SAME person in all3, same tasteful sage green two-piece swimsuit with opaque full coverage, no lingerie styling. LEFT daylight playing at shallow water's edge, joyful warm smile with hair moving in sea breeze. CENTER sunset seated upright on picnic blanket eating sliced fruit with amused wink, non-suggestive pose. RIGHT starlit evening standing ankle-deep at shoreline, warm quiet smile toward viewer, modest light open beach shirt draped over swimsuit. Beautiful painted sea backgrounds and nuanced lighting across the3 panels. Nonsexual wholesome vacation, no provocative framing or pose, no chest or butt emphasis, no text, no watermark. Full complete bodies with breathing space in all panels. Wavy shoulder length chestnut hair, gentle smiling brown almond eyes, soft round oval face, clear skin NO FRECKLES.",
+      "sha256": "72b1830258d9654591770b50f932f44859aab12bf65656e96bbbeea88f0f84af",
+      "original": "exec-044777b7-efaa-4201-aded-63922b0a62ca.png"
+    },
+    {
+      "id": 46,
+      "name": "楊子晴",
+      "code": "S047",
+      "path": "assets/characters/anime-v035/S047-beach-triptych.png",
+      "prompt": "Use case: illustration-story. Exact fictional 21-year-old adult university woman 楊子晴 from reference. Preserve same anime face, hair, eyes, adult build, clean 2D anime cel shading and mature adult proportions. Original romance game beach day CG TRIPTYCH: landscape1536x1024, three EQUAL VERTICAL PANELS with seams at exact one-third and two-thirds,512px per panel. SAME person in all3, same tasteful navy blue two-piece swimsuit with opaque full coverage, no lingerie styling. LEFT daylight playing at shallow water's edge, joyful warm smile with hair moving in sea breeze. CENTER sunset seated upright on picnic blanket eating sliced fruit with amused wink, non-suggestive pose. RIGHT starlit evening standing ankle-deep at shoreline, warm quiet smile toward viewer, modest light open beach shirt draped over swimsuit. Beautiful painted sea backgrounds and nuanced lighting across the3 panels. Nonsexual wholesome vacation, no provocative framing or pose, no chest or butt emphasis, no text, no watermark. Full complete bodies with breathing space in all panels. Half-up long dark hair, black scrunchie, wispy bangs, gentle brown almond eyes, soft heart oval face.",
+      "sha256": "adae1f081302b285ff9fc2bef7a1deec014163fbb77473755213eb7b4461b63c",
+      "original": "exec-09eb2ba1-8ddd-422c-84f0-66721d22800b.png"
+    },
+    {
+      "id": 0,
+      "name": "林知夏",
+      "code": "S001",
+      "path": "assets/characters/anime-v035/S001-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 林知夏: female20, long straight midnight blue hair, quiet thoughtful narrow violet eyes, slim tall oval face, ivory shirt under navy knit vest, navy culottes, white shoes, vintage camera. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "c2721391146f57c7b4676f5ebbb7b2dafb35f517eb5c2cd9e34131b1434eb371",
+      "original": "exec-bb456b7a-a91c-4720-82a8-91d15fb02273.png"
+    },
+    {
+      "id": 1,
+      "name": "陳以晴",
+      "code": "S002",
+      "path": "assets/characters/anime-v035/S002-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 陳以晴: as reference. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "47fe68569eefe238032309cd1796a25c8f27c8f6a55a2a89ca8a99a673143f09",
+      "original": "exec-b6b14648-c50f-4587-b494-c5b7a7395848.png"
+    },
+    {
+      "id": 2,
+      "name": "沈若寧",
+      "code": "S003",
+      "path": "assets/characters/anime-v035/S003-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 沈若寧: female22, chin length plum-black blunt bob, sharp amber eyes, long face, charcoal artist jacket over lilac tee, wide black trousers, ankle boots, sketchbook. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "5ff1bc0cf084bcad8e5d7d80b89bce66f1d8dbc420363fddbfcaa41c46794ca2",
+      "original": "exec-00d43d7e-c358-4e10-9372-ca79cd61c608.png"
+    },
+    {
+      "id": 3,
+      "name": "許可欣",
+      "code": "S004",
+      "path": "assets/characters/anime-v035/S004-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 許可欣: female23, high auburn ponytail, athletic toned build, tan skin, bright teal eyes, burgundy cropped sporty jacket over white sports tee, navy track trousers, white running shoes, basketball. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "f96a785471b245c58499132ad4eb20da35ccbac0cb53499c4b87042646eb376c",
+      "original": "exec-1080fe0f-6174-4ec1-a968-efacd34faaed.png"
+    },
+    {
+      "id": 6,
+      "name": "唐雪棠",
+      "code": "S007",
+      "path": "assets/characters/anime-v035/S007-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 唐雪棠: female21, long dusty rose hair in loose low braid, green eyes, round friendly face, cream oversized cardigan over black tee, denim midi skirt, canvas shoes, small game controller charm. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "d838f8ea9cb6840dccccc2f2cea409a1010261cd554f3037f793ba5c86c14d44",
+      "original": "exec-567b496b-b360-4ea0-b395-5c1ef6c3c0f9.png"
+    },
+    {
+      "id": 12,
+      "name": "葉青禾",
+      "code": "S013",
+      "path": "assets/characters/anime-v035/S013-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 葉青禾: female22, dark emerald medium hair with side braid, honey eyes, soft square face, healthy curvy build, sage apron tied over cream tee and rust wide trousers, brown loafers. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "ea5d322d46587f0a1406456e8b14ea85b9a1f369115172ba1b1db3155be714b8",
+      "original": "exec-f2dd31f8-5478-4f09-93c1-8805d3611f97.png"
+    },
+    {
+      "id": 13,
+      "name": "蘇曼婷",
+      "code": "S014",
+      "path": "assets/characters/anime-v035/S014-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 蘇曼婷: female23, long silver lavender hair with navy bow, half-lidded violet eyes, elegant long face, black sleeveless mockneck and plum midi skirt, black ankle boots, violin case. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "c5fa2374910b2a4724416d4e83d109d93d522f0cb85c23638c28a8d28e0f88b3",
+      "original": "exec-5791aa8e-f9e5-46e3-9fba-bc7bac6d46a8.png"
+    },
+    {
+      "id": 16,
+      "name": "蕭佳蓉",
+      "code": "S017",
+      "path": "assets/characters/anime-v035/S017-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 蕭佳蓉: female21, warm copper short wavy hair, freckles only on this character, green almond eyes, curvy adult build, saffron shirt dress with belt and cream trainers, red satchel. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "5a052b457d4a97e91374035650ecc8f07966b22f56c6c04fa6d313c7913f8355",
+      "original": "exec-1a0acfe6-01bf-45c9-8a0c-292343aee83f.png"
+    },
+    {
+      "id": 17,
+      "name": "胡珮珊",
+      "code": "S018",
+      "path": "assets/characters/anime-v035/S018-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 胡珮珊: female22, dark burgundy high ponytail, warm brown skin, golden eyes, athletic dancer build, teal off shoulder tee and high waist black wide trousers, dance sneakers. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "0c1effbc84c8ad44545694bad38d0b7302d44dd36ceb65889d98bb57e917d147",
+      "original": "exec-3181f0e0-0bcd-4b88-bf39-b0295df85503.png"
+    },
+    {
+      "id": 26,
+      "name": "賴書妍",
+      "code": "S027",
+      "path": "assets/characters/anime-v035/S027-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 賴書妍: female21, long pale ash blonde hair with braided crown, grey-green eyes, oval face, oatmeal cable cardigan and forest green pleated midi skirt, tan loafers, canvas book bag. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "1abbbf3f8547fea87cc7c4f7f1bc37cc0e69f464fe8525122eb1b4c6d0a5063d",
+      "original": "exec-89a951dd-a7da-47da-99ca-a93b16767e04.png"
+    },
+    {
+      "id": 28,
+      "name": "柯語桐",
+      "code": "S029",
+      "path": "assets/characters/anime-v035/S029-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 柯語桐: female23, shoulder length indigo hair with asymmetrical fringe, cool blue eyes, sharp face and tall slim build, pale blue cropped blazer white blouse and charcoal culottes, black loafers. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "5007f42ac19a8a8ced2ea1a23eb8964b016d244d62299b2ab9c997ac78d17aa8",
+      "original": "exec-cd5463b7-ceb0-4f5e-8e3d-e1498985f22a.png"
+    },
+    {
+      "id": 35,
+      "name": "戴蓓琳",
+      "code": "S036",
+      "path": "assets/characters/anime-v035/S036-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 戴蓓琳: female20, long peach brown twin low ponytails, warm brown eyes, softly round mature face, coral cardigan over white tee, dark denim dungarees and cream sneakers, travel notebook. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "58abf661c1238e7b5bc4e9e244231616d5d29d701a0b3bc088886c95e562c61d",
+      "original": "exec-6bd1a6cf-aa3c-4eae-ae78-69e7ee125ed5.png"
+    },
+    {
+      "id": 46,
+      "name": "楊子晴",
+      "code": "S047",
+      "path": "assets/characters/anime-v035/S047-home-ten.png",
+      "prompt": "Use case: character wardrobe production atlas. Same ORIGINAL ADULT woman age22 from reference; preserve face hair color and silhouette exactly, polished Japanese 2D anime linework and soft cel shading. Transparent background PNG. Landscape1536x1024, EXACT rectangular atlas 5 equal columns x2 equal rows, 10 cells each307.2x512, seams at20%,40%,60%,80% and50%height. NO borders or lettering. Every cell contains exactly one FULL BODY view of the SAME adult woman, centered within LEFT70% of its cell with head and slippers entirely inside cell; at RIGHT30% small separate flat-lay garments of her matching outfit. All figures identical scale, adult7.5head proportions, unambiguous adult age20plus. Distinct outfit for each cell reading left to right then secondrow: 1 soft cotton botanical pajamas, 2 pink cat-ear headband and opaque ruffled lounge dress, 3 navy sailor-collar bunny-ear headband lounge dress with red ribbon, 4 ivory sailor collar comfortable knee-length dress, 5 black-and-white lace trimmed modest maid-inspired house dress, 6 sky-blue ruffled blouse and relaxed shorts with opaque tights, 7 navy sailor collar layered skirt lounge set, 8 pale blue sailor double layered knee-length dress and bow, 9 blush satin buttoned pajama shirt and full-length trousers, 10 ivory knit cardigan over a long lavender nightdress. Every outfit is opaque and fully covers torso and hips; casual adult home fashion, no lingerie or sexualized posing. Each face in each cell is the same identity. Character 楊子晴: as reference. No new people, no watermark, no text. Leave margins to prevent garments or bodies touching adjacent cell. Neutral graceful standing, relaxed smile.",
+      "sha256": "7102d4f2ff4f0ef46817da7c924f40979358fab84eba2255312b5b7fb366c51a",
+      "original": "exec-a503fdff-d957-4804-9f6a-d95e62e15a83.png"
+    },
+    {
+      "id": 0,
+      "name": "林知夏",
+      "code": "S001",
+      "path": "assets/characters/anime-v035/S001-wash-fashion.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design sheet for 林知夏, a mature adult university woman age24. Reference1 provides her face, hair and eye identity; preserve those features. Reference2 provides a coordinated clothing product catalog. Use soft lavender with white daisy embroidery for her own matching adult women's bra and high-waisted full-coverage briefs. Landscape1536x1024, plain neutral ivory studio backdrop, two equal panels. LEFT: same adult woman in a neutral relaxed upright full-body fashion illustration wearing the coordinated opaque matching bra and high-waisted full-coverage briefs, plus a simple ivory cotton knee-length dressing gown resting over shoulders and arms. Mature adult proportions, calm ordinary expression, hands resting naturally, eye-level technical fashion catalog. RIGHT: carefully drawn matching flat-lay garments of the exact same bra, briefs and short simple robe, with front and back design views. Clear seams and matching fabric motifs. Clean anime contours and gentle cel shading, consistent with reference1. Pure garment design reference, no bathroom scene, no changing action, no romantic or suggestive pose, no lettering, no watermark.",
+      "sha256": "b4de5eb693859b6eddec265c5af56b45d50a155cb6411873a2a29974a7327096",
+      "original": "exec-cbe1df94-0ea1-42ec-b5a7-db36774f9a54.png"
+    },
+    {
+      "id": 1,
+      "name": "陳以晴",
+      "code": "S002",
+      "path": "assets/characters/anime-v035/S002-wash-fashion.png",
+      "prompt": "Create an original Japanese 2D anime ADULT fashion design sheet. Reference1 is Chen Yiqing, a 24-year-old adult university woman; preserve her chestnut shoulder-length wavy hair, soft oval face and brown almond eyes. Reference2 is a clothing-only product catalog; use its upper-left sage green botanical matching set as the garment design template. Plain neutral ivory studio background. Landscape1536x1024, two equal panels. LEFT: neutral upright full-body adult fashion model illustration of the same woman wearing the coordinated sage green botanical bra and matching high-waisted full-coverage briefs, with a simple ivory cotton dressing gown hanging naturally over shoulders and arms. Mature adult proportions, relaxed hands at sides, calm ordinary expression, eye-level fashion-catalog presentation. Opaque materials and clear seam details. RIGHT: precise matching flat-lay garment design of the bra, high-waisted briefs, and simple short knee-length robe; all colors and motifs exactly match the worn garments. This is a technical clothing design reference, no bathing scene, no changing action, no romantic or suggestive pose, no lettering, no watermark.",
+      "sha256": "3df913abcfc594e117ea57c971de2f1ea97b1fda3e6d30f96e8110e7c2f13a3d",
+      "original": "exec-d76eeb97-fa65-439b-a44f-eaea26bbab66.png"
+    },
+    {
+      "id": 2,
+      "name": "沈若寧",
+      "code": "S003",
+      "path": "assets/characters/anime-v035/S003-wash-fashion.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design sheet for 沈若寧, a mature adult university woman age24. Reference1 provides her face, hair and eye identity; preserve those features. Reference2 provides a coordinated clothing product catalog. Use navy blue with small cat motifs for her own matching adult women's bra and high-waisted full-coverage briefs. Landscape1536x1024, plain neutral ivory studio backdrop, two equal panels. LEFT: same adult woman in a neutral relaxed upright full-body fashion illustration wearing the coordinated opaque matching bra and high-waisted full-coverage briefs, plus a simple ivory cotton knee-length dressing gown resting over shoulders and arms. Mature adult proportions, calm ordinary expression, hands resting naturally, eye-level technical fashion catalog. RIGHT: carefully drawn matching flat-lay garments of the exact same bra, briefs and short simple robe, with front and back design views. Clear seams and matching fabric motifs. Clean anime contours and gentle cel shading, consistent with reference1. Pure garment design reference, no bathroom scene, no changing action, no romantic or suggestive pose, no lettering, no watermark.",
+      "sha256": "6e0b4db565bea685f74129317a9d4ae995166d1ce1890f2b6b570a3c6fb0ff1e",
+      "original": "exec-6ca7ae3a-ddd6-4369-b038-92380bb8ac9e.png"
+    },
+    {
+      "id": 3,
+      "name": "許可欣",
+      "code": "S004",
+      "path": "assets/characters/anime-v035/S004-wash-fashion.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design sheet for 許可欣, a mature adult university woman age24. Reference1 provides her face, hair and eye identity; preserve those features. Reference2 provides a coordinated clothing product catalog. Use ivory white scalloped floral lace for her own matching adult women's bra and high-waisted full-coverage briefs. Landscape1536x1024, plain neutral ivory studio backdrop, two equal panels. LEFT: same adult woman in a neutral relaxed upright full-body fashion illustration wearing the coordinated opaque matching bra and high-waisted full-coverage briefs, plus a simple ivory cotton knee-length dressing gown resting over shoulders and arms. Mature adult proportions, calm ordinary expression, hands resting naturally, eye-level technical fashion catalog. RIGHT: carefully drawn matching flat-lay garments of the exact same bra, briefs and short simple robe, with front and back design views. Clear seams and matching fabric motifs. Clean anime contours and gentle cel shading, consistent with reference1. Pure garment design reference, no bathroom scene, no changing action, no romantic or suggestive pose, no lettering, no watermark.",
+      "sha256": "109dfde4a5950b9373ca2c4856aea5c650df895cf735f83227a29b732d77a767",
+      "original": "exec-31be50fd-12e2-4a3c-901d-c626074fd875.png"
+    },
+    {
+      "id": 6,
+      "name": "唐雪棠",
+      "code": "S007",
+      "path": "assets/characters/anime-v035/S007-wash-fashion.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design sheet for 唐雪棠, a mature adult university woman age24. Reference1 provides her face, hair and eye identity; preserve those features. Reference2 provides a coordinated clothing product catalog. Use dusty pink with tiny bow motifs for her own matching adult women's bra and high-waisted full-coverage briefs. Landscape1536x1024, plain neutral ivory studio backdrop, two equal panels. LEFT: same adult woman in a neutral relaxed upright full-body fashion illustration wearing the coordinated opaque matching bra and high-waisted full-coverage briefs, plus a simple ivory cotton knee-length dressing gown resting over shoulders and arms. Mature adult proportions, calm ordinary expression, hands resting naturally, eye-level technical fashion catalog. RIGHT: carefully drawn matching flat-lay garments of the exact same bra, briefs and short simple robe, with front and back design views. Clear seams and matching fabric motifs. Clean anime contours and gentle cel shading, consistent with reference1. Pure garment design reference, no bathroom scene, no changing action, no romantic or suggestive pose, no lettering, no watermark.",
+      "sha256": "e8de617be8fb919d6848451a49e27ebcba6a61f2139882da17fb81f38e3e84e2",
+      "original": "exec-f9768c2f-b61d-42db-a5fa-52acb93d294b.png"
+    },
+    {
+      "id": 12,
+      "name": "葉青禾",
+      "code": "S013",
+      "path": "assets/characters/anime-v035/S013-wash-fashion.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design sheet for 葉青禾, a mature adult university woman age24. Reference1 provides her face, hair and eye identity; preserve those features. Reference2 provides a coordinated clothing product catalog. Use sky blue with ruffled edge for her own matching adult women's bra and high-waisted full-coverage briefs. Landscape1536x1024, plain neutral ivory studio backdrop, two equal panels. LEFT: same adult woman in a neutral relaxed upright full-body fashion illustration wearing the coordinated opaque matching bra and high-waisted full-coverage briefs, plus a simple ivory cotton knee-length dressing gown resting over shoulders and arms. Mature adult proportions, calm ordinary expression, hands resting naturally, eye-level technical fashion catalog. RIGHT: carefully drawn matching flat-lay garments of the exact same bra, briefs and short simple robe, with front and back design views. Clear seams and matching fabric motifs. Clean anime contours and gentle cel shading, consistent with reference1. Pure garment design reference, no bathroom scene, no changing action, no romantic or suggestive pose, no lettering, no watermark.",
+      "sha256": "a1f8053d58686deacb4efff1de333e47ee702b2baa360641ec77eaa60e1896ed",
+      "original": "exec-a0763ddb-9278-425a-8a14-5a36fd030d09.png"
+    },
+    {
+      "id": 46,
+      "name": "楊子晴",
+      "code": "S047",
+      "path": "assets/characters/anime-v035/S047-wash-fashion.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design sheet for 楊子晴, a mature adult university woman age24. Reference1 provides her face, hair and eye identity; preserve those features. Reference2 provides a coordinated clothing product catalog. Use dusty rose and white daisy embroidery for her own matching adult women's bra and high-waisted full-coverage briefs. Landscape1536x1024, plain neutral ivory studio backdrop, two equal panels. LEFT: same adult woman in a neutral relaxed upright full-body fashion illustration wearing the coordinated opaque matching bra and high-waisted full-coverage briefs, plus a simple ivory cotton knee-length dressing gown resting over shoulders and arms. Mature adult proportions, calm ordinary expression, hands resting naturally, eye-level technical fashion catalog. RIGHT: carefully drawn matching flat-lay garments of the exact same bra, briefs and short simple robe, with front and back design views. Clear seams and matching fabric motifs. Clean anime contours and gentle cel shading, consistent with reference1. Pure garment design reference, no bathroom scene, no changing action, no romantic or suggestive pose, no lettering, no watermark.",
+      "sha256": "5eed559c43ecf191c521580edcb925650859efb945f79d87da9cc03e16d442be",
+      "original": "exec-81deae62-dc72-48fe-af44-6c028a3fd971.png"
+    },
+    {
+      "id": 0,
+      "name": "林知夏",
+      "code": "S001",
+      "path": "assets/characters/anime-v035/S001-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 林知夏, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "9ef4026b3f7af37e5eb21de43c04d27d20bcb066dc0d2915cf6eb6a6f5bed02c",
+      "original": "exec-a59b5273-11dd-46da-a488-677e3bb706b9.png"
+    },
+    {
+      "id": 1,
+      "name": "陳以晴",
+      "code": "S002",
+      "path": "assets/characters/anime-v035/S002-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 陳以晴, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "431a990456e2290796e2f6842f38e928c8818587b0fbb837215aa60db5787351",
+      "original": "exec-82983ebd-593d-419c-b41c-ed123a49c7f1.png"
+    },
+    {
+      "id": 2,
+      "name": "沈若寧",
+      "code": "S003",
+      "path": "assets/characters/anime-v035/S003-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 沈若寧, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "06f6d11f1612665b5820bd704a1d1a95e815991a7e10801a479f5e2d6a16f7b1",
+      "original": "exec-fc2671b1-172e-405e-927c-829217074bf2.png"
+    },
+    {
+      "id": 3,
+      "name": "許可欣",
+      "code": "S004",
+      "path": "assets/characters/anime-v035/S004-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 許可欣, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "1e49e36e7dee9d8ebd91656b68c6b4e68ce2926d8a245d947e9043e7d2151485",
+      "original": "exec-3a8f23e1-082c-42cd-92af-81960293dc03.png"
+    },
+    {
+      "id": 6,
+      "name": "唐雪棠",
+      "code": "S007",
+      "path": "assets/characters/anime-v035/S007-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 唐雪棠, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "6784f770768ba724d58e32258ec20737e9443928769be03d891ca1a6897b4e98",
+      "original": "exec-32aacc42-544c-47c5-b436-b2da34f955f4.png"
+    },
+    {
+      "id": 12,
+      "name": "葉青禾",
+      "code": "S013",
+      "path": "assets/characters/anime-v035/S013-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 葉青禾, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "e7fa4bc5debd0d9486d646bc24bb94691235c94c732d913db237efe40ee5830a",
+      "original": "exec-636ae28c-be06-48f5-8531-ae4439e96020.png"
+    },
+    {
+      "id": 13,
+      "name": "蘇曼婷",
+      "code": "S014",
+      "path": "assets/characters/anime-v035/S014-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 蘇曼婷, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "00353d63c87e1ff4e199fcf7e3984fa11785e8ca2361d6e69e5c016490d82fe2",
+      "original": "exec-36cd5ee3-d6c6-48d5-84af-b36fc8e33b59.png"
+    },
+    {
+      "id": 16,
+      "name": "蕭佳蓉",
+      "code": "S017",
+      "path": "assets/characters/anime-v035/S017-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 蕭佳蓉, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "3ef80885e120c15ee53d63122df02f2e1a693446fee99514ecd37e6689c7fbaa",
+      "original": "exec-76b439cb-a2b6-4aa2-aa29-53dea2e044cc.png"
+    },
+    {
+      "id": 17,
+      "name": "胡珮珊",
+      "code": "S018",
+      "path": "assets/characters/anime-v035/S018-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 胡珮珊, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "36d811ad3b89ff4feb0d6380a4efc77b6f80906293a203771b15051825d65b59",
+      "original": "exec-1469efe8-b40b-4fb7-b11f-c9746d4d70ab.png"
+    },
+    {
+      "id": 26,
+      "name": "賴書妍",
+      "code": "S027",
+      "path": "assets/characters/anime-v035/S027-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 賴書妍, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "23f0578c4c65a4914dd3c3ac0b7a952ad0b2f9e313e9f583fe81bbd3c393ad9a",
+      "original": "exec-fb13bd70-83ee-44f5-87bc-5980f2362775.png"
+    },
+    {
+      "id": 28,
+      "name": "柯語桐",
+      "code": "S029",
+      "path": "assets/characters/anime-v035/S029-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 柯語桐, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "53ff46c1d33b16e4ee3d2c6336f8403fcfdaf64d54e2b19f9be02cff1e031794",
+      "original": "exec-f16b6261-b3c5-4dfd-911c-43ceb74ca735.png"
+    },
+    {
+      "id": 35,
+      "name": "戴蓓琳",
+      "code": "S036",
+      "path": "assets/characters/anime-v035/S036-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 戴蓓琳, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "055a37f1fe9451e231b5c0f519c64e6510916e95932201d43acbcb5ea3ed183b",
+      "original": "exec-3feb4f02-14ac-4748-9961-9fc6e37eb00f.png"
+    },
+    {
+      "id": 46,
+      "name": "楊子晴",
+      "code": "S047",
+      "path": "assets/characters/anime-v035/S047-wash-four.png",
+      "prompt": "Original Japanese 2D anime ADULT fashion design atlas for 楊子晴, a mature adult university woman age24. Preserve face, hair and eye identity from reference1; reference2 is a garment-only product design catalog. Landscape1536x1024, EXACT2columns x2rows, four equal768x512 cells, plain ivory studio background. Same adult woman repeated once per cell, neutral upright adult fashion illustration, mature adult proportions, ordinary calm expression. Each cell: LEFT40% one full-body view of her wearing an opaque matching adult women's bra and high-waisted full-coverage briefs with an ivory knee-length dressing gown resting over arms and shoulders. RIGHT60% exact matching flat-lay garments of the bra and briefs with precise seams, motifs and fabric construction. Four distinct coordinated sets, in reading order: 1 sage green botanical embroidery, 2 pale blue and white small cat motif with scalloped trim, 3 ivory white floral lace and tiny rose bow, 4 burgundy rose embroidery with navy ribbon details. Fully opaque clothing materials, both worn garments and flat-lay items must match perfectly within each cell. Every cell the SAME adult woman, only clothes change. Elegant clean 2D anime lines and gentle cel shading, consistent with reference1. Technical apparel design atlas, no bathroom setting, no changing action or romantic pose. No text, lettering, watermark or numbers. Exact equal cell layout for game UI cropping.",
+      "sha256": "82ad6e476b5dcb62edfe30c4a7594d3f07c2df5e9dd4c2a0f191d1743e16b480",
+      "original": "exec-54ddb46c-6b11-4a31-9250-a65642ec4d44.png"
+    },
+    {
+      "id": 0,
+      "name": "林知夏",
+      "code": "S001",
+      "path": "assets/characters/anime-v035/S001-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 林知夏, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "722673698cca60b7c737c391f8d4310c45ab8acfbf9dc2494e2b7aa725212cf6",
+      "original": "exec-a218ed5d-b138-44d1-b41e-ee35548a543c.png"
+    },
+    {
+      "id": 1,
+      "name": "陳以晴",
+      "code": "S002",
+      "path": "assets/characters/anime-v035/S002-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 陳以晴, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "7471237bbd8459d0d2fc382ab9566d9741f56f6f210e4a0d57b32ae813e34bf6",
+      "original": "exec-1129b4cb-d343-43c4-849a-bb2c42c4c236.png"
+    },
+    {
+      "id": 2,
+      "name": "沈若寧",
+      "code": "S003",
+      "path": "assets/characters/anime-v035/S003-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 沈若寧, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "d634ef165bb7d22e75ead8b7661c66c7cf7e4f8c6a6519972e1becf9ebaf9f6c",
+      "original": "exec-0df69b33-0e64-4c93-bab8-4755f638a717.png"
+    },
+    {
+      "id": 3,
+      "name": "許可欣",
+      "code": "S004",
+      "path": "assets/characters/anime-v035/S004-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 許可欣, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "37a91406aa8f4bb0c9a5a8912cb47c2d7b75f516cb0a08fdfe9aaf5bc780d785",
+      "original": "exec-2898ac3c-8329-4fa6-8737-2316d96a6f9a.png"
+    },
+    {
+      "id": 6,
+      "name": "唐雪棠",
+      "code": "S007",
+      "path": "assets/characters/anime-v035/S007-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 唐雪棠, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "76b7c2f69b93b8c6b324d7892f9aeca9b3591ffd6546fad4a817ad5f2b765b18",
+      "original": "exec-9d00de8d-13e0-46ec-87bd-695e3baadb07.png"
+    },
+    {
+      "id": 12,
+      "name": "葉青禾",
+      "code": "S013",
+      "path": "assets/characters/anime-v035/S013-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 葉青禾, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "1fcc1cb6c59820fd837017a0f231839dda32ed104a9f1b90d27ccee278269377",
+      "original": "exec-09ac1e93-8ed9-4503-9dde-fc5f26f173d6.png"
+    },
+    {
+      "id": 13,
+      "name": "蘇曼婷",
+      "code": "S014",
+      "path": "assets/characters/anime-v035/S014-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 蘇曼婷, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "973ddef4452f2e10062a55116f0fffd9910b0f6ceab807c4b126af8393a4e72c",
+      "original": "exec-8744be67-0359-466d-be5a-f9389fecd994.png"
+    },
+    {
+      "id": 16,
+      "name": "蕭佳蓉",
+      "code": "S017",
+      "path": "assets/characters/anime-v035/S017-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 蕭佳蓉, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "1abfabc0730a63f7da5f42753f5942c176753534f4b356d77915f0c999509e49",
+      "original": "exec-1dbd0335-be58-41f5-b7e6-4e5e22ec151e.png"
+    },
+    {
+      "id": 17,
+      "name": "胡珮珊",
+      "code": "S018",
+      "path": "assets/characters/anime-v035/S018-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 胡珮珊, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "444422818ab7dd1c1e8234fdeece692b57982afd46f904357216847feb6f4e6f",
+      "original": "exec-58e4902e-9d54-44d7-bac2-577d0e8c88c4.png"
+    },
+    {
+      "id": 26,
+      "name": "賴書妍",
+      "code": "S027",
+      "path": "assets/characters/anime-v035/S027-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 賴書妍, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "f292dfebd72d3aba24d36243bd3c977560b4c09f6b3dc0a32496ce91d9da38aa",
+      "original": "exec-0447528f-893f-4b82-88bb-2dd2b1a04ee1.png"
+    },
+    {
+      "id": 28,
+      "name": "柯語桐",
+      "code": "S029",
+      "path": "assets/characters/anime-v035/S029-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 柯語桐, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "81446390a97c279e32ac4f8d8467b5d6a67749a973bc2ab8ea82fb4a46ae0af0",
+      "original": "exec-fc271458-de20-44ae-949c-45d90da42653.png"
+    },
+    {
+      "id": 35,
+      "name": "戴蓓琳",
+      "code": "S036",
+      "path": "assets/characters/anime-v035/S036-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 戴蓓琳, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "cb08bba4aece289623748b5110762fcb3eda8447bc680580ff0d5ed1eb5ad99b",
+      "original": "exec-e9462933-5031-44ec-94a8-df6f757f27e5.png"
+    },
+    {
+      "id": 46,
+      "name": "楊子晴",
+      "code": "S047",
+      "path": "assets/characters/anime-v035/S047-short-robe.png",
+      "prompt": "Original ADULT Japanese 2D anime apparel catalog for 楊子晴, a mature adult university woman in her twenties. Preserve the face, hair and eye identity of reference. Plain ivory studio backdrop. Landscape1536x1024 TWO EQUAL panels. LEFT: full-body neutral standing adult fashion illustration wearing a simple short ivory terrycloth spa robe, length just above the knees, fully closed front, neatly secured wide belt, modest high collar, opaque thick cotton, long sleeves and comfortable slippers. She holds folded fresh clothes in one arm. Relaxed ordinary expression and mature adult proportions, no fancy lace or frills, no long robe. RIGHT: matching garment design flat-lays of the same simple short robe front and back plus a small rectangular folded bath towel, simple practical white cotton with one pastel border. Clear seams and fabric texture, elegant clean anime outlines and soft cel shading, consistent with reference. Technical apparel design board, no bathroom scene, no changing action, no text or watermark.",
+      "sha256": "9bce0d754bfac9b702cfe9fe51e2900dda73644ff2287ccd47b0899744705cdb",
+      "original": "exec-db898d79-62c9-4947-8498-f4b7c685f060.png"
+    },
+    {
+      "id": 0,
+      "name": "林知夏",
+      "code": "S001",
+      "path": "assets/characters/anime-v035/S001-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 林知夏, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "388ab44612ef1e5525a969028e832635d1ed49329f95615b4e7d65c522b025bc",
+      "original": "exec-711df014-9837-4edd-a06e-bcb90b440f74.png"
+    },
+    {
+      "id": 1,
+      "name": "陳以晴",
+      "code": "S002",
+      "path": "assets/characters/anime-v035/S002-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 陳以晴, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "91be79989025651e4c7fb127fba8391c01ba91acdf882338ac16d14fe3995256",
+      "original": "exec-e71f18ce-4062-4055-a44b-9b54b5e08df3.png"
+    },
+    {
+      "id": 2,
+      "name": "沈若寧",
+      "code": "S003",
+      "path": "assets/characters/anime-v035/S003-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 沈若寧, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "be20f12454d36ed75dc4a10bf2ab3843af7b879c6931b787a9324cbddb5e9d84",
+      "original": "exec-9d98d587-ff41-4342-a1df-258a376dcd0d.png"
+    },
+    {
+      "id": 3,
+      "name": "許可欣",
+      "code": "S004",
+      "path": "assets/characters/anime-v035/S004-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 許可欣, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "820df938a1e990de2e610abb600d20a5dbae3d9770cccb013005498a959313c0",
+      "original": "exec-3217a1e9-5859-438c-a4fe-f668c0d2bb4f.png"
+    },
+    {
+      "id": 6,
+      "name": "唐雪棠",
+      "code": "S007",
+      "path": "assets/characters/anime-v035/S007-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 唐雪棠, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "3bd10f15d1cc5d4a9323a41e3a6dc7529a075caf67d9d6c992690faf3fef0e00",
+      "original": "exec-a7500785-fd35-4c89-be5f-ea7ad502352a.png"
+    },
+    {
+      "id": 12,
+      "name": "葉青禾",
+      "code": "S013",
+      "path": "assets/characters/anime-v035/S013-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 葉青禾, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "29a6e510a0e477221c2c0f74a25c76cc7913dafe78603186335d9c468b762709",
+      "original": "exec-47696a92-ef2a-45ec-bad3-caa3f83ca41c.png"
+    },
+    {
+      "id": 13,
+      "name": "蘇曼婷",
+      "code": "S014",
+      "path": "assets/characters/anime-v035/S014-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 蘇曼婷, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "b13b005bd31bec4f1b2670957a494f7a2372cecf51dcacea00e89181a1188f36",
+      "original": "exec-318ef543-6c09-4594-b58a-0d68cb6ec710.png"
+    },
+    {
+      "id": 16,
+      "name": "蕭佳蓉",
+      "code": "S017",
+      "path": "assets/characters/anime-v035/S017-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 蕭佳蓉, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "c946a15a17964aaac08fcb077e88bf5dd536486a741b5dc0161f67635ea8c81b",
+      "original": "exec-efe61c57-cdc4-471f-a0df-f3cd302d9759.png"
+    },
+    {
+      "id": 17,
+      "name": "胡珮珊",
+      "code": "S018",
+      "path": "assets/characters/anime-v035/S018-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 胡珮珊, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "d56c8e60ab336a22c5d4c89ae29fb7c08222664b5944fb188343b2233f20e2cc",
+      "original": "exec-b7a4bfed-f34d-45a2-baaf-bf230c482b9a.png"
+    },
+    {
+      "id": 26,
+      "name": "賴書妍",
+      "code": "S027",
+      "path": "assets/characters/anime-v035/S027-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 賴書妍, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "0f23a1152bdc60838a4e316e503c6ecc3654b4ff4382f620f26221aed21fea4b",
+      "original": "exec-807912e2-dd67-47ce-98cc-c54dae4f454c.png"
+    },
+    {
+      "id": 28,
+      "name": "柯語桐",
+      "code": "S029",
+      "path": "assets/characters/anime-v035/S029-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 柯語桐, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "a22a874c428b4e472f592162859a08542321d3ab72b2e6d62925a3fa68c3d02c",
+      "original": "exec-3836eaa3-7e32-46b9-ae9a-cf2584eec24c.png"
+    },
+    {
+      "id": 35,
+      "name": "戴蓓琳",
+      "code": "S036",
+      "path": "assets/characters/anime-v035/S036-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT apparel design board for 戴蓓琳, a mature adult university woman age24. Reference1 is HER face and hair identity, preserve it exactly. Reference2 is ONLY the short towel construction and catalog layout template, do not copy its woman's identity. Landscape1536x1024 on plain ivory studio background. LEFT half: this same adult woman as neutral upright apparel model, wearing a securely fastened opaque ivory terrycloth spa wrap towel, top secured across upper chest and short hem just above knees, completely covering torso and hips, a small folded hand towel held at waist, comfortable slippers, mature adult proportions and calm ordinary expression. Include front and back costume views if space permits. RIGHT half: matching technical flat-lay garment design of the SAME short wrap towel front and back, simple pastel border and secure fastening construction, one folded hand towel and fabric-edge closeup. No long wrap, no long skirt. Refined clean anime contour lines and soft cel shading consistent with reference1. Pure garment construction catalog, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "f3f97ad288bf2a4fc5320a5f334f030e4619bcba1fe5b010aabed74d10bbba28",
+      "original": "exec-7752bdb9-8af9-44fa-b5c0-16c543f4475a.png"
+    },
+    {
+      "id": 46,
+      "name": "楊子晴",
+      "code": "S047",
+      "path": "assets/characters/anime-v035/S047-short-towel.png",
+      "prompt": "Original Japanese 2D anime ADULT clothing design reference for Yang Ziqing, a mature university woman age24, preserving the dark half-up long hair, wispy bangs, brown almond eyes and soft oval-heart face of the reference. Landscape1536x1024, plain neutral ivory studio background, two equal panels. LEFT: a neutral upright adult apparel model illustration wearing a securely wrapped opaque ivory terrycloth spa towel, its top snugly secured across the upper chest and its hem just above the knees, complete torso and hip coverage. A small second folded towel held in her hands at waist level. Mature adult proportions, relaxed ordinary expression, eye-level fashion catalog layout, simple slippers. RIGHT: flat-lay technical garment design of the same short terrycloth wrap with front and back views, clear folded fastening construction, pastel rose border, plus a small folded hand towel. Precise cotton texture and seam details. Refined anime outlines and soft cel shading. Pure clothing construction board, no bathroom scene, no changing action, no romantic pose, no lettering or watermark.",
+      "sha256": "ce536d610b43beeacb9b4a167f2b77b334a8649b8a2861f901306a00702f143d",
+      "original": "exec-38ea49ef-9ec2-42ce-b70e-f8b7727f59b7.png"
+    },
+    {
+      "path": "assets/characters/anime-v035/room-night-anime.png",
+      "prompt": "Use case: original visual novel game environment BACKGROUND ONLY. Landscape1536x1024. Refined hand-drawn Japanese 2D anime background, clean ink contours, softly painted cel-shaded colors, unmistakably illustrated not photorealistic. Cozy adult university student's apartment bedroom at night, double bed on right with ivory cotton bedding, a nightstand with warm amber fabric-shade lamp, a window on left with cool blue campus skyline, small potted plants and shelves, a mug and two books, delicate lived-in details. Camera eye level first person from near doorway, clear open center foreground floor space reserved for a standing character later. Warm light/cool window contrast. Restrained sage cream rose color palette, romantic and calm everyday atmosphere. No people, no silhouettes, no text, no watermark.",
+      "sha256": "aec35ed63698e30d513f309684468633e416aae29c5b595ef96301cfa3d61864",
+      "original": "exec-ec3239ff-dced-4907-9347-dd4f64eee436.png"
+    },
+    {
+      "path": "assets/characters/anime-v035/lingerie-design-catalog.png",
+      "prompt": "Use case: clothing product design sheet only. NO PEOPLE, no bodies, no mannequin, no skin. Original Japanese anime game wardrobe flat-lay catalog, crisp 2D clean line art and subtle cel shading on warm ivory paper. Landscape1536x1024 exact four columns x four rows,16 equal cells, first13 cells populated left to right then next row, last3 cells blank. Each populated cell contains one carefully designed ADULT WOMEN'S matching bra and briefs laid flat, upper garment above lower garment, coordinated color, lace or embroidered motif and small bow, not worn by anyone. The thirteen coordinated sets in order: 1 sage botanical embroidery; 2 soft lavender white daisies; 3 navy small cat motif; 4 ivory scalloped lace; 5 dusty pink tiny bows; 6 sky blue ruffle edge; 7 black and cream floral lace; 8 lilac fine flower pattern; 9 pale blue sailor ribbon motif; 10 cream gold delicate embroidery; 11 burgundy roses; 12 muted teal scallop edge; 13 dusty rose and white daisy embroidery. Fully opaque textile fashion design, clean garment construction with readable seams, elegant and tasteful retail catalog, no suggestive props, no fetish, no text, no numbers, no logos, no watermark. Generous space between cells and precise grid alignment.",
+      "sha256": "c9f41dfadd4dc6646a67702cca6c96cdcc8a072d2715d20dba7e80e6b8e21dff",
+      "original": "exec-6cbb8cea-77ac-4787-bff8-9c993aec88bb.png"
+    }
+  ]
+}
