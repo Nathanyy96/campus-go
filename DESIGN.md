@@ -23,6 +23,16 @@ typography:
     fontSize: "28px"
     lineHeight: 1.4
     letterSpacing: "-.025em"
+  desktop-feature:
+    fontFamily: "Noto Serif TC, serif"
+    fontSize: "24px"
+    lineHeight: 1.45
+    letterSpacing: "-.025em"
+  desktop-feature-compact:
+    fontFamily: "Noto Serif TC, serif"
+    fontSize: "22px"
+    lineHeight: 1.45
+    letterSpacing: "-.025em"
   title:
     fontFamily: "Noto Serif TC, serif"
     fontSize: "19px"
@@ -123,17 +133,17 @@ Campus Paper carries the phone, Campus Ground surrounds it, and Sage Surface gro
 
 ## Typography
 
-Noto Serif TC with serif fallback is the heading voice; Noto Sans TC with sans-serif fallback carries controls, narrative and supporting copy. Base headings use the frontmatter headline and title roles. Page headings tighten to (25px), desktop character headings expand from (32px) to (36px), and the smallest phone greeting uses (25px). Body paragraphs stop at (65ch); scene dialogue permits (70ch). Navigation uses compact labels (11px), supporting metadata (10–12px), and scene dialogue uses the narrative role, dropping to (14px) on narrow phones. Preserve readable line spacing instead of squeezing additional prose into the first viewport.
+Noto Serif TC with serif fallback is the heading voice; Noto Sans TC with sans-serif fallback carries controls, narrative and supporting copy. Base headings use the frontmatter headline and title roles. Page headings tighten to (25px), desktop character headings use (24px), reducing to (22px) between (901px) and (1350px), and the smallest phone greeting uses (25px). Body paragraphs stop at (65ch); scene dialogue permits (70ch). Navigation uses compact labels (11px), supporting metadata (10–12px), and scene dialogue uses the narrative role, dropping to (14px) on narrow phones. Preserve readable line spacing instead of squeezing additional prose into the first viewport.
 
 ## Layout
 
-The desktop container is capped at (1130px), with a character illustration beside a phone column of (440–540px), a (24px) gutter and outer padding. At (1300px) the phone fixes to (540px). At (900px) and below, the character panel disappears and the single phone spans a container capped at (600px); its frame radius and shadow disappear. At (430px) and below, screen padding becomes (22px 18px). Desktop phone content uses (26px) padding; mobile uses (24px).
+Above (900px), the desktop container is capped at (1760px), with grid columns `minmax(340px,.9fr) minmax(460px,1.1fr)`, a (24px) gutter and (24px) outer padding. The character panel stays sticky at (24px), with height `calc(100svh - 48px)`; the phone has the same minimum height. The full-body illustration occupies the flexible upper area, followed by a compact paper copy block. Anime art uses an SVG viewport derived from the right-hand panel of the (1536 × 1024) source at its authored split, with `preserveAspectRatio="xMidYMid meet"`; fit the complete panel without cover cropping or copy overlay. Copy padding is (18px 24px 20px), with text on the left and relationship meter/action on the right. Between (901px) and (1350px), padding becomes (16px 20px), heading and supporting text span both columns, and the meter/action share the final row. At (900px) and below, the character panel disappears and the single phone spans a container capped at (600px); its frame radius and shadow disappear. At (430px) and below, screen padding becomes (22px 18px). Desktop phone content uses (26px) padding; mobile uses (24px).
 
 Six top navigation destinations stay available, followed by a greeting, resources and daily slots in their relevant surfaces. The launcher has four columns; home wardrobe thumbnails have five, wash designs two. Lists use separators rather than a card for every row. Content can scroll; do not make the page an unscrollable phone screenshot.
 
 ## Elevation & Depth
 
-A single diffuse shadow lifts the desktop phone. Story dialogs use a deeper shadow, dark translucent backdrop and blur to focus attention; ordinary rows remain flat. The character panel uses an illustrated field and a pale bottom gradient for readable copy. Hover transitions take (.18s); brief floating gains use a (1.6s) ease-out animation. Reduced motion disables animation, transitions and smooth scrolling in the semester and scene surfaces.
+A single diffuse shadow lifts the desktop phone. Story dialogs use a deeper shadow, dark translucent backdrop and blur to focus attention; ordinary rows remain flat. The character panel uses an illustrated field above a separate pale paper copy block; the copy has no gradient overlay on the artwork. Hover transitions take (.18s); brief floating gains use a (1.6s) ease-out animation. Reduced motion disables animation, transitions and smooth scrolling in the semester and scene surfaces.
 
 ## Shapes
 

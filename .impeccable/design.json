@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T05:00:29.039361+00:00",
+  "generatedAt": "2026-10-20T05:13:03.779462+00:00",
   "title": "Design System: Campus Go · v0.35",
   "extensions": {
     "colorMeta": {
@@ -235,6 +235,14 @@
       "narrative": {
         "displayName": "Narrative",
         "purpose": "Focused scene dialogue."
+      },
+      "desktop-feature": {
+        "displayName": "Desktop Feature",
+        "purpose": "Compact character copy heading above 1350px."
+      },
+      "desktop-feature-compact": {
+        "displayName": "Compact Desktop Feature",
+        "purpose": "Character copy heading from 901px through 1350px."
       }
     },
     "shadows": [
@@ -263,8 +271,12 @@
     ],
     "breakpoints": [
       {
-        "name": "wide",
-        "value": "1300px"
+        "name": "desktop-copy-compact",
+        "value": "1350px"
+      },
+      {
+        "name": "desktop",
+        "value": "901px"
       },
       {
         "name": "phone-only",
@@ -304,7 +316,28 @@
       "home-wardrobe-ui.js",
       "account-gate.css"
     ],
-    "tonalRampNote": "Synthesized OKLCH display ramps; not implementation overrides."
+    "tonalRampNote": "Synthesized OKLCH display ramps; not implementation overrides.",
+    "desktopLayout": {
+      "minWidth": "901px",
+      "maxWidth": "1760px",
+      "gridTemplateColumns": "minmax(340px,.9fr) minmax(460px,1.1fr)",
+      "gap": "24px",
+      "outerPadding": "24px",
+      "characterPosition": "sticky",
+      "characterTop": "24px",
+      "characterHeight": "calc(100svh - 48px)",
+      "phoneMinHeight": "calc(100svh - 48px)",
+      "artwork": {
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "viewport": "right-hand panel at authored split",
+        "preserveAspectRatio": "xMidYMid meet",
+        "copyOverlay": false
+      },
+      "copyPadding": "18px 24px 20px",
+      "compactCopyPadding": "16px 20px",
+      "compactCopyMaxWidth": "1350px"
+    }
   },
   "components": [
     {
@@ -362,6 +395,14 @@
       "description": "Rounded-square launcher and authored line icon.",
       "html": "<button class=\"ds-app\"><span><svg viewBox=\"0 0 24 24\" width=\"27\" height=\"27\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M5 4h14v13H9l-4 3V4Z\"/><path d=\"M8 8h8M8 12h6\"/></svg></span>訊息</button>",
       "css": ".ds-app{font-family:\"Noto Sans TC\",sans-serif;color:#233e34;display:grid;justify-items:center;gap:9px;background:transparent;border:0;font-size:12px;cursor:pointer}.ds-app span{display:grid;place-items:center;width:58px;height:58px;background:#dfeadd;color:#285c49;border-radius:16px}.ds-app:hover span{background:#e1eadd}.ds-app:focus-visible{outline:3px solid #a0533e;outline-offset:3px}"
+    },
+    {
+      "name": "Desktop Feature Copy",
+      "kind": "custom",
+      "refersTo": "desktop-feature",
+      "description": "Paper copy below the complete fitted illustration; compact two-column arrangement adapts at 1350px. Artwork is outside this specimen.",
+      "html": "<div class=\"ds-feature-copy\"><h2>有些靠近，<br>從普通的一天開始。</h2><p>同學 · 日常</p><div class=\"ds-feature-bond\">相識 <progress value=\"20\" max=\"100\" aria-label=\"好感\"></progress></div><button>看看這位同學</button></div>",
+      "css": ".ds-feature-copy{padding:18px 24px 20px;background:#f4f8ea;color:#213f32;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 18px;align-items:center;font-family:\"Noto Sans TC\",sans-serif}.ds-feature-copy h2{grid-column:1;grid-row:1;font-family:\"Noto Serif TC\",serif;font-size:24px;line-height:1.45;letter-spacing:-.025em;margin:0}.ds-feature-copy p{grid-column:1;grid-row:2;margin:0;font-size:14px;line-height:1.85}.ds-feature-bond{grid-column:2;grid-row:1;width:210px;font-size:12px}.ds-feature-bond progress{width:100%;accent-color:#285c49}.ds-feature-copy button{grid-column:2;grid-row:2;justify-self:end;min-height:42px;padding:10px 14px;background:#fbfcf7;color:#233e34;border:1px solid #cbd7c9;border-radius:10px;font:inherit;cursor:pointer;transition:background .18s,color .18s}.ds-feature-copy button:hover{background:#e1eadd;color:#1c4031}.ds-feature-copy button:focus-visible{outline:3px solid #a0533e;outline-offset:3px}@media(max-width:1350px){.ds-feature-copy{padding:16px 20px;grid-template-columns:1fr 1fr}.ds-feature-copy h2{grid-column:1/-1;font-size:22px}.ds-feature-copy p{grid-column:1/-1}.ds-feature-bond{grid-column:1;grid-row:3;width:100%}.ds-feature-copy button{grid-column:2;grid-row:3;font-size:12px}}"
     }
   ],
   "narrative": {
