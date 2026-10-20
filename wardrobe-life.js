@@ -1,7 +1,7 @@
 import {relationship,personState,advance,hash,log} from './simulation.js';
 import {intimacy,earnIntimacy} from './intimacy.js';
 import {gameDate} from './calendar.js';
-export const WARDROBE_ATLAS='assets/wardrobe/couple-wardrobe-v02.png';
+export const WARDROBE_ATLAS=null; // Retired photo atlas; previews use characterArt.
 export const INNERWEAR_IMAGE='assets/wardrobe/innerwear-products-v01.png';
 export const LOOKS={casual:{label:'校園日常',column:0},date:{label:'外出約會',column:1},home:{label:'柔棉居家服',column:2}};
 export const INNERWEAR={ivory:{label:'米白柔棉成套',column:0},blue:{label:'霧藍柔棉成套',column:1},sage:{label:'鼠尾草綠柔棉成套',column:2}};
