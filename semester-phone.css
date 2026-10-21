@@ -25,6 +25,14 @@ body.semester-mode{margin:0;background:#e8eee5;color:#223c34;overflow:auto!impor
 .s-wash-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.s-wash-grid button{padding:6px!important;min-width:0}.s-wash-grid button[aria-pressed=true]{outline:2px solid #285c49;outline-offset:1px}.s-wash-grid button>img{width:100%;height:auto}.s-wash-grid span{display:block;font-size:12px;margin:8px 0}.s-wash-crop{position:relative;overflow:hidden;aspect-ratio:1.5}.s-wash-crop img{position:absolute;max-width:none!important;width:200%!important;height:200%!important;object-fit:fill}
 
 /* Desktop: use the screen width and fit the complete body panel before copy. */
+.s-black-look{position:relative;overflow:hidden;aspect-ratio:var(--black-aspect);width:100%;background:#faf7ef}
+.s-black-look img{position:absolute;display:block;max-width:none!important;width:200%!important;height:100%!important;top:0;object-fit:fill}
+.s-sleep-choice,.s-date-outfits details>.s-black-look,.s-home-fashion>.s-black-look{width:min(100%,300px);margin:16px auto}
+.s-sleep-choice>button{width:100%;margin-top:12px}
+.s-sleep-wardrobe{margin:26px 0}
+.s-date-outfits h3{font-size:16px;margin:22px 0 8px}
+.s-date-outfits summary{cursor:pointer;min-height:44px;padding:12px 0}
+.s-date-outfits button[aria-pressed=true],.s-sleep-choice button[aria-pressed=true]{outline:2px solid var(--s-accent);outline-offset:1px;background:var(--s-soft)!important}
 @media(min-width:901px){
  .s-desktop{max-width:1760px;grid-template-columns:minmax(340px,.9fr) minmax(460px,1.1fr)}
  .s-atmosphere{display:flex;flex-direction:column;min-height:0;background:#d9e3d3}

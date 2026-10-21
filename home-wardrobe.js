@@ -1,3 +1,4 @@
+import {BLACK_OUTFIT_ART} from './black-outfit-art.js';
 import {semester,routeBond,stage,atSlot,intimacyValue} from './semester.js';
 const entries=[
  ['cotton','花草棉睡衣','好感55／親密35',0],['cat','粉色貓耳居家裙','相處1天',120],['bunny','深藍水手兔耳款','相處2天',150],['ivory','白色水手領裙','親密45',180],['maid','黑白蕾絲居家裙','體貼4',180],['ruffle','霧藍荷葉邊套裝','穩重4',160],['navy','深藍水手層次裙','幽默4',160],['sky','晴空雙層裙','熱血4',160],['satin','櫻粉緞面睡衣','好感95',220],['knit','奶油針織長睡裙','親密70／好感100',260]
@@ -38,4 +39,11 @@ export function buyHomeOutfit(s,p,key){const v=semester(s),b=routeBond(s,p),outf
  if(s.life.money<outfit.price)return {ok:false,text:`這套衣服需要$${outfit.price}。`};
  s.life.money-=outfit.price;collection(s,p).unlocked.push(key);
  return {ok:true,text:`${p.name}收下${outfit.label}：「謝謝你記得我的喜好。」已加入衣櫃，今晚見面時可以一起挑選。`};
+}
+
+export function wearBlackSleep(s,p){
+ if(!BLACK_OUTFIT_ART[p?.id])return {ok:false,text:'這位角色的黑色荷葉邊睡衣全身圖待補。'};
+ const error=washGate(s,p);if(error)return error;
+ const c=collection(s,p);c.mode='sleep-black';c.wash=false;
+ return {ok:true,text:`已換上${p.name}的黑色荷葉邊睡衣；房間與睡前保留同一套，不消耗時段。`};
 }
