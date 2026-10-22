@@ -1,0 +1,89 @@
+{
+  "category": "daily",
+  "generator": "built-in imagegen",
+  "date": "2026-10-21",
+  "note": "Generated under the initial date-outfit brief; reclassified as daily clothing by the user. Original daily outfit plus these three = four.",
+  "assets": [
+    {
+      "code": "S002",
+      "name": "陳以晴",
+      "file": "S002-daily-three.png",
+      "sha256": "a1b21f3c18dee49187c533bf68ab0e141c42c570100e08c2405f1e55412e4b99",
+      "prompt": "Use case: identity-preserve. Create an anime game DATE OUTFIT wardrobe sheet showing THREE complete full-body views of the SAME adult woman from reference1 in one horizontal row. Preserve reference1 face shape, eye color, hairstyle, hair color and hair accessories exactly; the other references are CLOTHES ONLY, do not copy their faces/hair. Left: reference2 white oversized zip-up hooded mini dress with pale blue sporty sleeve stripes, cuffs and hem, opaque fabric, closed zipper to upper chest, matching opaque shorts concealed beneath hem, retain original character hair without animal ears or tail. Middle: reference3 ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks and dark loafers. Right: reference4 white opaque flouncy camisole crop top, blue distressed denim shorts with white frayed edges, simple white date sandals. Retain original garment colors, shapes, trim and texture. Neutral relaxed standing fashion catalogue poses, calm expressions, no props, no handheld console, no scene or speech bubbles. All heads and feet completely visible, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime rendering matching reference1. No text, no watermark."
+    },
+    {
+      "code": "S047",
+      "name": "楊子晴",
+      "file": "S047-daily-three.png",
+      "sha256": "99148b43bc25d00192f950e07dcb502f7ee35b74665dcc70c957a19aa8d77f58",
+      "prompt": "Use case: identity-preserve. Anime game DATE OUTFIT wardrobe sheet: THREE complete full-body views of the SAME adult woman from reference1, one horizontal row. Preserve reference1 face shape, eye color, exact hairstyle, hair color and accessories. Other references are CLOTHES ONLY, never copy their faces or hair. Left reference2: opaque white oversized zip-up hooded mini dress, pale blue sporty sleeve stripes/cuffs/hem, zipper closed to upper chest, matching shorts concealed under hem, white sneakers. Middle reference3: ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks, dark loafers. Right reference4: opaque white flouncy camisole crop top, blue distressed denim shorts with white frayed hems, white date sandals. Retain garment colors/shapes/trim/material. Keep original character hair; no added animal ears or tail. Relaxed neutral catalogue standing poses, calm adult expression. All three heads and feet completely inside frame, evenly spaced, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime matching reference1. No scene, props, game console, text or watermark. Character: 楊子晴; retain reference1 identity."
+    },
+    {
+      "code": "S003",
+      "name": "沈若寧",
+      "file": "S003-daily-three.png",
+      "sha256": "e54157f0153764880150899dde12b3d1f2f3cde6dda401d0f94163c34ef137d7",
+      "prompt": "Use case: identity-preserve. Anime game DATE OUTFIT wardrobe sheet: THREE complete full-body views of the SAME adult woman from reference1, one horizontal row. Preserve reference1 face shape, eye color, exact hairstyle, hair color and accessories. Other references are CLOTHES ONLY, never copy their faces or hair. Left reference2: opaque white oversized zip-up hooded mini dress, pale blue sporty sleeve stripes/cuffs/hem, zipper closed to upper chest, matching shorts concealed under hem, white sneakers. Middle reference3: ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks, dark loafers. Right reference4: opaque white flouncy camisole crop top, blue distressed denim shorts with white frayed hems, white date sandals. Retain garment colors/shapes/trim/material. Keep original character hair; no added animal ears or tail. Relaxed neutral catalogue standing poses, calm adult expression. All three heads and feet completely inside frame, evenly spaced, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime matching reference1. No scene, props, game console, text or watermark. Character: 沈若寧; retain reference1 identity."
+    },
+    {
+      "code": "S004",
+      "name": "許可欣",
+      "file": "S004-daily-three.png",
+      "sha256": "936fbd1c957fe71b1bb44869d9c679d6e127597ebd13408589978140ca6a604a",
+      "prompt": "Use case: identity-preserve. Anime game DATE OUTFIT wardrobe sheet: THREE complete full-body views of the SAME adult woman from reference1, one horizontal row. Preserve reference1 face shape, eye color, exact hairstyle, hair color and accessories. Other references are CLOTHES ONLY, never copy their faces or hair. Left reference2: opaque white oversized zip-up hooded mini dress, pale blue sporty sleeve stripes/cuffs/hem, zipper closed to upper chest, matching shorts concealed under hem, white sneakers. Middle reference3: ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks, dark loafers. Right reference4: opaque white flouncy camisole crop top, blue distressed denim shorts with white frayed hems, white date sandals. Retain garment colors/shapes/trim/material. Keep original character hair; no added animal ears or tail. Relaxed neutral catalogue standing poses, calm adult expression. All three heads and feet completely inside frame, evenly spaced, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime matching reference1. No scene, props, game console, text or watermark. Character: 許可欣; retain reference1 identity."
+    },
+    {
+      "code": "S007",
+      "name": "唐雪棠",
+      "file": "S007-daily-three.png",
+      "sha256": "0c71eb86f09247187a87866334d7b16d8dcd75c5d85641564a8e98c8be332d38",
+      "prompt": "Use case: identity-preserve. Anime game DATE OUTFIT wardrobe sheet: THREE complete full-body views of the SAME adult woman from reference1, one horizontal row. Preserve reference1 face shape, eye color, exact hairstyle, hair color and accessories. Other references are CLOTHES ONLY, never copy their faces or hair. Left reference2: opaque white oversized zip-up hooded mini dress, pale blue sporty sleeve stripes/cuffs/hem, zipper closed to upper chest, matching shorts concealed under hem, white sneakers. Middle reference3: ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks, dark loafers. Right reference4: opaque white flouncy camisole crop top, blue distressed denim shorts with white frayed hems, white date sandals. Retain garment colors/shapes/trim/material. Keep original character hair; no added animal ears or tail. Relaxed neutral catalogue standing poses, calm adult expression. All three heads and feet completely inside frame, evenly spaced, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime matching reference1. No scene, props, game console, text or watermark. Character: 唐雪棠; retain reference1 identity."
+    },
+    {
+      "code": "S014",
+      "name": "蘇曼婷",
+      "file": "S014-daily-three.png",
+      "sha256": "411062a3581a55ec0798238b85bc2c6d4f119a3d10b48fab855b7e8edd417cbb",
+      "prompt": "Use case: identity-preserve. Anime game DATE OUTFIT wardrobe sheet: THREE complete full-body views of the SAME adult woman from reference1, one horizontal row. Preserve reference1 face shape, eye color, exact hairstyle, hair color and accessories. Other references are CLOTHES ONLY, never copy their faces or hair. Left reference2: opaque white oversized zip-up hooded mini dress, pale blue sporty sleeve stripes/cuffs/hem, zipper closed to upper chest, matching shorts concealed under hem, white sneakers. Middle reference3: ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks, dark loafers. Right reference4: opaque white flouncy camisole crop top, blue distressed denim shorts with white frayed hems, white date sandals. Retain garment colors/shapes/trim/material. Keep original character hair; no added animal ears or tail. Relaxed neutral catalogue standing poses, calm adult expression. All three heads and feet completely inside frame, evenly spaced, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime matching reference1. No scene, props, game console, text or watermark. Character: 蘇曼婷; retain reference1 identity."
+    },
+    {
+      "code": "S017",
+      "name": "蕭佳蓉",
+      "file": "S017-daily-three.png",
+      "sha256": "6a1561d946c07088949cf86847781c48e58849312e9d3ba13d608ec61f68066a",
+      "prompt": "Use case: identity-preserve. Anime game DATE OUTFIT wardrobe sheet: THREE complete full-body views of the SAME adult woman from reference1, one horizontal row. Preserve reference1 face shape, eye color, exact hairstyle, hair color and accessories. Other references are CLOTHES ONLY, never copy their faces or hair. Left reference2: opaque white oversized zip-up hooded mini dress, pale blue sporty sleeve stripes/cuffs/hem, zipper closed to upper chest, matching shorts concealed under hem, white sneakers. Middle reference3: ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks, dark loafers. Right reference4: opaque white flouncy camisole crop top, blue distressed denim shorts with white frayed hems, white date sandals. Retain garment colors/shapes/trim/material. Keep original character hair; no added animal ears or tail. Relaxed neutral catalogue standing poses, calm adult expression. All three heads and feet completely inside frame, evenly spaced, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime matching reference1. No scene, props, game console, text or watermark. Character: 蕭佳蓉; retain reference1 identity."
+    },
+    {
+      "code": "S027",
+      "name": "賴書妍",
+      "file": "S027-daily-three.png",
+      "sha256": "cb5cdda0153bf1dcb1551cd36919b144b2873ea7440ae5a714bdf7387a840b8f",
+      "prompt": "Use case: identity-preserve. Anime game DATE OUTFIT wardrobe sheet: THREE complete full-body views of the SAME adult woman from reference1, one horizontal row. Preserve reference1 face shape, eye color, exact hairstyle, hair color and accessories. Other references are CLOTHES ONLY, never copy their faces or hair. Left reference2: opaque white oversized zip-up hooded mini dress, pale blue sporty sleeve stripes/cuffs/hem, zipper closed to upper chest, matching shorts concealed under hem, white sneakers. Middle reference3: ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks, dark loafers. Right reference4: opaque white flouncy camisole crop top, blue distressed denim shorts with white frayed hems, white date sandals. Retain garment colors/shapes/trim/material. Keep original character hair; no added animal ears or tail. Relaxed neutral catalogue standing poses, calm adult expression. All three heads and feet completely inside frame, evenly spaced, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime matching reference1. No scene, props, game console, text or watermark. Character: 賴書妍; retain reference1 identity."
+    },
+    {
+      "code": "S029",
+      "name": "柯語桐",
+      "file": "S029-daily-three.png",
+      "sha256": "83313a13b466818ff329e8f8a7f092fa6a5705a8ee2ebf5124bc17ada7ac26d5",
+      "prompt": "Use case: identity-preserve. Anime game DATE OUTFIT wardrobe sheet: THREE complete full-body views of the SAME adult woman from reference1, one horizontal row. Preserve reference1 face shape, eye color, exact hairstyle, hair color and accessories. Other references are CLOTHES ONLY, never copy their faces or hair. Left reference2: opaque white oversized zip-up hooded mini dress, pale blue sporty sleeve stripes/cuffs/hem, zipper closed to upper chest, matching shorts concealed under hem, white sneakers. Middle reference3: ivory cable-knit long-sleeved sweater, grey pleated mini skirt, white scrunch socks, dark loafers. Right reference4: opaque white flouncy camisole crop top, blue distressed denim shorts with white frayed hems, white date sandals. Retain garment colors/shapes/trim/material. Keep original character hair; no added animal ears or tail. Relaxed neutral catalogue standing poses, calm adult expression. All three heads and feet completely inside frame, evenly spaced, no overlap, generous margins. Warm ivory plain background, refined hand-painted anime matching reference1. No scene, props, game console, text or watermark. Character: 柯語桐; retain reference1 identity."
+    }
+  ],
+  "pending": [
+    {
+      "code": "S001",
+      "name": "林知夏"
+    },
+    {
+      "code": "S013",
+      "name": "葉青禾"
+    },
+    {
+      "code": "S018",
+      "name": "胡珮珊"
+    },
+    {
+      "code": "S036",
+      "name": "戴蓓琳"
+    }
+  ]
+}

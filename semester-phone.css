@@ -32,6 +32,13 @@ body.semester-mode{margin:0;background:#e8eee5;color:#223c34;overflow:auto!impor
 .s-sleep-wardrobe{margin:26px 0}
 .s-date-outfits h3{font-size:16px;margin:22px 0 8px}
 .s-date-outfits summary{cursor:pointer;min-height:44px;padding:12px 0}
+.s-daily-look>svg{display:block!important;width:100%!important;height:100%!important;overflow:hidden}
+.s-daily-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px;margin-top:16px}
+.s-daily-grid>div{min-width:0;display:grid;grid-template-rows:1fr auto;gap:10px}
+.s-daily-grid .s-art{width:100%;align-self:start}
+.s-daily-grid button{width:100%}
+.s-daily-wardrobe summary{cursor:pointer;min-height:44px;padding:12px 0}
+.s-daily-wardrobe button[aria-pressed=true]{outline:2px solid var(--s-accent);outline-offset:1px;background:var(--s-soft)!important}
 .s-date-outfits button[aria-pressed=true],.s-sleep-choice button[aria-pressed=true]{outline:2px solid var(--s-accent);outline-offset:1px;background:var(--s-soft)!important}
 @media(min-width:901px){
  .s-desktop{max-width:1760px;grid-template-columns:minmax(340px,.9fr) minmax(460px,1.1fr)}
